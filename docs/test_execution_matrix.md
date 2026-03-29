@@ -18,6 +18,15 @@
   - 実行コストが高い、または重複確認/スポット確認の位置づけ。
   - リリース前や重点変更時に実行する。
 
+## 3.1 marker 運用方針
+- 既存 marker `integration` を DB依存グループの唯一の実行markerとして使う。
+- `app_api/tests` では以下を `pytest.mark.integration` 付与対象とする。
+  - `test_db_connection.py`
+  - `test_recipe_repository.py`
+  - `test_menu_api.py`
+  - `test_vocabulary_api.py`
+- `test_openapi_error_responses.py` は unmarked のまま（optional / 準unit）。
+
 # 4. ファイル別実行マトリクス表
 | file | 区分 | 目的 | 前提条件 | 推奨実行コマンド | 実行頻度 | 失敗時の一次切り分け |
 |---|---|---|---|---|---|---|
@@ -59,6 +68,11 @@ python -m pytest tests/test_option2_db_integration_postgres.py tests/test_pipeli
 推奨コマンド（app_api 側）:
 ```bash
 python -m pytest app_api/tests/test_db_connection.py app_api/tests/test_recipe_repository.py app_api/tests/test_menu_api.py app_api/tests/test_vocabulary_api.py -q
+```
+
+推奨コマンド（marker ベース）:
+```bash
+python -m pytest app_api/tests -m integration -q
 ```
 
 # 7. 任意実行セット
@@ -117,7 +131,8 @@ python -m pytest app_api/tests/test_db_connection.py app_api/tests/test_recipe_r
 python -m pytest tests/test_validator_canonical_v1.py tests/test_pipeline_acceptance.py tests/test_pipeline_db_import_acceptance.py -q
 python -m pytest tests/test_pipeline_loader_canonical_v1.py app_api/tests/test_openapi_error_responses.py -q
 python -m pytest tests/test_option2_db_integration_postgres.py tests/test_pipeline_db_integration_postgres.py -m integration -q
-python -m pytest app_api/tests/test_db_connection.py app_api/tests/test_recipe_repository.py app_api/tests/test_menu_api.py app_api/tests/test_vocabulary_api.py -q
+python -m pytest app_api/tests -m integration -q
+python -m pytest app_api/tests -m "not integration" -q
 ```
 
 # 11. 失敗時の一次切り分け

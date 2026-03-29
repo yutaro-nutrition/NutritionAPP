@@ -1,9 +1,12 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
+import pytest
 from fastapi.testclient import TestClient
 
 from app.main import app
 
+
+pytestmark = pytest.mark.integration
 
 client = TestClient(app)
 
@@ -60,4 +63,3 @@ def test_validation_error_has_error_code() -> None:
     payload = response.json()
     assert payload["error_code"] == "VALIDATION_ERROR"
     assert isinstance(payload["detail"], list)
-

@@ -1,7 +1,12 @@
-﻿from __future__ import annotations
+from __future__ import annotations
+
+import pytest
 
 from app.db.session import SessionLocal
 from app.repositories.recipe_repository import RecipeListFilters, RecipeRepository
+
+
+pytestmark = pytest.mark.integration
 
 
 def test_recipe_list_fetch() -> None:
@@ -38,4 +43,3 @@ def test_invalid_category_for_random() -> None:
             assert False, "ValueError should be raised for invalid slot"
         except ValueError:
             assert True
-

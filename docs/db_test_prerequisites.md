@@ -112,7 +112,7 @@ python -m pytest tests/test_option2_db_integration_postgres.py tests/test_pipeli
 
 ## 9.2 app_api DB依存 tests
 ```bash
-python -m pytest app_api/tests/test_db_connection.py app_api/tests/test_recipe_repository.py app_api/tests/test_menu_api.py app_api/tests/test_vocabulary_api.py -q
+python -m pytest app_api/tests -m integration -q
 ```
 
 ## 9.3 app_api向け seed 導線（推奨）
@@ -127,6 +127,7 @@ python app_api/scripts/load_minimum_test_seed.py
 
 備考:
 - `load_minimum_test_seed.py` は DB名 allowlist ガード付き（既定: `recipe_test_db` のみ）。
+- `app_api/tests/test_openapi_error_responses.py` は unmarked なので `-m integration` には含まれない。
 
 # 10. 注意事項
 - 本ガイドは「前提固定」が目的であり、テストコード変更は含まない。
