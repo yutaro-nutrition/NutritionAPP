@@ -61,20 +61,32 @@
   - schema適用（`create_tables.sql` + migrations）
   - 固定ID seed の再投入
 
-## 7.2 seedを無効化して確認したい場合
+## 7.2 pytest非依存の手動再投入（追加CLI）
+- `app_api/scripts/load_minimum_test_seed.py` を実行する。
+- 実行内容:
+  - schema適用（`create_tables.sql` + migrations）
+  - 固定ID minimum seed 再投入
+- 安全ガード:
+  - DB名 allowlist（既定: `recipe_test_db`）に一致しない場合は停止。
+  - `prod` / `production` / `live` を含む危険DB名は停止。
+
+## 7.3 seedを無効化して確認したい場合
 - 環境変数 `APP_API_TEST_AUTO_SEED=0` を設定して実行する。
 
 # 8. 実行コマンド例
 ```bash
 # DB起動（標準）
-docker compose up -d postgres_test
+powershell -ExecutionPolicy Bypass -File scripts/start_test_postgres.ps1
 
-# app_api DB依存テスト（自動seed有効）
+# minimum seed 手動再投入（pytest非依存）
 set POSTGRES_HOST=127.0.0.1
 set POSTGRES_PORT=55432
 set POSTGRES_DB=recipe_test_db
 set POSTGRES_USER=recipe_test_user
 set POSTGRES_PASSWORD=recipe_test_password
+python app_api/scripts/load_minimum_test_seed.py
+
+# app_api DB依存テスト（自動seed有効）
 set APP_API_TEST_AUTO_SEED=1
 python -m pytest app_api/tests/test_db_connection.py app_api/tests/test_recipe_repository.py app_api/tests/test_menu_api.py app_api/tests/test_vocabulary_api.py -q
 ```
@@ -82,9 +94,10 @@ python -m pytest app_api/tests/test_db_connection.py app_api/tests/test_recipe_r
 # 9. 既知の制約
 - 自動seedは `recipe_test_db` 前提で運用することを推奨（本番DB流用は禁止）。
 - seed無効時、既存DBデータに依存して結果が不安定になる。
-- `docker compose up -d postgres_test` が環境要因で失敗する場合があり、その場合は代替手順（`docker start recipe-postgres-test`）を使う。
+- 起動標準は `scripts/start_test_postgres.ps1`。直接 compose 実行は環境依存で失敗し得る。
+- `docker start recipe-postgres-test` は標準失敗時の代替/復旧手順。
 
 # 10. 今後の改善候補
 - seed ID/値を JSON 定義に分離し、データ更新差分を見やすくする。
-- app_api専用の軽量 seed CLI（pytest非依存）を追加する。
+- seed CLI の実行ログを `reports/` 配下へ残すオプション追加。
 - menu生成テスト向けに deterministic random 制御を検討する（現状はデータ量で安定化）。

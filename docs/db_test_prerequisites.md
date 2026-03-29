@@ -30,17 +30,17 @@ DB依存テストを再現可能に実行するための最低成立条件を固
 
 # 4. 標準DB起動手順
 標準手順（採用）:
-```bash
-docker compose up -d postgres_test
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/start_test_postgres.ps1
 ```
 
 採用理由:
-- `docs/db_integration_postgres_test_usage.md` の主手順と一致。
-- サービス名ベースで起動でき、再現手順として文書化しやすい。
+- 実環境で `docker compose up -d postgres_test` が `project name must not be empty` で失敗する問題を吸収できる。
+- 内部で compose 正規導線（`docker compose -p mealplan-test -f docker-compose.yml up -d postgres_test`）を優先し、既存固定コンテナ競合時のみ復旧導線へフォールバックする。
 
 起動確認:
 ```bash
-docker compose ps
+docker ps --filter "name=recipe-postgres-test"
 ```
 - `postgres_test` が `healthy` であること。
 
@@ -51,13 +51,13 @@ docker start recipe-postgres-test
 ```
 
 使用条件:
-- `docker compose up -d postgres_test` が project name 解決/コンテナ名競合等で失敗する環境。
+- 標準ラッパーが失敗し、かつ既存固定コンテナを明示起動したい場合。
 - 既存固定名コンテナ `recipe-postgres-test` が事前に存在する場合のみ。
 
 docs 間の矛盾（明示）:
 - `docs/db_integration_postgres_test_usage.md` は `docker compose up -d postgres_test` を主手順として記載。
 - `docs/integration_test_baseline_2026-03-29.md` は環境制約付きで `docker start recipe-postgres-test` を採用。
-- 本ガイドでは「composeを標準、docker startを例外時代替」に統一する。
+- 本ガイドでは「起動ラッパーを標準、docker startを例外時代替」に統一する。
 
 # 6. 最低限必要なDB状態
 - 接続可能であること（host/port/db/user/password が一致）。
@@ -117,9 +117,16 @@ python -m pytest app_api/tests/test_db_connection.py app_api/tests/test_recipe_r
 
 ## 9.3 app_api向け seed 導線（推奨）
 ```powershell
-$env:APP_API_TEST_AUTO_SEED='1'
-python -m pytest app_api/tests/test_db_connection.py app_api/tests/test_recipe_repository.py app_api/tests/test_menu_api.py app_api/tests/test_vocabulary_api.py -q
+$env:POSTGRES_HOST='127.0.0.1'
+$env:POSTGRES_PORT='55432'
+$env:POSTGRES_DB='recipe_test_db'
+$env:POSTGRES_USER='recipe_test_user'
+$env:POSTGRES_PASSWORD='recipe_test_password'
+python app_api/scripts/load_minimum_test_seed.py
 ```
+
+備考:
+- `load_minimum_test_seed.py` は DB名 allowlist ガード付き（既定: `recipe_test_db` のみ）。
 
 # 10. 注意事項
 - 本ガイドは「前提固定」が目的であり、テストコード変更は含まない。

@@ -131,6 +131,6 @@ python -m pytest app_api/tests/test_db_connection.py app_api/tests/test_recipe_r
   - seed不足（特に app_api/repository/menu 系）
 
 # 12. 今後の整理候補
-- 自動seedを pytest外から実行する薄いCLIを追加し、トラブルシュート時の再投入を簡単化。
+- seed CLI（`app_api/scripts/load_minimum_test_seed.py`）のログ出力/監査性を強化。
 - `pipeline_loader_canonical_v1` と `pipeline_acceptance` の責務重複削減。
 - root と `scripts/` の二重エントリポイントの正本宣言。
