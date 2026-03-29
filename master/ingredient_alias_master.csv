@@ -1,0 +1,12 @@
+raw_name,normalized_name,alias_group,note
+鶏むね肉,鶏肉 むね,chicken_breast,部位正規化
+鶏胸肉,鶏肉 むね,chicken_breast,表記ゆれ
+鳥むね,鶏肉 むね,chicken_breast,誤記吸収
+鶏もも肉,鶏肉 もも,chicken_thigh,部位正規化
+豚ロース肉,豚肉 ロース,pork_loin,部位正規化
+牛もも肉,牛肉 もも,beef_round,部位正規化
+食パン6枚切り,食パン,bread_white,パン種別吸収
+うどん（ゆで）,うどん,udon,表記統一
+ゆでうどん,うどん,udon,表記統一
+乾そば,そば,soba,表記統一
+ゆでそば,そば,soba,表記統一

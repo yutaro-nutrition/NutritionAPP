@@ -1,0 +1,9 @@
+BEGIN;
+
+ALTER TABLE IF EXISTS recipe_ingredients
+    ADD COLUMN IF NOT EXISTS food_id TEXT NULL;
+
+ALTER TABLE IF EXISTS recipe_ingredients
+    ADD COLUMN IF NOT EXISTS process TEXT NULL;
+
+COMMIT;

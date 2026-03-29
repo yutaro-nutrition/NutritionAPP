@@ -1,0 +1,29 @@
+{
+  "status": "success",
+  "source_food_master": "C:\\Users\\yurar\\.codex\\献立作成\\food_source.xlsx",
+  "source_step3": "C:\\Users\\yurar\\.codex\\献立作成\\recipe_db_udon_100.xlsx",
+  "output": "C:\\Users\\yurar\\.codex\\献立作成\\recipe_db_udon_100.xlsx",
+  "recipe_count": 100,
+  "ingredient_rows": 1100,
+  "step_rows": 500,
+  "tag_matched_with_input_count": 96,
+  "tag_retry_adjusted_recipe_count": 4,
+  "tag_replaced_recipe_count": 0,
+  "checks": {
+    "na_zero": true,
+    "nutrition_missing_zero": true,
+    "pfc_consistency": true,
+    "tag_consistency": true,
+    "excel_valid": true,
+    "nutrition_exact_match": true
+  },
+  "process": [
+    "Step1 マスタ参照: OK",
+    "Step2 可食部補正: OK",
+    "Step3 Yield補正: OK",
+    "Step4 Retention補正: OK",
+    "Step5 合算: OK",
+    "Step6 PFC算出: OK",
+    "Step7 タグ付与: OK"
+  ]
+}

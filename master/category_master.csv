@@ -1,0 +1,15 @@
+file_pattern,category_lv1,category_lv2,default_batch,default_version
+recipe_db_udon_*.xlsx,主食,うどん,udon_batch1,v1.0_udon
+recipe_db_soba_*.xlsx,主食,そば,soba_batch1,v1.0_soba
+recipe_db_ramen_*.xlsx,主食,らーめん,ramen_batch1,v1.0_ramen
+recipe_db_bread_*.xlsx,主食,パン,bread_batch1,v1.0_bread
+recipe_db_donburi_*.xlsx,丼,丼,donburi_batch1,v1.0_donburi
+recipe_db_main_beef_*.xlsx,主菜,牛肉主菜,beef_batch1,v1.0_beef
+recipe_db_main_pork_*.xlsx,主菜,豚肉主菜,pork_batch1,v1.0_pork
+recipe_db_main_chicken_*.xlsx,主菜,鶏肉主菜,chicken_batch1,v1.0_chicken
+recipe_db_main_fish_*.xlsx,主菜,魚介主菜,fish_batch1,v1.0_fish
+recipe_db_main_seafood_*.xlsx,主菜,魚介主菜,fish_batch1,v1.0_fish
+recipe_db_side_lowprotein_*.xlsx,副菜,副菜低タンパク,side_lp_batch1,v1.0_side_lp
+recipe_db_side_protein5_*.xlsx,副菜,副菜タンパク質5g程度,side_p5_batch1,v1.0_side_p5
+recipe_db_soup_*.xlsx,汁物,汁物,soup_batch1,v1.0_soup
+recipe_db_dessert_*.xlsx,デザート,果物乳製品デザート,dessert_batch1,v1.0_dessert

@@ -1,0 +1,9 @@
+{
+  "source_file": "recipe_db_gohan_120.xlsx",
+  "imported_at": "2026-03-19T13:42:53.097Z",
+  "recipe_count": 120,
+  "ingredient_row_count": 811,
+  "step_row_count": 480,
+  "missing_recipe_ids_in_ingredients": [],
+  "missing_recipe_ids_in_steps": []
+}

@@ -1,0 +1,4322 @@
+[
+  {
+    "recipe_id": "RICE_0001",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "青魚と彩り野菜の生姜しょうゆごはん 001の材料を計量する。＜魚類＞ （さば類） まさば 生は一口大、（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0001",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0001",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0001",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0001",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0001",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0002",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "赤身魚と彩り野菜のみそだれごはん 002の材料を計量する。＜魚類＞ （まぐろ類） きはだ 生は一口大、つるにんじん 根 生・ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0002",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0002",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0002",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0002",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0002",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0003",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "白身魚と彩り野菜の塩だれごはん 003の材料を計量する。＜魚類＞ （たら類） まだら 生は一口大、（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0003",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0003",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0003",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0003",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0003",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0004",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "青魚と彩り野菜のごましょうゆごはん 004の材料を計量する。＜魚類＞ （さば類） まさば 生は一口大、ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生・（しめじ類） はたけしめじ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0004",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0004",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0004",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0004",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0004",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0005",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "赤身魚と彩り野菜の生姜しょうゆごはん 005の材料を計量する。＜魚類＞ （まぐろ類） きはだ 生は一口大、こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0005",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0005",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0005",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0005",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0005",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0006",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "白身魚と彩り野菜のみそだれごはん 006の材料を計量する。＜魚類＞ （たら類） まだら 生は一口大、ブロッコリー 花序 生・（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0006",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0006",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0006",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0006",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0006",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0007",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "青魚と彩り野菜の塩だれごはん 007の材料を計量する。＜魚類＞ （さば類） まさば 生は一口大、しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0007",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0007",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0007",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0007",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0007",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0008",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "赤身魚と彩り野菜のごましょうゆごはん 008の材料を計量する。＜魚類＞ （まぐろ類） きはだ 生は一口大、（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0008",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0008",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0008",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0008",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0008",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0009",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "白身魚と彩り野菜の生姜しょうゆごはん 009の材料を計量する。＜魚類＞ （たら類） まだら 生は一口大、（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生・ほうれんそう 葉 通年平均 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0009",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0009",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0009",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0009",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0009",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0010",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "青魚と彩り野菜のみそだれごはん 010の材料を計量する。＜魚類＞ （さば類） まさば 生は一口大、（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0010",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0010",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0010",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0010",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0010",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0011",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "赤身魚と彩り野菜の塩だれごはん 011の材料を計量する。＜魚類＞ （まぐろ類） きはだ 生は一口大、つるにんじん 根 生・ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0011",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0011",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0011",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0011",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0011",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0012",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "白身魚と彩り野菜のごましょうゆごはん 012の材料を計量する。＜魚類＞ （たら類） まだら 生は一口大、（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0012",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0012",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0012",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0012",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0012",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0013",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "青魚と彩り野菜の生姜しょうゆごはん 013の材料を計量する。＜魚類＞ （さば類） まさば 生は一口大、ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生・（しめじ類） はたけしめじ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0013",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0013",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0013",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0013",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0013",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0014",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "赤身魚と彩り野菜のみそだれごはん 014の材料を計量する。＜魚類＞ （まぐろ類） きはだ 生は一口大、こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0014",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0014",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0014",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0014",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0014",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0015",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "白身魚と彩り野菜の塩だれごはん 015の材料を計量する。＜魚類＞ （たら類） まだら 生は一口大、ブロッコリー 花序 生・（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0015",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0015",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0015",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0015",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0015",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0016",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ひき肉と彩り野菜のごましょうゆごはん 016の材料を計量する。＜畜肉類＞ うし ［ひき肉］ 生は一口大、しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0016",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0016",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0016",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0016",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0016",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0017",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏ひき肉と彩り野菜の生姜しょうゆごはん 017の材料を計量する。＜鳥肉類＞ にわとり ［二次品目］ ひき肉 生は一口大、（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0017",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0017",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0017",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0017",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0017",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0018",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "青魚と彩り野菜のみそだれごはん 018の材料を計量する。＜魚類＞ （さば類） まさば 生は一口大、（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生・ほうれんそう 葉 通年平均 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0018",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0018",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0018",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0018",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0018",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0019",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "赤身魚と彩り野菜の塩だれごはん 019の材料を計量する。＜魚類＞ （まぐろ類） きはだ 生は一口大、（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0019",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0019",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0019",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0019",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0019",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0020",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "白身魚と彩り野菜のごましょうゆごはん 020の材料を計量する。＜魚類＞ （たら類） まだら 生は一口大、つるにんじん 根 生・ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0020",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0020",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0020",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0020",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0020",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0021",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ひき肉と彩り野菜の生姜しょうゆごはん 021の材料を計量する。＜畜肉類＞ ぶた ［ひき肉］ 生は一口大、（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0021",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0021",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0021",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0021",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0021",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0022",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ひき肉と彩り野菜のみそだれごはん 022の材料を計量する。＜畜肉類＞ うし ［ひき肉］ 生は一口大、ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生・（しめじ類） はたけしめじ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0022",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0022",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0022",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0022",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0022",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0023",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏ひき肉と彩り野菜の塩だれごはん 023の材料を計量する。＜鳥肉類＞ にわとり ［二次品目］ ひき肉 生は一口大、こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0023",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0023",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0023",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0023",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0023",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0024",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "青魚と彩り野菜のごましょうゆごはん 024の材料を計量する。＜魚類＞ （さば類） まさば 生は一口大、ブロッコリー 花序 生・（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0024",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0024",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0024",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0024",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0024",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0025",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "赤身魚と彩り野菜の生姜しょうゆごはん 025の材料を計量する。＜魚類＞ （まぐろ類） きはだ 生は一口大、しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0025",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0025",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0025",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0025",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0025",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0026",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "白身魚と彩り野菜のみそだれごはん 026の材料を計量する。＜魚類＞ （たら類） まだら 生は一口大、（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0026",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0026",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0026",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0026",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0026",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0027",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ひき肉と彩り野菜の塩だれごはん 027の材料を計量する。＜畜肉類＞ ぶた ［ひき肉］ 生は一口大、（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生・ほうれんそう 葉 通年平均 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0027",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0027",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0027",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0027",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0027",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0028",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ひき肉と彩り野菜のごましょうゆごはん 028の材料を計量する。＜畜肉類＞ うし ［ひき肉］ 生は一口大、（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0028",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0028",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0028",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0028",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0028",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0029",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏ひき肉と彩り野菜の生姜しょうゆごはん 029の材料を計量する。＜鳥肉類＞ にわとり ［二次品目］ ひき肉 生は一口大、つるにんじん 根 生・ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0029",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0029",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0029",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0029",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0029",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0030",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "青魚と彩り野菜のみそだれごはん 030の材料を計量する。＜魚類＞ （さば類） まさば 生は一口大、（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0030",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0030",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0030",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0030",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0030",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0031",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "赤身魚と彩り野菜の塩だれごはん 031の材料を計量する。＜魚類＞ （まぐろ類） きはだ 生は一口大、ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生・（しめじ類） はたけしめじ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0031",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0031",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0031",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0031",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0031",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0032",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "白身魚と彩り野菜のごましょうゆごはん 032の材料を計量する。＜魚類＞ （たら類） まだら 生は一口大、こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0032",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0032",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0032",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0032",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0032",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0033",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ひき肉と彩り野菜の生姜しょうゆごはん 033の材料を計量する。＜畜肉類＞ ぶた ［ひき肉］ 生は一口大、ブロッコリー 花序 生・（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0033",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0033",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0033",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0033",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0033",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0034",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ひき肉と彩り野菜のみそだれごはん 034の材料を計量する。＜畜肉類＞ うし ［ひき肉］ 生は一口大、しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0034",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0034",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0034",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0034",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0034",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0035",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏ひき肉と彩り野菜の塩だれごはん 035の材料を計量する。＜鳥肉類＞ にわとり ［二次品目］ ひき肉 生は一口大、（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0035",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0035",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0035",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0035",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0035",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0036",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "青魚と彩り野菜のごましょうゆごはん 036の材料を計量する。＜魚類＞ （さば類） まさば 生は一口大、（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生・ほうれんそう 葉 通年平均 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0036",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0036",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0036",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0036",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0036",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0037",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "赤身魚と彩り野菜の生姜しょうゆごはん 037の材料を計量する。＜魚類＞ （まぐろ類） きはだ 生は一口大、（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0037",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0037",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0037",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0037",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0037",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0038",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "白身魚と彩り野菜のみそだれごはん 038の材料を計量する。＜魚類＞ （たら類） まだら 生は一口大、つるにんじん 根 生・ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0038",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0038",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0038",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0038",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0038",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0039",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ひき肉と彩り野菜の塩だれごはん 039の材料を計量する。＜畜肉類＞ ぶた ［ひき肉］ 生は一口大、（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0039",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0039",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0039",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0039",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0039",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0040",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ひき肉と彩り野菜のごましょうゆごはん 040の材料を計量する。＜畜肉類＞ うし ［ひき肉］ 生は一口大、ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生・（しめじ類） はたけしめじ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0040",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0040",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0040",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0040",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0040",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0041",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏ひき肉と彩り野菜の生姜しょうゆごはん 041の材料を計量する。＜鳥肉類＞ にわとり ［二次品目］ ひき肉 生は一口大、こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0041",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0041",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0041",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0041",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0041",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0042",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "青魚と彩り野菜のみそだれごはん 042の材料を計量する。＜魚類＞ （さば類） まさば 生は一口大、ブロッコリー 花序 生・（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0042",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0042",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0042",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0042",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0042",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0043",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "赤身魚と彩り野菜の塩だれごはん 043の材料を計量する。＜魚類＞ （まぐろ類） きはだ 生は一口大、しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0043",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0043",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0043",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0043",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0043",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0044",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "白身魚と彩り野菜のごましょうゆごはん 044の材料を計量する。＜魚類＞ （たら類） まだら 生は一口大、（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0044",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0044",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0044",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0044",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0044",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0045",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ひき肉と彩り野菜の生姜しょうゆごはん 045の材料を計量する。＜畜肉類＞ ぶた ［ひき肉］ 生は一口大、（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生・ほうれんそう 葉 通年平均 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0045",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0045",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0045",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0045",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0045",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0046",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ひき肉と彩り野菜のみそだれごはん 046の材料を計量する。＜畜肉類＞ うし ［ひき肉］ 生は一口大、（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0046",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0046",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0046",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0046",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0046",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0047",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏ひき肉と彩り野菜の塩だれごはん 047の材料を計量する。＜鳥肉類＞ にわとり ［二次品目］ ひき肉 生は一口大、つるにんじん 根 生・ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0047",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0047",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0047",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0047",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0047",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0048",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏もも(皮なし)と彩り野菜のごましょうゆごはん 048の材料を計量する。＜鳥肉類＞ にわとり ［親・主品目］ もも 皮なし 生は一口大、（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0048",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0048",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0048",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0048",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0048",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0049",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏むね(皮なし)と彩り野菜の生姜しょうゆごはん 049の材料を計量する。＜鳥肉類＞ にわとり ［親・主品目］ むね 皮なし 生は一口大、ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生・（しめじ類） はたけしめじ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0049",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0049",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0049",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0049",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0049",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0050",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "青魚と彩り野菜のみそだれごはん 050の材料を計量する。＜魚類＞ （さば類） まさば 生は一口大、こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0050",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0050",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0050",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0050",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0050",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0051",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "赤身魚と彩り野菜の塩だれごはん 051の材料を計量する。＜魚類＞ （まぐろ類） きはだ 生は一口大、ブロッコリー 花序 生・（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0051",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0051",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0051",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0051",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0051",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0052",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "白身魚と彩り野菜のごましょうゆごはん 052の材料を計量する。＜魚類＞ （たら類） まだら 生は一口大、しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0052",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0052",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0052",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0052",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0052",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0053",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ひき肉と彩り野菜の生姜しょうゆごはん 053の材料を計量する。＜畜肉類＞ ぶた ［ひき肉］ 生は一口大、（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0053",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0053",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0053",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0053",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0053",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0054",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ひき肉と彩り野菜のみそだれごはん 054の材料を計量する。＜畜肉類＞ うし ［ひき肉］ 生は一口大、（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生・ほうれんそう 葉 通年平均 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0054",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0054",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0054",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0054",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0054",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0055",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏ひき肉と彩り野菜の塩だれごはん 055の材料を計量する。＜鳥肉類＞ にわとり ［二次品目］ ひき肉 生は一口大、（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0055",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0055",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0055",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0055",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0055",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0056",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏もも(皮なし)と彩り野菜のごましょうゆごはん 056の材料を計量する。＜鳥肉類＞ にわとり ［親・主品目］ もも 皮なし 生は一口大、つるにんじん 根 生・ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0056",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0056",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0056",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0056",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0056",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0057",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏むね(皮なし)と彩り野菜の生姜しょうゆごはん 057の材料を計量する。＜鳥肉類＞ にわとり ［親・主品目］ むね 皮なし 生は一口大、（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0057",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0057",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0057",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0057",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0057",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0058",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "青魚と彩り野菜のみそだれごはん 058の材料を計量する。＜魚類＞ （さば類） まさば 生は一口大、ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生・（しめじ類） はたけしめじ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0058",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0058",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0058",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0058",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0058",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0059",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "赤身魚と彩り野菜の塩だれごはん 059の材料を計量する。＜魚類＞ （まぐろ類） きはだ 生は一口大、こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0059",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0059",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0059",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0059",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0059",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0060",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "白身魚と彩り野菜のごましょうゆごはん 060の材料を計量する。＜魚類＞ （たら類） まだら 生は一口大、ブロッコリー 花序 生・（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0060",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0060",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0060",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0060",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0060",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0061",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ひき肉と彩り野菜の生姜しょうゆごはん 061の材料を計量する。＜畜肉類＞ ぶた ［ひき肉］ 生は一口大、しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0061",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0061",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0061",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0061",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0061",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0062",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ヒレと彩り野菜のみそだれごはん 062の材料を計量する。＜畜肉類＞ うし ［和牛肉］ ヒレ 赤肉 生は一口大、（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0062",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0062",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0062",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0062",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0062",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0063",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛肩と彩り野菜の塩だれごはん 063の材料を計量する。＜畜肉類＞ うし ［和牛肉］ かた 脂身つき 生は一口大、（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生・ほうれんそう 葉 通年平均 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0063",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0063",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0063",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0063",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0063",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0064",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛肩ロースと彩り野菜のごましょうゆごはん 064の材料を計量する。＜畜肉類＞ うし ［和牛肉］ かたロース 脂身つき 生は一口大、（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0064",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0064",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0064",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0064",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0064",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0065",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ひき肉と彩り野菜の生姜しょうゆごはん 065の材料を計量する。＜畜肉類＞ うし ［ひき肉］ 生は一口大、つるにんじん 根 生・ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0065",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0065",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0065",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0065",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0065",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0066",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ももと彩り野菜のみそだれごはん 066の材料を計量する。＜畜肉類＞ うし ［和牛肉］ もも 脂身つき 生は一口大、（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0066",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0066",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0066",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0066",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0066",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0067",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ロースと彩り野菜の塩だれごはん 067の材料を計量する。＜畜肉類＞ うし ［和牛肉］ かたロース 脂身つき 生は一口大、ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生・（しめじ類） はたけしめじ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0067",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0067",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0067",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0067",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0067",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0068",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏ひき肉と彩り野菜のごましょうゆごはん 068の材料を計量する。＜鳥肉類＞ にわとり ［二次品目］ ひき肉 生は一口大、こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0068",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0068",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0068",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0068",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0068",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0069",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏もも(皮なし)と彩り野菜の生姜しょうゆごはん 069の材料を計量する。＜鳥肉類＞ にわとり ［親・主品目］ もも 皮なし 生は一口大、ブロッコリー 花序 生・（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0069",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0069",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0069",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0069",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0069",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0070",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏もも(皮あり)と彩り野菜のみそだれごはん 070の材料を計量する。＜鳥肉類＞ にわとり ［親・主品目］ もも 皮つき 生は一口大、しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0070",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0070",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0070",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0070",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0070",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0071",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏むね(皮なし)と彩り野菜の塩だれごはん 071の材料を計量する。＜鳥肉類＞ にわとり ［親・主品目］ むね 皮なし 生は一口大、（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0071",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0071",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0071",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0071",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0071",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0072",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "青魚と彩り野菜のごましょうゆごはん 072の材料を計量する。＜魚類＞ （さば類） まさば 生は一口大、（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生・ほうれんそう 葉 通年平均 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0072",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0072",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0072",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0072",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0072",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0073",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "赤身魚と彩り野菜の生姜しょうゆごはん 073の材料を計量する。＜魚類＞ （まぐろ類） きはだ 生は一口大、（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0073",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0073",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0073",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0073",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0073",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0074",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "白身魚と彩り野菜のみそだれごはん 074の材料を計量する。＜魚類＞ （たら類） まだら 生は一口大、つるにんじん 根 生・ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0074",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0074",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0074",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0074",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0074",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0075",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ヒレと彩り野菜の塩だれごはん 075の材料を計量する。＜畜肉類＞ ぶた ［大型種肉］ ヒレ 赤肉 生は一口大、（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0075",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0075",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0075",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0075",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0075",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0076",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚肩と彩り野菜のごましょうゆごはん 076の材料を計量する。＜畜肉類＞ ぶた ［大型種肉］ かた 脂身つき 生は一口大、ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生・（しめじ類） はたけしめじ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0076",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0076",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0076",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0076",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0076",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0077",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚肩ロースと彩り野菜の生姜しょうゆごはん 077の材料を計量する。＜畜肉類＞ ぶた ［大型種肉］ かたロース 脂身つき 生は一口大、こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0077",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0077",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0077",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0077",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0077",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0078",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ひき肉と彩り野菜のみそだれごはん 078の材料を計量する。＜畜肉類＞ ぶた ［ひき肉］ 生は一口大、ブロッコリー 花序 生・（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0078",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0078",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0078",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0078",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0078",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0079",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ももと彩り野菜の塩だれごはん 079の材料を計量する。＜畜肉類＞ ぶた ［大型種肉］ もも 脂身つき 生は一口大、しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0079",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0079",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0079",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0079",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0079",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0080",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ロースと彩り野菜のごましょうゆごはん 080の材料を計量する。＜畜肉類＞ ぶた ［大型種肉］ かたロース 脂身つき 生は一口大、（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0080",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0080",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0080",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0080",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0080",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0081",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ハラミ相当(ばら)と彩り野菜の生姜しょうゆごはん 081の材料を計量する。＜畜肉類＞ うし ［和牛肉］ ばら 脂身つき 生は一口大、（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生・ほうれんそう 葉 通年平均 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0081",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0081",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0081",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0081",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0081",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0082",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ヒレと彩り野菜のみそだれごはん 082の材料を計量する。＜畜肉類＞ うし ［和牛肉］ ヒレ 赤肉 生は一口大、（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0082",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0082",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0082",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0082",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0082",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0083",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛肩と彩り野菜の塩だれごはん 083の材料を計量する。＜畜肉類＞ うし ［和牛肉］ かた 脂身つき 生は一口大、つるにんじん 根 生・ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0083",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0083",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0083",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0083",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0083",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0084",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛肩ロースと彩り野菜のごましょうゆごはん 084の材料を計量する。＜畜肉類＞ うし ［和牛肉］ かたロース 脂身つき 生は一口大、（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0084",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0084",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0084",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0084",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0084",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0085",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ひき肉と彩り野菜の生姜しょうゆごはん 085の材料を計量する。＜畜肉類＞ うし ［ひき肉］ 生は一口大、ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生・（しめじ類） はたけしめじ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0085",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0085",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0085",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0085",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0085",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0086",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ももと彩り野菜のみそだれごはん 086の材料を計量する。＜畜肉類＞ うし ［和牛肉］ もも 脂身つき 生は一口大、こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0086",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0086",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0086",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0086",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0086",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0087",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ロースと彩り野菜の塩だれごはん 087の材料を計量する。＜畜肉類＞ うし ［和牛肉］ かたロース 脂身つき 生は一口大、ブロッコリー 花序 生・（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0087",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0087",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0087",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0087",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0087",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0088",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏ひき肉と彩り野菜のごましょうゆごはん 088の材料を計量する。＜鳥肉類＞ にわとり ［二次品目］ ひき肉 生は一口大、しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0088",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0088",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0088",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0088",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0088",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0089",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏もも(皮なし)と彩り野菜の生姜しょうゆごはん 089の材料を計量する。＜鳥肉類＞ にわとり ［親・主品目］ もも 皮なし 生は一口大、（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0089",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0089",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0089",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0089",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0089",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0090",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏もも(皮あり)と彩り野菜のみそだれごはん 090の材料を計量する。＜鳥肉類＞ にわとり ［親・主品目］ もも 皮つき 生は一口大、（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生・ほうれんそう 葉 通年平均 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0090",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0090",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0090",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0090",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0090",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0091",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏むね(皮なし)と彩り野菜の塩だれごはん 091の材料を計量する。＜鳥肉類＞ にわとり ［親・主品目］ むね 皮なし 生は一口大、（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0091",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0091",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0091",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0091",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0091",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0092",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "青魚と彩り野菜のごましょうゆごはん 092の材料を計量する。＜魚類＞ （さば類） まさば 生は一口大、つるにんじん 根 生・ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0092",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0092",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0092",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0092",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0092",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0093",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "赤身魚と彩り野菜の生姜しょうゆごはん 093の材料を計量する。＜魚類＞ （まぐろ類） きはだ 生は一口大、（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0093",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0093",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0093",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0093",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0093",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0094",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "白身魚と彩り野菜のみそだれごはん 094の材料を計量する。＜魚類＞ （たら類） まだら 生は一口大、ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生・（しめじ類） はたけしめじ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0094",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0094",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0094",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0094",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0094",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0095",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ヒレと彩り野菜の塩だれごはん 095の材料を計量する。＜畜肉類＞ ぶた ［大型種肉］ ヒレ 赤肉 生は一口大、こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0095",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0095",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0095",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0095",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0095",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0096",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚肩と彩り野菜のごましょうゆごはん 096の材料を計量する。＜畜肉類＞ ぶた ［大型種肉］ かた 脂身つき 生は一口大、ブロッコリー 花序 生・（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0096",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0096",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0096",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0096",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0096",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0097",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚肩ロースと彩り野菜の生姜しょうゆごはん 097の材料を計量する。＜畜肉類＞ ぶた ［大型種肉］ かたロース 脂身つき 生は一口大、しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0097",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0097",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0097",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0097",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0097",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0098",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ひき肉と彩り野菜のみそだれごはん 098の材料を計量する。＜畜肉類＞ ぶた ［ひき肉］ 生は一口大、（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0098",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0098",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0098",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0098",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0098",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0099",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ももと彩り野菜の塩だれごはん 099の材料を計量する。＜畜肉類＞ ぶた ［大型種肉］ もも 脂身つき 生は一口大、（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生・ほうれんそう 葉 通年平均 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0099",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0099",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0099",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0099",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0099",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0100",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ロースと彩り野菜のごましょうゆごはん 100の材料を計量する。＜畜肉類＞ ぶた ［大型種肉］ かたロース 脂身つき 生は一口大、（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0100",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0100",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0100",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0100",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0100",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0101",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ハラミ相当(ばら)と彩り野菜の生姜しょうゆごはん 101の材料を計量する。＜畜肉類＞ うし ［和牛肉］ ばら 脂身つき 生は一口大、つるにんじん 根 生・ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0101",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0101",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0101",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0101",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0101",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0102",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ヒレと彩り野菜のみそだれごはん 102の材料を計量する。＜畜肉類＞ うし ［和牛肉］ ヒレ 赤肉 生は一口大、（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0102",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0102",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0102",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0102",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0102",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0103",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛肩と彩り野菜の塩だれごはん 103の材料を計量する。＜畜肉類＞ うし ［和牛肉］ かた 脂身つき 生は一口大、ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生・（しめじ類） はたけしめじ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0103",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0103",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0103",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0103",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0103",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0104",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛肩ロースと彩り野菜のごましょうゆごはん 104の材料を計量する。＜畜肉類＞ うし ［和牛肉］ かたロース 脂身つき 生は一口大、こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0104",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0104",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0104",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0104",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0104",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0105",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ひき肉と彩り野菜の生姜しょうゆごはん 105の材料を計量する。＜畜肉類＞ うし ［ひき肉］ 生は一口大、ブロッコリー 花序 生・（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0105",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0105",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0105",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0105",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0105",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0106",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ももと彩り野菜のみそだれごはん 106の材料を計量する。＜畜肉類＞ うし ［和牛肉］ もも 脂身つき 生は一口大、しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0106",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0106",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0106",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0106",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0106",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0107",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "牛ロースと彩り野菜の塩だれごはん 107の材料を計量する。＜畜肉類＞ うし ［和牛肉］ かたロース 脂身つき 生は一口大、（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0107",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0107",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0107",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0107",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0107",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0108",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏ひき肉と彩り野菜のごましょうゆごはん 108の材料を計量する。＜鳥肉類＞ にわとり ［二次品目］ ひき肉 生は一口大、（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生・ほうれんそう 葉 通年平均 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0108",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0108",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0108",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0108",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0108",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0109",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏もも(皮なし)と彩り野菜の生姜しょうゆごはん 109の材料を計量する。＜鳥肉類＞ にわとり ［親・主品目］ もも 皮なし 生は一口大、（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0109",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0109",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0109",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0109",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0109",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0110",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏もも(皮あり)と彩り野菜のみそだれごはん 110の材料を計量する。＜鳥肉類＞ にわとり ［親・主品目］ もも 皮つき 生は一口大、つるにんじん 根 生・ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0110",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0110",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0110",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0110",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0110",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0111",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "鶏むね(皮なし)と彩り野菜の塩だれごはん 111の材料を計量する。＜鳥肉類＞ にわとり ［親・主品目］ むね 皮なし 生は一口大、（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0111",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0111",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0111",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0111",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0111",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0112",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "青魚と彩り野菜のごましょうゆごはん 112の材料を計量する。＜魚類＞ （さば類） まさば 生は一口大、ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生・（しめじ類） はたけしめじ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0112",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0112",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0112",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0112",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0112",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0113",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "赤身魚と彩り野菜の生姜しょうゆごはん 113の材料を計量する。＜魚類＞ （まぐろ類） きはだ 生は一口大、こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0113",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0113",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0113",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0113",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0113",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0114",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "白身魚と彩り野菜のみそだれごはん 114の材料を計量する。＜魚類＞ （たら類） まだら 生は一口大、ブロッコリー 花序 生・（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0114",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0114",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0114",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0114",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0114",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0115",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ヒレと彩り野菜の塩だれごはん 115の材料を計量する。＜畜肉類＞ ぶた ［大型種肉］ ヒレ 赤肉 生は一口大、しいたけ 生しいたけ 菌床栽培 生・（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0115",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0115",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0115",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0115",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0115",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0116",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚肩と彩り野菜のごましょうゆごはん 116の材料を計量する。＜畜肉類＞ ぶた ［大型種肉］ かた 脂身つき 生は一口大、（しめじ類） はたけしめじ 生・（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0116",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0116",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0116",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0116",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0116",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0117",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚肩ロースと彩り野菜の生姜しょうゆごはん 117の材料を計量する。＜畜肉類＞ ぶた ［大型種肉］ かたロース 脂身つき 生は一口大、（だいこん類） かいわれだいこん 芽ばえ 生・つるにんじん 根 生・ほうれんそう 葉 通年平均 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0117",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0117",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "生姜しょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0117",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0117",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0117",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0118",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ひき肉と彩り野菜のみそだれごはん 118の材料を計量する。＜畜肉類＞ ぶた ［ひき肉］ 生は一口大、（たまねぎ類） たまねぎ りん茎 生・（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0118",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0118",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "みそだれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0118",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0118",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0118",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0119",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ももと彩り野菜の塩だれごはん 119の材料を計量する。＜畜肉類＞ ぶた ［大型種肉］ もも 脂身つき 生は一口大、つるにんじん 根 生・ほうれんそう 葉 通年平均 生・ブロッコリー 花序 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0119",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0119",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "塩だれで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0119",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0119",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0119",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  },
+  {
+    "recipe_id": "RICE_0120",
+    "step_no": 1,
+    "estimate_min": 3,
+    "instruction": "豚ロースと彩り野菜のごましょうゆごはん 120の材料を計量する。＜畜肉類＞ ぶた ［大型種肉］ かたロース 脂身つき 生は一口大、（キャベツ類） キャベツ 結球葉 生・こまつな 葉 生・しいたけ 生しいたけ 菌床栽培 生は食べやすく切る。"
+  },
+  {
+    "recipe_id": "RICE_0120",
+    "step_no": 2,
+    "estimate_min": 3,
+    "instruction": "調味料を合わせて下味だれを作る。ごはんは温かい状態にしておく。"
+  },
+  {
+    "recipe_id": "RICE_0120",
+    "step_no": 3,
+    "estimate_min": 5,
+    "instruction": "ごましょうゆで主材料に火を入れる。中心温度が十分に上がるまで加熱する。"
+  },
+  {
+    "recipe_id": "RICE_0120",
+    "step_no": 4,
+    "estimate_min": 5,
+    "instruction": "副材料を加えて加熱し、全体に調味液を絡める。水分は軽く飛ばして食感を整える。"
+  },
+  {
+    "recipe_id": "RICE_0120",
+    "step_no": 5,
+    "estimate_min": 2,
+    "instruction": "器にごはんを盛り、具材をのせる。塩味・甘味のバランスを確認して仕上げる。"
+  },
+  {
+    "recipe_id": "RICE_0120",
+    "step_no": 6,
+    "estimate_min": 1,
+    "instruction": "提供前に全体を混ぜ合わせ、温度と食べやすさを確認して完成。"
+  }
+]

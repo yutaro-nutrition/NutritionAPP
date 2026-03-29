@@ -1,0 +1,1260 @@
+[
+  {
+    "recipe_id": "R001",
+    "recipe_name": "白ごはん",
+    "category": "主食",
+    "cuisine": "和食",
+    "cook_time_min": 10,
+    "difficulty": "easy",
+    "budget_jpy": 80,
+    "main_food": "白米",
+    "meal_type": "breakfast",
+    "allergens": [],
+    "tags": [
+      "米"
+    ]
+  },
+  {
+    "recipe_id": "R002",
+    "recipe_name": "鮭おにぎり",
+    "category": "主食",
+    "cuisine": "和食",
+    "cook_time_min": 15,
+    "difficulty": "easy",
+    "budget_jpy": 180,
+    "main_food": "鮭",
+    "meal_type": "breakfast",
+    "allergens": [
+      "魚"
+    ],
+    "tags": [
+      "米",
+      "鮭"
+    ]
+  },
+  {
+    "recipe_id": "R003",
+    "recipe_name": "卵かけごはん",
+    "category": "主食",
+    "cuisine": "和食",
+    "cook_time_min": 8,
+    "difficulty": "easy",
+    "budget_jpy": 120,
+    "main_food": "卵",
+    "meal_type": "breakfast",
+    "allergens": [
+      "卵"
+    ],
+    "tags": [
+      "米",
+      "卵"
+    ]
+  },
+  {
+    "recipe_id": "R004",
+    "recipe_name": "納豆ごはん",
+    "category": "主食",
+    "cuisine": "和食",
+    "cook_time_min": 8,
+    "difficulty": "easy",
+    "budget_jpy": 130,
+    "main_food": "納豆",
+    "meal_type": "breakfast",
+    "allergens": [
+      "大豆"
+    ],
+    "tags": [
+      "米",
+      "納豆"
+    ]
+  },
+  {
+    "recipe_id": "R005",
+    "recipe_name": "食パントースト",
+    "category": "主食",
+    "cuisine": "洋食",
+    "cook_time_min": 6,
+    "difficulty": "easy",
+    "budget_jpy": 90,
+    "main_food": "食パン",
+    "meal_type": "breakfast",
+    "allergens": [
+      "小麦"
+    ],
+    "tags": [
+      "パン"
+    ]
+  },
+  {
+    "recipe_id": "R006",
+    "recipe_name": "チーズトースト",
+    "category": "主食",
+    "cuisine": "洋食",
+    "cook_time_min": 7,
+    "difficulty": "easy",
+    "budget_jpy": 140,
+    "main_food": "チーズ",
+    "meal_type": "breakfast",
+    "allergens": [
+      "小麦",
+      "乳"
+    ],
+    "tags": [
+      "パン",
+      "チーズ"
+    ]
+  },
+  {
+    "recipe_id": "R007",
+    "recipe_name": "かけうどん",
+    "category": "主食",
+    "cuisine": "和食",
+    "cook_time_min": 12,
+    "difficulty": "easy",
+    "budget_jpy": 220,
+    "main_food": "うどん",
+    "meal_type": "dinner",
+    "allergens": [
+      "小麦"
+    ],
+    "tags": [
+      "麺"
+    ]
+  },
+  {
+    "recipe_id": "R008",
+    "recipe_name": "ざるそば",
+    "category": "主食",
+    "cuisine": "和食",
+    "cook_time_min": 12,
+    "difficulty": "easy",
+    "budget_jpy": 240,
+    "main_food": "そば",
+    "meal_type": "dinner",
+    "allergens": [
+      "そば"
+    ],
+    "tags": [
+      "麺"
+    ]
+  },
+  {
+    "recipe_id": "R009",
+    "recipe_name": "オートミール粥",
+    "category": "主食",
+    "cuisine": "洋食",
+    "cook_time_min": 10,
+    "difficulty": "easy",
+    "budget_jpy": 150,
+    "main_food": "オートミール",
+    "meal_type": "breakfast",
+    "allergens": [],
+    "tags": [
+      "オートミール"
+    ]
+  },
+  {
+    "recipe_id": "R010",
+    "recipe_name": "野菜雑炊",
+    "category": "主食",
+    "cuisine": "和食",
+    "cook_time_min": 15,
+    "difficulty": "normal",
+    "budget_jpy": 180,
+    "main_food": "白米",
+    "meal_type": "dinner",
+    "allergens": [
+      "卵"
+    ],
+    "tags": [
+      "米",
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R011",
+    "recipe_name": "鶏むね照り焼き",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 20,
+    "difficulty": "normal",
+    "budget_jpy": 320,
+    "main_food": "鶏むね肉",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "鶏肉"
+    ]
+  },
+  {
+    "recipe_id": "R012",
+    "recipe_name": "鮭の塩焼き",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 18,
+    "difficulty": "easy",
+    "budget_jpy": 360,
+    "main_food": "鮭",
+    "meal_type": "dinner",
+    "allergens": [
+      "魚"
+    ],
+    "tags": [
+      "魚"
+    ]
+  },
+  {
+    "recipe_id": "R013",
+    "recipe_name": "豚のしょうが焼き",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 20,
+    "difficulty": "normal",
+    "budget_jpy": 350,
+    "main_food": "豚ロース",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "豚肉"
+    ]
+  },
+  {
+    "recipe_id": "R014",
+    "recipe_name": "牛肉とたまねぎ炒め",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 18,
+    "difficulty": "normal",
+    "budget_jpy": 420,
+    "main_food": "牛もも肉",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "牛肉"
+    ]
+  },
+  {
+    "recipe_id": "R015",
+    "recipe_name": "さば味噌煮",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 25,
+    "difficulty": "normal",
+    "budget_jpy": 380,
+    "main_food": "さば",
+    "meal_type": "dinner",
+    "allergens": [
+      "魚",
+      "大豆"
+    ],
+    "tags": [
+      "魚",
+      "味噌"
+    ]
+  },
+  {
+    "recipe_id": "R016",
+    "recipe_name": "豆腐ハンバーグ",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 25,
+    "difficulty": "normal",
+    "budget_jpy": 280,
+    "main_food": "木綿豆腐",
+    "meal_type": "dinner",
+    "allergens": [
+      "大豆",
+      "卵"
+    ],
+    "tags": [
+      "豆腐"
+    ]
+  },
+  {
+    "recipe_id": "R017",
+    "recipe_name": "親子煮",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 20,
+    "difficulty": "easy",
+    "budget_jpy": 320,
+    "main_food": "鶏むね肉",
+    "meal_type": "dinner",
+    "allergens": [
+      "卵"
+    ],
+    "tags": [
+      "鶏肉",
+      "卵"
+    ]
+  },
+  {
+    "recipe_id": "R018",
+    "recipe_name": "まぐろステーキ",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 15,
+    "difficulty": "easy",
+    "budget_jpy": 390,
+    "main_food": "まぐろ",
+    "meal_type": "dinner",
+    "allergens": [
+      "魚"
+    ],
+    "tags": [
+      "魚"
+    ]
+  },
+  {
+    "recipe_id": "R019",
+    "recipe_name": "えびとブロッコリー炒め",
+    "category": "主菜",
+    "cuisine": "中華",
+    "cook_time_min": 20,
+    "difficulty": "normal",
+    "budget_jpy": 420,
+    "main_food": "えび",
+    "meal_type": "dinner",
+    "allergens": [
+      "えび"
+    ],
+    "tags": [
+      "えび",
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R020",
+    "recipe_name": "卵とほうれん草炒め",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 12,
+    "difficulty": "easy",
+    "budget_jpy": 210,
+    "main_food": "卵",
+    "meal_type": "breakfast",
+    "allergens": [
+      "卵"
+    ],
+    "tags": [
+      "卵",
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R021",
+    "recipe_name": "ほうれん草のおひたし",
+    "category": "副菜",
+    "cuisine": "和食",
+    "cook_time_min": 10,
+    "difficulty": "easy",
+    "budget_jpy": 120,
+    "main_food": "ほうれん草",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R022",
+    "recipe_name": "キャベツ浅漬け",
+    "category": "副菜",
+    "cuisine": "和食",
+    "cook_time_min": 8,
+    "difficulty": "easy",
+    "budget_jpy": 100,
+    "main_food": "キャベツ",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R023",
+    "recipe_name": "トマトサラダ",
+    "category": "副菜",
+    "cuisine": "洋食",
+    "cook_time_min": 6,
+    "difficulty": "easy",
+    "budget_jpy": 130,
+    "main_food": "トマト",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R024",
+    "recipe_name": "ブロッコリー温サラダ",
+    "category": "副菜",
+    "cuisine": "洋食",
+    "cook_time_min": 10,
+    "difficulty": "easy",
+    "budget_jpy": 140,
+    "main_food": "ブロッコリー",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R025",
+    "recipe_name": "にんじんしりしり",
+    "category": "副菜",
+    "cuisine": "和食",
+    "cook_time_min": 12,
+    "difficulty": "easy",
+    "budget_jpy": 120,
+    "main_food": "にんじん",
+    "meal_type": "dinner",
+    "allergens": [
+      "卵"
+    ],
+    "tags": [
+      "野菜",
+      "卵"
+    ]
+  },
+  {
+    "recipe_id": "R026",
+    "recipe_name": "ポテトヨーグルトサラダ",
+    "category": "副菜",
+    "cuisine": "洋食",
+    "cook_time_min": 15,
+    "difficulty": "normal",
+    "budget_jpy": 160,
+    "main_food": "じゃがいも",
+    "meal_type": "dinner",
+    "allergens": [
+      "乳"
+    ],
+    "tags": [
+      "野菜",
+      "ヨーグルト"
+    ]
+  },
+  {
+    "recipe_id": "R027",
+    "recipe_name": "大根サラダ",
+    "category": "副菜",
+    "cuisine": "和食",
+    "cook_time_min": 8,
+    "difficulty": "easy",
+    "budget_jpy": 110,
+    "main_food": "大根",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R028",
+    "recipe_name": "わかめ酢の物",
+    "category": "副菜",
+    "cuisine": "和食",
+    "cook_time_min": 6,
+    "difficulty": "easy",
+    "budget_jpy": 90,
+    "main_food": "わかめ",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "海藻"
+    ]
+  },
+  {
+    "recipe_id": "R029",
+    "recipe_name": "りんごヨーグルト和え",
+    "category": "副菜",
+    "cuisine": "洋食",
+    "cook_time_min": 5,
+    "difficulty": "easy",
+    "budget_jpy": 140,
+    "main_food": "りんご",
+    "meal_type": "breakfast",
+    "allergens": [
+      "乳"
+    ],
+    "tags": [
+      "果物",
+      "ヨーグルト"
+    ]
+  },
+  {
+    "recipe_id": "R030",
+    "recipe_name": "チーズトマト和え",
+    "category": "副菜",
+    "cuisine": "洋食",
+    "cook_time_min": 5,
+    "difficulty": "easy",
+    "budget_jpy": 170,
+    "main_food": "チーズ",
+    "meal_type": "dinner",
+    "allergens": [
+      "乳"
+    ],
+    "tags": [
+      "チーズ",
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R031",
+    "recipe_name": "豆腐わかめ味噌汁",
+    "category": "汁物",
+    "cuisine": "和食",
+    "cook_time_min": 10,
+    "difficulty": "easy",
+    "budget_jpy": 100,
+    "main_food": "味噌",
+    "meal_type": "dinner",
+    "allergens": [
+      "大豆"
+    ],
+    "tags": [
+      "汁物"
+    ]
+  },
+  {
+    "recipe_id": "R032",
+    "recipe_name": "野菜味噌汁",
+    "category": "汁物",
+    "cuisine": "和食",
+    "cook_time_min": 12,
+    "difficulty": "easy",
+    "budget_jpy": 120,
+    "main_food": "味噌",
+    "meal_type": "dinner",
+    "allergens": [
+      "大豆"
+    ],
+    "tags": [
+      "汁物"
+    ]
+  },
+  {
+    "recipe_id": "R033",
+    "recipe_name": "卵スープ",
+    "category": "汁物",
+    "cuisine": "中華",
+    "cook_time_min": 10,
+    "difficulty": "easy",
+    "budget_jpy": 110,
+    "main_food": "卵",
+    "meal_type": "dinner",
+    "allergens": [
+      "卵"
+    ],
+    "tags": [
+      "汁物"
+    ]
+  },
+  {
+    "recipe_id": "R034",
+    "recipe_name": "わかめスープ",
+    "category": "汁物",
+    "cuisine": "中華",
+    "cook_time_min": 8,
+    "difficulty": "easy",
+    "budget_jpy": 90,
+    "main_food": "わかめ",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "汁物"
+    ]
+  },
+  {
+    "recipe_id": "R035",
+    "recipe_name": "ミルクスープ",
+    "category": "汁物",
+    "cuisine": "洋食",
+    "cook_time_min": 12,
+    "difficulty": "easy",
+    "budget_jpy": 150,
+    "main_food": "牛乳",
+    "meal_type": "breakfast",
+    "allergens": [
+      "乳"
+    ],
+    "tags": [
+      "汁物",
+      "乳製品"
+    ]
+  },
+  {
+    "recipe_id": "R036",
+    "recipe_name": "バナナヨーグルト",
+    "category": "デザート",
+    "cuisine": "洋食",
+    "cook_time_min": 4,
+    "difficulty": "easy",
+    "budget_jpy": 120,
+    "main_food": "バナナ",
+    "meal_type": "breakfast",
+    "allergens": [
+      "乳"
+    ],
+    "tags": [
+      "果物"
+    ]
+  },
+  {
+    "recipe_id": "R037",
+    "recipe_name": "りんごスライス",
+    "category": "デザート",
+    "cuisine": "洋食",
+    "cook_time_min": 3,
+    "difficulty": "easy",
+    "budget_jpy": 80,
+    "main_food": "りんご",
+    "meal_type": "breakfast",
+    "allergens": [],
+    "tags": [
+      "果物"
+    ]
+  },
+  {
+    "recipe_id": "R038",
+    "recipe_name": "プレーンヨーグルト",
+    "category": "デザート",
+    "cuisine": "洋食",
+    "cook_time_min": 1,
+    "difficulty": "easy",
+    "budget_jpy": 90,
+    "main_food": "ヨーグルト",
+    "meal_type": "breakfast",
+    "allergens": [
+      "乳"
+    ],
+    "tags": [
+      "乳製品"
+    ]
+  },
+  {
+    "recipe_id": "R039",
+    "recipe_name": "チーズとりんご",
+    "category": "デザート",
+    "cuisine": "洋食",
+    "cook_time_min": 3,
+    "difficulty": "easy",
+    "budget_jpy": 140,
+    "main_food": "チーズ",
+    "meal_type": "breakfast",
+    "allergens": [
+      "乳"
+    ],
+    "tags": [
+      "果物",
+      "チーズ"
+    ]
+  },
+  {
+    "recipe_id": "R040",
+    "recipe_name": "バナナミルク",
+    "category": "デザート",
+    "cuisine": "洋食",
+    "cook_time_min": 5,
+    "difficulty": "easy",
+    "budget_jpy": 130,
+    "main_food": "牛乳",
+    "meal_type": "breakfast",
+    "allergens": [
+      "乳"
+    ],
+    "tags": [
+      "果物",
+      "乳製品"
+    ]
+  },
+  {
+    "recipe_id": "R041",
+    "recipe_name": "鮭ごはん",
+    "category": "主食",
+    "cuisine": "和食",
+    "cook_time_min": 15,
+    "difficulty": "easy",
+    "budget_jpy": 260,
+    "main_food": "鮭",
+    "meal_type": "breakfast",
+    "allergens": [
+      "魚"
+    ],
+    "tags": [
+      "米",
+      "鮭"
+    ]
+  },
+  {
+    "recipe_id": "R042",
+    "recipe_name": "納豆卵ごはん",
+    "category": "主食",
+    "cuisine": "和食",
+    "cook_time_min": 8,
+    "difficulty": "easy",
+    "budget_jpy": 180,
+    "main_food": "納豆",
+    "meal_type": "breakfast",
+    "allergens": [
+      "卵"
+    ],
+    "tags": [
+      "米",
+      "納豆"
+    ]
+  },
+  {
+    "recipe_id": "R043",
+    "recipe_name": "まぐろトマトごはん",
+    "category": "主食",
+    "cuisine": "和食",
+    "cook_time_min": 12,
+    "difficulty": "easy",
+    "budget_jpy": 290,
+    "main_food": "まぐろ",
+    "meal_type": "dinner",
+    "allergens": [
+      "魚"
+    ],
+    "tags": [
+      "米",
+      "まぐろ"
+    ]
+  },
+  {
+    "recipe_id": "R044",
+    "recipe_name": "牛ももしぐれごはん",
+    "category": "主食",
+    "cuisine": "和食",
+    "cook_time_min": 14,
+    "difficulty": "normal",
+    "budget_jpy": 360,
+    "main_food": "牛もも",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "米",
+      "牛肉"
+    ]
+  },
+  {
+    "recipe_id": "R045",
+    "recipe_name": "豚ロースしょうがごはん",
+    "category": "主食",
+    "cuisine": "和食",
+    "cook_time_min": 14,
+    "difficulty": "normal",
+    "budget_jpy": 320,
+    "main_food": "豚ロース",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "米",
+      "豚肉"
+    ]
+  },
+  {
+    "recipe_id": "R046",
+    "recipe_name": "鶏ささみ雑炊",
+    "category": "主食",
+    "cuisine": "和食",
+    "cook_time_min": 12,
+    "difficulty": "easy",
+    "budget_jpy": 240,
+    "main_food": "鶏ささみ",
+    "meal_type": "breakfast",
+    "allergens": [
+      "卵"
+    ],
+    "tags": [
+      "米",
+      "鶏肉"
+    ]
+  },
+  {
+    "recipe_id": "R047",
+    "recipe_name": "ほうれん草そば",
+    "category": "主食",
+    "cuisine": "和食",
+    "cook_time_min": 12,
+    "difficulty": "easy",
+    "budget_jpy": 220,
+    "main_food": "そば",
+    "meal_type": "dinner",
+    "allergens": [
+      "卵"
+    ],
+    "tags": [
+      "麺",
+      "そば"
+    ]
+  },
+  {
+    "recipe_id": "R048",
+    "recipe_name": "たまごうどん",
+    "category": "主食",
+    "cuisine": "和食",
+    "cook_time_min": 10,
+    "difficulty": "easy",
+    "budget_jpy": 200,
+    "main_food": "うどん",
+    "meal_type": "breakfast",
+    "allergens": [
+      "卵"
+    ],
+    "tags": [
+      "麺",
+      "うどん"
+    ]
+  },
+  {
+    "recipe_id": "R049",
+    "recipe_name": "オートミールミルク粥",
+    "category": "主食",
+    "cuisine": "洋食",
+    "cook_time_min": 9,
+    "difficulty": "easy",
+    "budget_jpy": 180,
+    "main_food": "オートミール",
+    "meal_type": "breakfast",
+    "allergens": [
+      "乳"
+    ],
+    "tags": [
+      "オートミール"
+    ]
+  },
+  {
+    "recipe_id": "R050",
+    "recipe_name": "鶏ささみの照り焼き",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 12,
+    "difficulty": "easy",
+    "budget_jpy": 260,
+    "main_food": "鶏ささみ",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "鶏肉",
+      "高たんぱく"
+    ]
+  },
+  {
+    "recipe_id": "R051",
+    "recipe_name": "豚ロースの塩焼き",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 12,
+    "difficulty": "easy",
+    "budget_jpy": 300,
+    "main_food": "豚ロース",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "豚肉"
+    ]
+  },
+  {
+    "recipe_id": "R052",
+    "recipe_name": "牛もものしぐれ煮",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 15,
+    "difficulty": "normal",
+    "budget_jpy": 360,
+    "main_food": "牛もも",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "牛肉"
+    ]
+  },
+  {
+    "recipe_id": "R053",
+    "recipe_name": "鮭のしょうゆ焼き",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 10,
+    "difficulty": "easy",
+    "budget_jpy": 280,
+    "main_food": "鮭",
+    "meal_type": "dinner",
+    "allergens": [
+      "魚"
+    ],
+    "tags": [
+      "魚"
+    ]
+  },
+  {
+    "recipe_id": "R054",
+    "recipe_name": "まぐろステーキ",
+    "category": "主菜",
+    "cuisine": "洋食",
+    "cook_time_min": 10,
+    "difficulty": "easy",
+    "budget_jpy": 300,
+    "main_food": "まぐろ",
+    "meal_type": "dinner",
+    "allergens": [
+      "魚"
+    ],
+    "tags": [
+      "魚",
+      "高たんぱく"
+    ]
+  },
+  {
+    "recipe_id": "R055",
+    "recipe_name": "木綿豆腐の卵とじ",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 11,
+    "difficulty": "easy",
+    "budget_jpy": 180,
+    "main_food": "豆腐",
+    "meal_type": "breakfast",
+    "allergens": [
+      "卵"
+    ],
+    "tags": [
+      "豆腐"
+    ]
+  },
+  {
+    "recipe_id": "R056",
+    "recipe_name": "納豆オムレツ",
+    "category": "主菜",
+    "cuisine": "洋食",
+    "cook_time_min": 10,
+    "difficulty": "easy",
+    "budget_jpy": 180,
+    "main_food": "納豆",
+    "meal_type": "breakfast",
+    "allergens": [
+      "卵"
+    ],
+    "tags": [
+      "卵",
+      "納豆"
+    ]
+  },
+  {
+    "recipe_id": "R057",
+    "recipe_name": "鶏ささみの味噌炒め",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 13,
+    "difficulty": "easy",
+    "budget_jpy": 260,
+    "main_food": "鶏ささみ",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "鶏肉"
+    ]
+  },
+  {
+    "recipe_id": "R058",
+    "recipe_name": "豚ロースの甘辛炒め",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 14,
+    "difficulty": "normal",
+    "budget_jpy": 310,
+    "main_food": "豚ロース",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "豚肉"
+    ]
+  },
+  {
+    "recipe_id": "R059",
+    "recipe_name": "牛ももとブロッコリー炒め",
+    "category": "主菜",
+    "cuisine": "中華",
+    "cook_time_min": 15,
+    "difficulty": "normal",
+    "budget_jpy": 360,
+    "main_food": "牛もも",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "牛肉"
+    ]
+  },
+  {
+    "recipe_id": "R060",
+    "recipe_name": "鮭と豆腐の蒸し煮",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 15,
+    "difficulty": "normal",
+    "budget_jpy": 300,
+    "main_food": "鮭",
+    "meal_type": "dinner",
+    "allergens": [
+      "魚"
+    ],
+    "tags": [
+      "魚",
+      "豆腐"
+    ]
+  },
+  {
+    "recipe_id": "R061",
+    "recipe_name": "まぐろの生姜煮",
+    "category": "主菜",
+    "cuisine": "和食",
+    "cook_time_min": 12,
+    "difficulty": "easy",
+    "budget_jpy": 310,
+    "main_food": "まぐろ",
+    "meal_type": "dinner",
+    "allergens": [
+      "魚"
+    ],
+    "tags": [
+      "魚"
+    ]
+  },
+  {
+    "recipe_id": "R062",
+    "recipe_name": "ほうれん草おひたし",
+    "category": "副菜",
+    "cuisine": "和食",
+    "cook_time_min": 8,
+    "difficulty": "easy",
+    "budget_jpy": 100,
+    "main_food": "ほうれん草",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R063",
+    "recipe_name": "キャベツ塩和え",
+    "category": "副菜",
+    "cuisine": "和食",
+    "cook_time_min": 7,
+    "difficulty": "easy",
+    "budget_jpy": 90,
+    "main_food": "キャベツ",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R064",
+    "recipe_name": "にんじんしりしり風",
+    "category": "副菜",
+    "cuisine": "和食",
+    "cook_time_min": 10,
+    "difficulty": "easy",
+    "budget_jpy": 120,
+    "main_food": "にんじん",
+    "meal_type": "dinner",
+    "allergens": [
+      "卵"
+    ],
+    "tags": [
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R065",
+    "recipe_name": "だいこんサラダ",
+    "category": "副菜",
+    "cuisine": "和食",
+    "cook_time_min": 7,
+    "difficulty": "easy",
+    "budget_jpy": 110,
+    "main_food": "だいこん",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R066",
+    "recipe_name": "ブロッコリーごま和え",
+    "category": "副菜",
+    "cuisine": "和食",
+    "cook_time_min": 8,
+    "difficulty": "easy",
+    "budget_jpy": 120,
+    "main_food": "ブロッコリー",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R067",
+    "recipe_name": "トマトたまねぎマリネ",
+    "category": "副菜",
+    "cuisine": "洋食",
+    "cook_time_min": 8,
+    "difficulty": "easy",
+    "budget_jpy": 130,
+    "main_food": "トマト",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R068",
+    "recipe_name": "じゃがいもソテー",
+    "category": "副菜",
+    "cuisine": "洋食",
+    "cook_time_min": 12,
+    "difficulty": "easy",
+    "budget_jpy": 140,
+    "main_food": "じゃがいも",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "いも"
+    ]
+  },
+  {
+    "recipe_id": "R069",
+    "recipe_name": "さつまいも甘煮",
+    "category": "副菜",
+    "cuisine": "和食",
+    "cook_time_min": 14,
+    "difficulty": "easy",
+    "budget_jpy": 140,
+    "main_food": "さつまいも",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "いも"
+    ]
+  },
+  {
+    "recipe_id": "R070",
+    "recipe_name": "豆腐とほうれん草和え",
+    "category": "副菜",
+    "cuisine": "和食",
+    "cook_time_min": 10,
+    "difficulty": "easy",
+    "budget_jpy": 130,
+    "main_food": "豆腐",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "豆腐",
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R071",
+    "recipe_name": "たまねぎチーズ和え",
+    "category": "副菜",
+    "cuisine": "洋食",
+    "cook_time_min": 8,
+    "difficulty": "easy",
+    "budget_jpy": 150,
+    "main_food": "たまねぎ",
+    "meal_type": "dinner",
+    "allergens": [
+      "乳"
+    ],
+    "tags": [
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R072",
+    "recipe_name": "キャベツにんじん蒸し",
+    "category": "副菜",
+    "cuisine": "和食",
+    "cook_time_min": 9,
+    "difficulty": "easy",
+    "budget_jpy": 110,
+    "main_food": "キャベツ",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "野菜"
+    ]
+  },
+  {
+    "recipe_id": "R073",
+    "recipe_name": "豆腐とたまねぎの味噌汁",
+    "category": "汁物",
+    "cuisine": "和食",
+    "cook_time_min": 9,
+    "difficulty": "easy",
+    "budget_jpy": 120,
+    "main_food": "豆腐",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "汁物"
+    ]
+  },
+  {
+    "recipe_id": "R074",
+    "recipe_name": "ほうれん草と卵のスープ",
+    "category": "汁物",
+    "cuisine": "中華",
+    "cook_time_min": 10,
+    "difficulty": "easy",
+    "budget_jpy": 130,
+    "main_food": "ほうれん草",
+    "meal_type": "dinner",
+    "allergens": [
+      "卵"
+    ],
+    "tags": [
+      "汁物"
+    ]
+  },
+  {
+    "recipe_id": "R075",
+    "recipe_name": "じゃがいも味噌汁",
+    "category": "汁物",
+    "cuisine": "和食",
+    "cook_time_min": 10,
+    "difficulty": "easy",
+    "budget_jpy": 120,
+    "main_food": "じゃがいも",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "汁物"
+    ]
+  },
+  {
+    "recipe_id": "R076",
+    "recipe_name": "だいこんにんじん味噌汁",
+    "category": "汁物",
+    "cuisine": "和食",
+    "cook_time_min": 11,
+    "difficulty": "easy",
+    "budget_jpy": 120,
+    "main_food": "だいこん",
+    "meal_type": "dinner",
+    "allergens": [],
+    "tags": [
+      "汁物"
+    ]
+  }
+]

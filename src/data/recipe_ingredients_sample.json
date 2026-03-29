@@ -1,0 +1,2594 @@
+[
+  {
+    "recipe_id": "R001",
+    "food_id": "F001",
+    "amount_g": 180,
+    "role": "主材料",
+    "display_amount": "180",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R001",
+    "food_id": "F035",
+    "amount_g": 1,
+    "role": "調味料",
+    "display_amount": "1",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R002",
+    "food_id": "F001",
+    "amount_g": 140,
+    "role": "主材料",
+    "display_amount": "140",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R002",
+    "food_id": "F009",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R002",
+    "food_id": "F035",
+    "amount_g": 1,
+    "role": "調味料",
+    "display_amount": "1",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R003",
+    "food_id": "F001",
+    "amount_g": 180,
+    "role": "主材料",
+    "display_amount": "180",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R003",
+    "food_id": "F014",
+    "amount_g": 50,
+    "role": "副材料",
+    "display_amount": "50",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R003",
+    "food_id": "F031",
+    "amount_g": 6,
+    "role": "調味料",
+    "display_amount": "6",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R004",
+    "food_id": "F001",
+    "amount_g": 160,
+    "role": "主材料",
+    "display_amount": "160",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R004",
+    "food_id": "F015",
+    "amount_g": 50,
+    "role": "副材料",
+    "display_amount": "50",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R004",
+    "food_id": "F031",
+    "amount_g": 5,
+    "role": "調味料",
+    "display_amount": "5",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R005",
+    "food_id": "F002",
+    "amount_g": 60,
+    "role": "主材料",
+    "display_amount": "60",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R005",
+    "food_id": "F034",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R006",
+    "food_id": "F002",
+    "amount_g": 60,
+    "role": "主材料",
+    "display_amount": "60",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R006",
+    "food_id": "F030",
+    "amount_g": 20,
+    "role": "副材料",
+    "display_amount": "20",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R006",
+    "food_id": "F034",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R007",
+    "food_id": "F003",
+    "amount_g": 220,
+    "role": "主材料",
+    "display_amount": "220",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R007",
+    "food_id": "F024",
+    "amount_g": 10,
+    "role": "副材料",
+    "display_amount": "10",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R007",
+    "food_id": "F031",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R008",
+    "food_id": "F004",
+    "amount_g": 200,
+    "role": "主材料",
+    "display_amount": "200",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R008",
+    "food_id": "F031",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R009",
+    "food_id": "F005",
+    "amount_g": 50,
+    "role": "主材料",
+    "display_amount": "50",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R009",
+    "food_id": "F026",
+    "amount_g": 100,
+    "role": "副材料",
+    "display_amount": "100",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R009",
+    "food_id": "F033",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R010",
+    "food_id": "F001",
+    "amount_g": 140,
+    "role": "主材料",
+    "display_amount": "140",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R010",
+    "food_id": "F014",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R010",
+    "food_id": "F019",
+    "amount_g": 30,
+    "role": "副材料",
+    "display_amount": "30",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R010",
+    "food_id": "F031",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R011",
+    "food_id": "F006",
+    "amount_g": 160,
+    "role": "主材料",
+    "display_amount": "160",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R011",
+    "food_id": "F019",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R011",
+    "food_id": "F031",
+    "amount_g": 10,
+    "role": "調味料",
+    "display_amount": "10",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R011",
+    "food_id": "F032",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R011",
+    "food_id": "F033",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R011",
+    "food_id": "F034",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 6
+  },
+  {
+    "recipe_id": "R012",
+    "food_id": "F009",
+    "amount_g": 140,
+    "role": "主材料",
+    "display_amount": "140",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R012",
+    "food_id": "F035",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R012",
+    "food_id": "F034",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R013",
+    "food_id": "F007",
+    "amount_g": 140,
+    "role": "主材料",
+    "display_amount": "140",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R013",
+    "food_id": "F019",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R013",
+    "food_id": "F031",
+    "amount_g": 10,
+    "role": "調味料",
+    "display_amount": "10",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R013",
+    "food_id": "F036",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R013",
+    "food_id": "F034",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R014",
+    "food_id": "F008",
+    "amount_g": 140,
+    "role": "主材料",
+    "display_amount": "140",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R014",
+    "food_id": "F019",
+    "amount_g": 50,
+    "role": "副材料",
+    "display_amount": "50",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R014",
+    "food_id": "F031",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R014",
+    "food_id": "F036",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R014",
+    "food_id": "F034",
+    "amount_g": 5,
+    "role": "調味料",
+    "display_amount": "5",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R015",
+    "food_id": "F010",
+    "amount_g": 130,
+    "role": "主材料",
+    "display_amount": "130",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R015",
+    "food_id": "F025",
+    "amount_g": 18,
+    "role": "調味料",
+    "display_amount": "18",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R015",
+    "food_id": "F031",
+    "amount_g": 6,
+    "role": "調味料",
+    "display_amount": "6",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R015",
+    "food_id": "F032",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R015",
+    "food_id": "F033",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R016",
+    "food_id": "F013",
+    "amount_g": 160,
+    "role": "主材料",
+    "display_amount": "160",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R016",
+    "food_id": "F014",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R016",
+    "food_id": "F031",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R016",
+    "food_id": "F034",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R017",
+    "food_id": "F006",
+    "amount_g": 120,
+    "role": "主材料",
+    "display_amount": "120",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R017",
+    "food_id": "F014",
+    "amount_g": 60,
+    "role": "副材料",
+    "display_amount": "60",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R017",
+    "food_id": "F019",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R017",
+    "food_id": "F031",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R017",
+    "food_id": "F032",
+    "amount_g": 6,
+    "role": "調味料",
+    "display_amount": "6",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R018",
+    "food_id": "F011",
+    "amount_g": 150,
+    "role": "主材料",
+    "display_amount": "150",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R018",
+    "food_id": "F031",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R018",
+    "food_id": "F034",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R019",
+    "food_id": "F012",
+    "amount_g": 120,
+    "role": "主材料",
+    "display_amount": "120",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R019",
+    "food_id": "F022",
+    "amount_g": 80,
+    "role": "副材料",
+    "display_amount": "80",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R019",
+    "food_id": "F031",
+    "amount_g": 7,
+    "role": "調味料",
+    "display_amount": "7",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R019",
+    "food_id": "F034",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R020",
+    "food_id": "F014",
+    "amount_g": 100,
+    "role": "主材料",
+    "display_amount": "100",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R020",
+    "food_id": "F017",
+    "amount_g": 70,
+    "role": "副材料",
+    "display_amount": "70",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R020",
+    "food_id": "F031",
+    "amount_g": 6,
+    "role": "調味料",
+    "display_amount": "6",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R020",
+    "food_id": "F034",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R021",
+    "food_id": "F017",
+    "amount_g": 90,
+    "role": "主材料",
+    "display_amount": "90",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R021",
+    "food_id": "F031",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R022",
+    "food_id": "F016",
+    "amount_g": 110,
+    "role": "主材料",
+    "display_amount": "110",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R022",
+    "food_id": "F035",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R023",
+    "food_id": "F023",
+    "amount_g": 120,
+    "role": "主材料",
+    "display_amount": "120",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R023",
+    "food_id": "F034",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R023",
+    "food_id": "F035",
+    "amount_g": 1,
+    "role": "調味料",
+    "display_amount": "1",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R024",
+    "food_id": "F022",
+    "amount_g": 100,
+    "role": "主材料",
+    "display_amount": "100",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R024",
+    "food_id": "F034",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R024",
+    "food_id": "F035",
+    "amount_g": 1,
+    "role": "調味料",
+    "display_amount": "1",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R025",
+    "food_id": "F018",
+    "amount_g": 100,
+    "role": "主材料",
+    "display_amount": "100",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R025",
+    "food_id": "F014",
+    "amount_g": 50,
+    "role": "副材料",
+    "display_amount": "50",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R025",
+    "food_id": "F034",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R025",
+    "food_id": "F035",
+    "amount_g": 1,
+    "role": "調味料",
+    "display_amount": "1",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R026",
+    "food_id": "F020",
+    "amount_g": 120,
+    "role": "主材料",
+    "display_amount": "120",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R026",
+    "food_id": "F027",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R026",
+    "food_id": "F035",
+    "amount_g": 1,
+    "role": "調味料",
+    "display_amount": "1",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R027",
+    "food_id": "F021",
+    "amount_g": 120,
+    "role": "主材料",
+    "display_amount": "120",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R027",
+    "food_id": "F035",
+    "amount_g": 1,
+    "role": "調味料",
+    "display_amount": "1",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R027",
+    "food_id": "F034",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R028",
+    "food_id": "F024",
+    "amount_g": 40,
+    "role": "主材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R028",
+    "food_id": "F031",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R029",
+    "food_id": "F029",
+    "amount_g": 80,
+    "role": "主材料",
+    "display_amount": "80",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R029",
+    "food_id": "F027",
+    "amount_g": 60,
+    "role": "副材料",
+    "display_amount": "60",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R029",
+    "food_id": "F033",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R030",
+    "food_id": "F030",
+    "amount_g": 25,
+    "role": "主材料",
+    "display_amount": "25",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R030",
+    "food_id": "F023",
+    "amount_g": 90,
+    "role": "副材料",
+    "display_amount": "90",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R030",
+    "food_id": "F034",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R031",
+    "food_id": "F013",
+    "amount_g": 70,
+    "role": "主材料",
+    "display_amount": "70",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R031",
+    "food_id": "F024",
+    "amount_g": 15,
+    "role": "副材料",
+    "display_amount": "15",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R031",
+    "food_id": "F025",
+    "amount_g": 15,
+    "role": "調味料",
+    "display_amount": "15",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R031",
+    "food_id": "F031",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R032",
+    "food_id": "F016",
+    "amount_g": 60,
+    "role": "主材料",
+    "display_amount": "60",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R032",
+    "food_id": "F019",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R032",
+    "food_id": "F025",
+    "amount_g": 15,
+    "role": "調味料",
+    "display_amount": "15",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R032",
+    "food_id": "F031",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R033",
+    "food_id": "F014",
+    "amount_g": 60,
+    "role": "主材料",
+    "display_amount": "60",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R033",
+    "food_id": "F019",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R033",
+    "food_id": "F031",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R034",
+    "food_id": "F024",
+    "amount_g": 20,
+    "role": "主材料",
+    "display_amount": "20",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R034",
+    "food_id": "F031",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R035",
+    "food_id": "F026",
+    "amount_g": 180,
+    "role": "主材料",
+    "display_amount": "180",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R035",
+    "food_id": "F019",
+    "amount_g": 30,
+    "role": "副材料",
+    "display_amount": "30",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R035",
+    "food_id": "F035",
+    "amount_g": 1,
+    "role": "調味料",
+    "display_amount": "1",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R036",
+    "food_id": "F028",
+    "amount_g": 90,
+    "role": "主材料",
+    "display_amount": "90",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R036",
+    "food_id": "F027",
+    "amount_g": 80,
+    "role": "副材料",
+    "display_amount": "80",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R036",
+    "food_id": "F033",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R037",
+    "food_id": "F029",
+    "amount_g": 120,
+    "role": "主材料",
+    "display_amount": "120",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R037",
+    "food_id": "F035",
+    "amount_g": 0.2,
+    "role": "調味料",
+    "display_amount": "0.2",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R038",
+    "food_id": "F027",
+    "amount_g": 120,
+    "role": "主材料",
+    "display_amount": "120",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R038",
+    "food_id": "F033",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R039",
+    "food_id": "F030",
+    "amount_g": 20,
+    "role": "主材料",
+    "display_amount": "20",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R039",
+    "food_id": "F029",
+    "amount_g": 80,
+    "role": "副材料",
+    "display_amount": "80",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R039",
+    "food_id": "F033",
+    "amount_g": 1,
+    "role": "調味料",
+    "display_amount": "1",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R040",
+    "food_id": "F028",
+    "amount_g": 80,
+    "role": "主材料",
+    "display_amount": "80",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R040",
+    "food_id": "F026",
+    "amount_g": 150,
+    "role": "副材料",
+    "display_amount": "150",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R040",
+    "food_id": "F033",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R041",
+    "food_id": "F001",
+    "amount_g": 180,
+    "role": "主材料",
+    "display_amount": "180",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R041",
+    "food_id": "F009",
+    "amount_g": 70,
+    "role": "副材料",
+    "display_amount": "70",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R041",
+    "food_id": "F031",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R041",
+    "food_id": "F036",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R041",
+    "food_id": "F035",
+    "amount_g": 0.8,
+    "role": "調味料",
+    "display_amount": "0.8",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R042",
+    "food_id": "F001",
+    "amount_g": 180,
+    "role": "主材料",
+    "display_amount": "180",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R042",
+    "food_id": "F015",
+    "amount_g": 45,
+    "role": "副材料",
+    "display_amount": "45",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R042",
+    "food_id": "F014",
+    "amount_g": 50,
+    "role": "副材料",
+    "display_amount": "50",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R042",
+    "food_id": "F031",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R042",
+    "food_id": "F035",
+    "amount_g": 0.6,
+    "role": "調味料",
+    "display_amount": "0.6",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R043",
+    "food_id": "F001",
+    "amount_g": 180,
+    "role": "主材料",
+    "display_amount": "180",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R043",
+    "food_id": "F011",
+    "amount_g": 70,
+    "role": "副材料",
+    "display_amount": "70",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R043",
+    "food_id": "F023",
+    "amount_g": 50,
+    "role": "副材料",
+    "display_amount": "50",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R043",
+    "food_id": "F031",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R043",
+    "food_id": "F034",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R044",
+    "food_id": "F001",
+    "amount_g": 180,
+    "role": "主材料",
+    "display_amount": "180",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R044",
+    "food_id": "F008",
+    "amount_g": 70,
+    "role": "副材料",
+    "display_amount": "70",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R044",
+    "food_id": "F019",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R044",
+    "food_id": "F031",
+    "amount_g": 5,
+    "role": "調味料",
+    "display_amount": "5",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R044",
+    "food_id": "F033",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R044",
+    "food_id": "F036",
+    "amount_g": 6,
+    "role": "調味料",
+    "display_amount": "6",
+    "display_unit": "g",
+    "sort_order": 6
+  },
+  {
+    "recipe_id": "R045",
+    "food_id": "F001",
+    "amount_g": 180,
+    "role": "主材料",
+    "display_amount": "180",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R045",
+    "food_id": "F007",
+    "amount_g": 70,
+    "role": "副材料",
+    "display_amount": "70",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R045",
+    "food_id": "F019",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R045",
+    "food_id": "F031",
+    "amount_g": 5,
+    "role": "調味料",
+    "display_amount": "5",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R045",
+    "food_id": "F036",
+    "amount_g": 6,
+    "role": "調味料",
+    "display_amount": "6",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R046",
+    "food_id": "F001",
+    "amount_g": 160,
+    "role": "主材料",
+    "display_amount": "160",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R046",
+    "food_id": "F006",
+    "amount_g": 80,
+    "role": "副材料",
+    "display_amount": "80",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R046",
+    "food_id": "F014",
+    "amount_g": 50,
+    "role": "副材料",
+    "display_amount": "50",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R046",
+    "food_id": "F031",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R046",
+    "food_id": "F035",
+    "amount_g": 0.8,
+    "role": "調味料",
+    "display_amount": "0.8",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R047",
+    "food_id": "F004",
+    "amount_g": 200,
+    "role": "主材料",
+    "display_amount": "200",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R047",
+    "food_id": "F017",
+    "amount_g": 50,
+    "role": "副材料",
+    "display_amount": "50",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R047",
+    "food_id": "F014",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R047",
+    "food_id": "F031",
+    "amount_g": 5,
+    "role": "調味料",
+    "display_amount": "5",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R047",
+    "food_id": "F035",
+    "amount_g": 0.8,
+    "role": "調味料",
+    "display_amount": "0.8",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R048",
+    "food_id": "F003",
+    "amount_g": 220,
+    "role": "主材料",
+    "display_amount": "220",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R048",
+    "food_id": "F014",
+    "amount_g": 50,
+    "role": "副材料",
+    "display_amount": "50",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R048",
+    "food_id": "F031",
+    "amount_g": 5,
+    "role": "調味料",
+    "display_amount": "5",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R048",
+    "food_id": "F035",
+    "amount_g": 0.8,
+    "role": "調味料",
+    "display_amount": "0.8",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R049",
+    "food_id": "F005",
+    "amount_g": 55,
+    "role": "主材料",
+    "display_amount": "55",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R049",
+    "food_id": "F026",
+    "amount_g": 180,
+    "role": "副材料",
+    "display_amount": "180",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R049",
+    "food_id": "F014",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R049",
+    "food_id": "F033",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R049",
+    "food_id": "F035",
+    "amount_g": 0.2,
+    "role": "調味料",
+    "display_amount": "0.2",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R050",
+    "food_id": "F006",
+    "amount_g": 140,
+    "role": "主材料",
+    "display_amount": "140",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R050",
+    "food_id": "F031",
+    "amount_g": 7,
+    "role": "調味料",
+    "display_amount": "7",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R050",
+    "food_id": "F033",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R050",
+    "food_id": "F036",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R050",
+    "food_id": "F034",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R051",
+    "food_id": "F007",
+    "amount_g": 130,
+    "role": "主材料",
+    "display_amount": "130",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R051",
+    "food_id": "F035",
+    "amount_g": 1,
+    "role": "調味料",
+    "display_amount": "1",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R051",
+    "food_id": "F036",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R051",
+    "food_id": "F034",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R052",
+    "food_id": "F008",
+    "amount_g": 130,
+    "role": "主材料",
+    "display_amount": "130",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R052",
+    "food_id": "F031",
+    "amount_g": 7,
+    "role": "調味料",
+    "display_amount": "7",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R052",
+    "food_id": "F033",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R052",
+    "food_id": "F019",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R052",
+    "food_id": "F036",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R053",
+    "food_id": "F009",
+    "amount_g": 140,
+    "role": "主材料",
+    "display_amount": "140",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R053",
+    "food_id": "F031",
+    "amount_g": 6,
+    "role": "調味料",
+    "display_amount": "6",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R053",
+    "food_id": "F036",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R053",
+    "food_id": "F034",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R054",
+    "food_id": "F011",
+    "amount_g": 140,
+    "role": "主材料",
+    "display_amount": "140",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R054",
+    "food_id": "F031",
+    "amount_g": 6,
+    "role": "調味料",
+    "display_amount": "6",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R054",
+    "food_id": "F036",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R054",
+    "food_id": "F034",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R055",
+    "food_id": "F013",
+    "amount_g": 170,
+    "role": "主材料",
+    "display_amount": "170",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R055",
+    "food_id": "F014",
+    "amount_g": 55,
+    "role": "副材料",
+    "display_amount": "55",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R055",
+    "food_id": "F031",
+    "amount_g": 5,
+    "role": "調味料",
+    "display_amount": "5",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R055",
+    "food_id": "F036",
+    "amount_g": 6,
+    "role": "調味料",
+    "display_amount": "6",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R055",
+    "food_id": "F035",
+    "amount_g": 0.7,
+    "role": "調味料",
+    "display_amount": "0.7",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R056",
+    "food_id": "F015",
+    "amount_g": 50,
+    "role": "主材料",
+    "display_amount": "50",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R056",
+    "food_id": "F014",
+    "amount_g": 100,
+    "role": "副材料",
+    "display_amount": "100",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R056",
+    "food_id": "F031",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R056",
+    "food_id": "F034",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R057",
+    "food_id": "F006",
+    "amount_g": 130,
+    "role": "主材料",
+    "display_amount": "130",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R057",
+    "food_id": "F025",
+    "amount_g": 10,
+    "role": "調味料",
+    "display_amount": "10",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R057",
+    "food_id": "F019",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R057",
+    "food_id": "F036",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R057",
+    "food_id": "F034",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R058",
+    "food_id": "F007",
+    "amount_g": 130,
+    "role": "主材料",
+    "display_amount": "130",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R058",
+    "food_id": "F031",
+    "amount_g": 7,
+    "role": "調味料",
+    "display_amount": "7",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R058",
+    "food_id": "F033",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R058",
+    "food_id": "F036",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R058",
+    "food_id": "F019",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R058",
+    "food_id": "F034",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 6
+  },
+  {
+    "recipe_id": "R059",
+    "food_id": "F008",
+    "amount_g": 130,
+    "role": "主材料",
+    "display_amount": "130",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R059",
+    "food_id": "F022",
+    "amount_g": 70,
+    "role": "副材料",
+    "display_amount": "70",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R059",
+    "food_id": "F031",
+    "amount_g": 6,
+    "role": "調味料",
+    "display_amount": "6",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R059",
+    "food_id": "F034",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R059",
+    "food_id": "F036",
+    "amount_g": 6,
+    "role": "調味料",
+    "display_amount": "6",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R060",
+    "food_id": "F009",
+    "amount_g": 110,
+    "role": "主材料",
+    "display_amount": "110",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R060",
+    "food_id": "F013",
+    "amount_g": 100,
+    "role": "副材料",
+    "display_amount": "100",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R060",
+    "food_id": "F025",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R060",
+    "food_id": "F021",
+    "amount_g": 50,
+    "role": "副材料",
+    "display_amount": "50",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R060",
+    "food_id": "F036",
+    "amount_g": 5,
+    "role": "調味料",
+    "display_amount": "5",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R061",
+    "food_id": "F011",
+    "amount_g": 130,
+    "role": "主材料",
+    "display_amount": "130",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R061",
+    "food_id": "F031",
+    "amount_g": 6,
+    "role": "調味料",
+    "display_amount": "6",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R061",
+    "food_id": "F036",
+    "amount_g": 8,
+    "role": "調味料",
+    "display_amount": "8",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R061",
+    "food_id": "F019",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R061",
+    "food_id": "F033",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R062",
+    "food_id": "F017",
+    "amount_g": 90,
+    "role": "主材料",
+    "display_amount": "90",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R062",
+    "food_id": "F031",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R062",
+    "food_id": "F035",
+    "amount_g": 0.4,
+    "role": "調味料",
+    "display_amount": "0.4",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R063",
+    "food_id": "F016",
+    "amount_g": 100,
+    "role": "主材料",
+    "display_amount": "100",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R063",
+    "food_id": "F035",
+    "amount_g": 0.7,
+    "role": "調味料",
+    "display_amount": "0.7",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R063",
+    "food_id": "F034",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R064",
+    "food_id": "F018",
+    "amount_g": 100,
+    "role": "主材料",
+    "display_amount": "100",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R064",
+    "food_id": "F014",
+    "amount_g": 45,
+    "role": "副材料",
+    "display_amount": "45",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R064",
+    "food_id": "F031",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R064",
+    "food_id": "F034",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R065",
+    "food_id": "F021",
+    "amount_g": 100,
+    "role": "主材料",
+    "display_amount": "100",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R065",
+    "food_id": "F031",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R065",
+    "food_id": "F034",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R065",
+    "food_id": "F035",
+    "amount_g": 0.5,
+    "role": "調味料",
+    "display_amount": "0.5",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R066",
+    "food_id": "F022",
+    "amount_g": 100,
+    "role": "主材料",
+    "display_amount": "100",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R066",
+    "food_id": "F031",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R066",
+    "food_id": "F034",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R066",
+    "food_id": "F035",
+    "amount_g": 0.5,
+    "role": "調味料",
+    "display_amount": "0.5",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R067",
+    "food_id": "F023",
+    "amount_g": 100,
+    "role": "主材料",
+    "display_amount": "100",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R067",
+    "food_id": "F019",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R067",
+    "food_id": "F031",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R067",
+    "food_id": "F034",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R067",
+    "food_id": "F035",
+    "amount_g": 0.4,
+    "role": "調味料",
+    "display_amount": "0.4",
+    "display_unit": "g",
+    "sort_order": 5
+  },
+  {
+    "recipe_id": "R068",
+    "food_id": "F020",
+    "amount_g": 110,
+    "role": "主材料",
+    "display_amount": "110",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R068",
+    "food_id": "F034",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R068",
+    "food_id": "F035",
+    "amount_g": 0.6,
+    "role": "調味料",
+    "display_amount": "0.6",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R069",
+    "food_id": "F024",
+    "amount_g": 110,
+    "role": "主材料",
+    "display_amount": "110",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R069",
+    "food_id": "F033",
+    "amount_g": 4,
+    "role": "調味料",
+    "display_amount": "4",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R069",
+    "food_id": "F035",
+    "amount_g": 0.3,
+    "role": "調味料",
+    "display_amount": "0.3",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R070",
+    "food_id": "F013",
+    "amount_g": 110,
+    "role": "主材料",
+    "display_amount": "110",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R070",
+    "food_id": "F017",
+    "amount_g": 60,
+    "role": "副材料",
+    "display_amount": "60",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R070",
+    "food_id": "F031",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R070",
+    "food_id": "F035",
+    "amount_g": 0.5,
+    "role": "調味料",
+    "display_amount": "0.5",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R071",
+    "food_id": "F019",
+    "amount_g": 90,
+    "role": "主材料",
+    "display_amount": "90",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R071",
+    "food_id": "F030",
+    "amount_g": 20,
+    "role": "副材料",
+    "display_amount": "20",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R071",
+    "food_id": "F031",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R071",
+    "food_id": "F034",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R072",
+    "food_id": "F016",
+    "amount_g": 70,
+    "role": "主材料",
+    "display_amount": "70",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R072",
+    "food_id": "F018",
+    "amount_g": 50,
+    "role": "副材料",
+    "display_amount": "50",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R072",
+    "food_id": "F035",
+    "amount_g": 0.5,
+    "role": "調味料",
+    "display_amount": "0.5",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R072",
+    "food_id": "F034",
+    "amount_g": 2,
+    "role": "調味料",
+    "display_amount": "2",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R073",
+    "food_id": "F013",
+    "amount_g": 110,
+    "role": "主材料",
+    "display_amount": "110",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R073",
+    "food_id": "F019",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R073",
+    "food_id": "F025",
+    "amount_g": 12,
+    "role": "調味料",
+    "display_amount": "12",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R073",
+    "food_id": "F035",
+    "amount_g": 0.5,
+    "role": "調味料",
+    "display_amount": "0.5",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R074",
+    "food_id": "F017",
+    "amount_g": 60,
+    "role": "主材料",
+    "display_amount": "60",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R074",
+    "food_id": "F014",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R074",
+    "food_id": "F035",
+    "amount_g": 0.8,
+    "role": "調味料",
+    "display_amount": "0.8",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R074",
+    "food_id": "F031",
+    "amount_g": 3,
+    "role": "調味料",
+    "display_amount": "3",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R075",
+    "food_id": "F020",
+    "amount_g": 90,
+    "role": "主材料",
+    "display_amount": "90",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R075",
+    "food_id": "F025",
+    "amount_g": 12,
+    "role": "調味料",
+    "display_amount": "12",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R075",
+    "food_id": "F019",
+    "amount_g": 30,
+    "role": "副材料",
+    "display_amount": "30",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R075",
+    "food_id": "F035",
+    "amount_g": 0.5,
+    "role": "調味料",
+    "display_amount": "0.5",
+    "display_unit": "g",
+    "sort_order": 4
+  },
+  {
+    "recipe_id": "R076",
+    "food_id": "F021",
+    "amount_g": 70,
+    "role": "主材料",
+    "display_amount": "70",
+    "display_unit": "g",
+    "sort_order": 1
+  },
+  {
+    "recipe_id": "R076",
+    "food_id": "F018",
+    "amount_g": 40,
+    "role": "副材料",
+    "display_amount": "40",
+    "display_unit": "g",
+    "sort_order": 2
+  },
+  {
+    "recipe_id": "R076",
+    "food_id": "F025",
+    "amount_g": 12,
+    "role": "調味料",
+    "display_amount": "12",
+    "display_unit": "g",
+    "sort_order": 3
+  },
+  {
+    "recipe_id": "R076",
+    "food_id": "F035",
+    "amount_g": 0.5,
+    "role": "調味料",
+    "display_amount": "0.5",
+    "display_unit": "g",
+    "sort_order": 4
+  }
+]

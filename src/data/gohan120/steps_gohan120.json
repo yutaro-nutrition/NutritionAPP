@@ -1,0 +1,2882 @@
+[
+  {
+    "recipe_id": "RICE001",
+    "recipe_name": "鮭おにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE001",
+    "recipe_name": "鮭おにぎり",
+    "step_no": 2,
+    "step_description": "鮭は食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE001",
+    "recipe_name": "鮭おにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE001",
+    "recipe_name": "鮭おにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE002",
+    "recipe_name": "梅しそおにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE002",
+    "recipe_name": "梅しそおにぎり",
+    "step_no": 2,
+    "step_description": "梅干しは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE002",
+    "recipe_name": "梅しそおにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE002",
+    "recipe_name": "梅しそおにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE003",
+    "recipe_name": "しらす青のりおにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE003",
+    "recipe_name": "しらす青のりおにぎり",
+    "step_no": 2,
+    "step_description": "あおのり・焼きのり・こいくちしょうゆは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE003",
+    "recipe_name": "しらす青のりおにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE003",
+    "recipe_name": "しらす青のりおにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE004",
+    "recipe_name": "鶏そぼろおにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE004",
+    "recipe_name": "鶏そぼろおにぎり",
+    "step_no": 2,
+    "step_description": "鶏ひき肉・こいくちしょうゆは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE004",
+    "recipe_name": "鶏そぼろおにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE004",
+    "recipe_name": "鶏そぼろおにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE005",
+    "recipe_name": "まぐろしょうゆおにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE005",
+    "recipe_name": "まぐろしょうゆおにぎり",
+    "step_no": 2,
+    "step_description": "まぐろ・こいくちしょうゆは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE005",
+    "recipe_name": "まぐろしょうゆおにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE005",
+    "recipe_name": "まぐろしょうゆおにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE006",
+    "recipe_name": "たらこ風おにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE006",
+    "recipe_name": "たらこ風おにぎり",
+    "step_no": 2,
+    "step_description": "たら・こいくちしょうゆは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE006",
+    "recipe_name": "たらこ風おにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE006",
+    "recipe_name": "たらこ風おにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE007",
+    "recipe_name": "鮭枝豆おにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE007",
+    "recipe_name": "鮭枝豆おにぎり",
+    "step_no": 2,
+    "step_description": "鮭・えだまめは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE007",
+    "recipe_name": "鮭枝豆おにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE007",
+    "recipe_name": "鮭枝豆おにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE008",
+    "recipe_name": "牛しぐれおにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE008",
+    "recipe_name": "牛しぐれおにぎり",
+    "step_no": 2,
+    "step_description": "牛もも肉・こいくちしょうゆは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE008",
+    "recipe_name": "牛しぐれおにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE008",
+    "recipe_name": "牛しぐれおにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE009",
+    "recipe_name": "豚ヒレしょうが焼きおにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE009",
+    "recipe_name": "豚ヒレしょうが焼きおにぎり",
+    "step_no": 2,
+    "step_description": "豚ヒレ肉・こいくちしょうゆは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE009",
+    "recipe_name": "豚ヒレしょうが焼きおにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE009",
+    "recipe_name": "豚ヒレしょうが焼きおにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE010",
+    "recipe_name": "さば塩おにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE010",
+    "recipe_name": "さば塩おにぎり",
+    "step_no": 2,
+    "step_description": "さば・しょうがは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE010",
+    "recipe_name": "さば塩おにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE010",
+    "recipe_name": "さば塩おにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE011",
+    "recipe_name": "かつお生姜おにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE011",
+    "recipe_name": "かつお生姜おにぎり",
+    "step_no": 2,
+    "step_description": "かつお・こいくちしょうゆは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE011",
+    "recipe_name": "かつお生姜おにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE011",
+    "recipe_name": "かつお生姜おにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE012",
+    "recipe_name": "鯛ごまおにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE012",
+    "recipe_name": "鯛ごまおにぎり",
+    "step_no": 2,
+    "step_description": "鯛・こいくちしょうゆは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE012",
+    "recipe_name": "鯛ごまおにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE012",
+    "recipe_name": "鯛ごまおにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE013",
+    "recipe_name": "豚そぼろおにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE013",
+    "recipe_name": "豚そぼろおにぎり",
+    "step_no": 2,
+    "step_description": "豚ひき肉・こいくちしょうゆは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE013",
+    "recipe_name": "豚そぼろおにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE013",
+    "recipe_name": "豚そぼろおにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE014",
+    "recipe_name": "鶏むねわかめおにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE014",
+    "recipe_name": "鶏むねわかめおにぎり",
+    "step_no": 2,
+    "step_description": "鶏むね肉（皮なし）・こいくちしょうゆは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE014",
+    "recipe_name": "鶏むねわかめおにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE014",
+    "recipe_name": "鶏むねわかめおにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE015",
+    "recipe_name": "いわし甘辛おにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE015",
+    "recipe_name": "いわし甘辛おにぎり",
+    "step_no": 2,
+    "step_description": "いわし・こいくちしょうゆは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE015",
+    "recipe_name": "いわし甘辛おにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE015",
+    "recipe_name": "いわし甘辛おにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE016",
+    "recipe_name": "鮭バターしょうゆおにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE016",
+    "recipe_name": "鮭バターしょうゆおにぎり",
+    "step_no": 2,
+    "step_description": "鮭・こいくちしょうゆは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE016",
+    "recipe_name": "鮭バターしょうゆおにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE016",
+    "recipe_name": "鮭バターしょうゆおにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE017",
+    "recipe_name": "鶏むね塩昆布風おにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE017",
+    "recipe_name": "鶏むね塩昆布風おにぎり",
+    "step_no": 2,
+    "step_description": "鶏むね肉（皮なし）・こいくちしょうゆは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE017",
+    "recipe_name": "鶏むね塩昆布風おにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE017",
+    "recipe_name": "鶏むね塩昆布風おにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE018",
+    "recipe_name": "牛そぼろ黒ごまおにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE018",
+    "recipe_name": "牛そぼろ黒ごまおにぎり",
+    "step_no": 2,
+    "step_description": "牛ひき肉・こいくちしょうゆは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE018",
+    "recipe_name": "牛そぼろ黒ごまおにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE018",
+    "recipe_name": "牛そぼろ黒ごまおにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE019",
+    "recipe_name": "まぐろ味噌おにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE019",
+    "recipe_name": "まぐろ味噌おにぎり",
+    "step_no": 2,
+    "step_description": "まぐろ・本みりんは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE019",
+    "recipe_name": "まぐろ味噌おにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE019",
+    "recipe_name": "まぐろ味噌おにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE020",
+    "recipe_name": "たら青菜おにぎり",
+    "step_no": 1,
+    "step_description": "米は洗って通常の水加減で炊飯し、炊き上がったら10分蒸らす。"
+  },
+  {
+    "recipe_id": "RICE020",
+    "recipe_name": "たら青菜おにぎり",
+    "step_no": 2,
+    "step_description": "たら・こまつなは食べやすく加熱または下味付けし、水分が多い場合は軽く飛ばす。"
+  },
+  {
+    "recipe_id": "RICE020",
+    "recipe_name": "たら青菜おにぎり",
+    "step_no": 3,
+    "step_description": "ごはんに塩とごまを混ぜ、具材を包みやすい温度まで冷ます。"
+  },
+  {
+    "recipe_id": "RICE020",
+    "recipe_name": "たら青菜おにぎり",
+    "step_no": 4,
+    "step_description": "1食分ずつ成形し、のりで包んで仕上げる。"
+  },
+  {
+    "recipe_id": "RICE021",
+    "recipe_name": "鶏むねとごぼうの炊き込みごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE021",
+    "recipe_name": "鶏むねとごぼうの炊き込みごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE021",
+    "recipe_name": "鶏むねとごぼうの炊き込みごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE021",
+    "recipe_name": "鶏むねとごぼうの炊き込みごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE022",
+    "recipe_name": "鮭ときのこの炊き込みごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE022",
+    "recipe_name": "鮭ときのこの炊き込みごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE022",
+    "recipe_name": "鮭ときのこの炊き込みごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE022",
+    "recipe_name": "鮭ときのこの炊き込みごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE023",
+    "recipe_name": "豚ヒレと小松菜の混ぜごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE023",
+    "recipe_name": "豚ヒレと小松菜の混ぜごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE023",
+    "recipe_name": "豚ヒレと小松菜の混ぜごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE023",
+    "recipe_name": "豚ヒレと小松菜の混ぜごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE024",
+    "recipe_name": "牛ももと舞茸のしぐれごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE024",
+    "recipe_name": "牛ももと舞茸のしぐれごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE024",
+    "recipe_name": "牛ももと舞茸のしぐれごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE024",
+    "recipe_name": "牛ももと舞茸のしぐれごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE025",
+    "recipe_name": "鶏そぼろと枝豆の混ぜごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE025",
+    "recipe_name": "鶏そぼろと枝豆の混ぜごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE025",
+    "recipe_name": "鶏そぼろと枝豆の混ぜごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE025",
+    "recipe_name": "鶏そぼろと枝豆の混ぜごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE026",
+    "recipe_name": "さばと生姜の炊き込みごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE026",
+    "recipe_name": "さばと生姜の炊き込みごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE026",
+    "recipe_name": "さばと生姜の炊き込みごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE026",
+    "recipe_name": "さばと生姜の炊き込みごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE027",
+    "recipe_name": "たらとにんじんのやさしい炊き込みごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE027",
+    "recipe_name": "たらとにんじんのやさしい炊き込みごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE027",
+    "recipe_name": "たらとにんじんのやさしい炊き込みごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE027",
+    "recipe_name": "たらとにんじんのやさしい炊き込みごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE028",
+    "recipe_name": "鯛としょうがの炊き込みごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE028",
+    "recipe_name": "鯛としょうがの炊き込みごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE028",
+    "recipe_name": "鯛としょうがの炊き込みごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE028",
+    "recipe_name": "鯛としょうがの炊き込みごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE029",
+    "recipe_name": "豚ももとひじき風混ぜごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE029",
+    "recipe_name": "豚ももとひじき風混ぜごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE029",
+    "recipe_name": "豚ももとひじき風混ぜごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE029",
+    "recipe_name": "豚ももとひじき風混ぜごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE030",
+    "recipe_name": "いわしと梅のさっぱり混ぜごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE030",
+    "recipe_name": "いわしと梅のさっぱり混ぜごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE030",
+    "recipe_name": "いわしと梅のさっぱり混ぜごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE030",
+    "recipe_name": "いわしと梅のさっぱり混ぜごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE031",
+    "recipe_name": "牛そぼろコーンごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE031",
+    "recipe_name": "牛そぼろコーンごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE031",
+    "recipe_name": "牛そぼろコーンごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE031",
+    "recipe_name": "牛そぼろコーンごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE032",
+    "recipe_name": "鶏ももとしめじの炊き込みごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE032",
+    "recipe_name": "鶏ももとしめじの炊き込みごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE032",
+    "recipe_name": "鶏ももとしめじの炊き込みごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE032",
+    "recipe_name": "鶏ももとしめじの炊き込みごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE033",
+    "recipe_name": "まぐろと枝豆の混ぜごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE033",
+    "recipe_name": "まぐろと枝豆の混ぜごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE033",
+    "recipe_name": "まぐろと枝豆の混ぜごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE033",
+    "recipe_name": "まぐろと枝豆の混ぜごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE034",
+    "recipe_name": "豚そぼろカレー炊き込みごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE034",
+    "recipe_name": "豚そぼろカレー炊き込みごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE034",
+    "recipe_name": "豚そぼろカレー炊き込みごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE034",
+    "recipe_name": "豚そぼろカレー炊き込みごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE035",
+    "recipe_name": "鮭とブロッコリーの混ぜごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE035",
+    "recipe_name": "鮭とブロッコリーの混ぜごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE035",
+    "recipe_name": "鮭とブロッコリーの混ぜごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE035",
+    "recipe_name": "鮭とブロッコリーの混ぜごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE036",
+    "recipe_name": "鶏むねとトマトの洋風混ぜごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE036",
+    "recipe_name": "鶏むねとトマトの洋風混ぜごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE036",
+    "recipe_name": "鶏むねとトマトの洋風混ぜごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE036",
+    "recipe_name": "鶏むねとトマトの洋風混ぜごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE037",
+    "recipe_name": "さわらと小松菜の混ぜごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE037",
+    "recipe_name": "さわらと小松菜の混ぜごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE037",
+    "recipe_name": "さわらと小松菜の混ぜごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE037",
+    "recipe_name": "さわらと小松菜の混ぜごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE038",
+    "recipe_name": "牛ももと黒米のスタミナごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE038",
+    "recipe_name": "牛ももと黒米のスタミナごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE038",
+    "recipe_name": "牛ももと黒米のスタミナごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE038",
+    "recipe_name": "牛ももと黒米のスタミナごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE039",
+    "recipe_name": "鶏そぼろと卵の二色ごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE039",
+    "recipe_name": "鶏そぼろと卵の二色ごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE039",
+    "recipe_name": "鶏そぼろと卵の二色ごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE039",
+    "recipe_name": "鶏そぼろと卵の二色ごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE040",
+    "recipe_name": "豚ヒレと赤米の彩りごはん",
+    "step_no": 1,
+    "step_description": "米は洗って30分ほど浸水し、ざるに上げる。"
+  },
+  {
+    "recipe_id": "RICE040",
+    "recipe_name": "豚ヒレと赤米の彩りごはん",
+    "step_no": 2,
+    "step_description": "主材料の肉または魚は食べやすく切り、野菜・きのこ類は均一な大きさに整える。"
+  },
+  {
+    "recipe_id": "RICE040",
+    "recipe_name": "豚ヒレと赤米の彩りごはん",
+    "step_no": 3,
+    "step_description": "炊飯器に米、調味料、必要量の水を入れ、具材を上にのせて炊飯する。"
+  },
+  {
+    "recipe_id": "RICE040",
+    "recipe_name": "豚ヒレと赤米の彩りごはん",
+    "step_no": 4,
+    "step_description": "炊き上がったら全体をさっくり混ぜ、10分ほど蒸らしてから盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE041",
+    "recipe_name": "鶏むね親子丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE041",
+    "recipe_name": "鶏むね親子丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE041",
+    "recipe_name": "鶏むね親子丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE041",
+    "recipe_name": "鶏むね親子丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE042",
+    "recipe_name": "豚ヒレしょうが丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE042",
+    "recipe_name": "豚ヒレしょうが丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE042",
+    "recipe_name": "豚ヒレしょうが丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE042",
+    "recipe_name": "豚ヒレしょうが丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE043",
+    "recipe_name": "牛ももすき煮丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE043",
+    "recipe_name": "牛ももすき煮丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE043",
+    "recipe_name": "牛ももすき煮丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE043",
+    "recipe_name": "牛ももすき煮丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE044",
+    "recipe_name": "鮭ほぐし丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE044",
+    "recipe_name": "鮭ほぐし丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE044",
+    "recipe_name": "鮭ほぐし丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE044",
+    "recipe_name": "鮭ほぐし丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE045",
+    "recipe_name": "まぐろ照り焼き丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE045",
+    "recipe_name": "まぐろ照り焼き丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE045",
+    "recipe_name": "まぐろ照り焼き丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE045",
+    "recipe_name": "まぐろ照り焼き丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE046",
+    "recipe_name": "たらあんかけ丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE046",
+    "recipe_name": "たらあんかけ丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE046",
+    "recipe_name": "たらあんかけ丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE046",
+    "recipe_name": "たらあんかけ丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE047",
+    "recipe_name": "鶏もも照り焼き丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE047",
+    "recipe_name": "鶏もも照り焼き丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE047",
+    "recipe_name": "鶏もも照り焼き丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE047",
+    "recipe_name": "鶏もも照り焼き丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE048",
+    "recipe_name": "豚もも塩だれ丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE048",
+    "recipe_name": "豚もも塩だれ丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE048",
+    "recipe_name": "豚もも塩だれ丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE048",
+    "recipe_name": "豚もも塩だれ丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE049",
+    "recipe_name": "牛しぐれ卵黄風丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE049",
+    "recipe_name": "牛しぐれ卵黄風丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE049",
+    "recipe_name": "牛しぐれ卵黄風丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE049",
+    "recipe_name": "牛しぐれ卵黄風丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE050",
+    "recipe_name": "さばみそ丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE050",
+    "recipe_name": "さばみそ丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE050",
+    "recipe_name": "さばみそ丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE050",
+    "recipe_name": "さばみそ丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE051",
+    "recipe_name": "鯛だし茶漬け風ごはん",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE051",
+    "recipe_name": "鯛だし茶漬け風ごはん",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE051",
+    "recipe_name": "鯛だし茶漬け風ごはん",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE051",
+    "recipe_name": "鯛だし茶漬け風ごはん",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE052",
+    "recipe_name": "かつお生姜丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE052",
+    "recipe_name": "かつお生姜丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE052",
+    "recipe_name": "かつお生姜丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE052",
+    "recipe_name": "かつお生姜丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE053",
+    "recipe_name": "鶏そぼろ丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE053",
+    "recipe_name": "鶏そぼろ丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE053",
+    "recipe_name": "鶏そぼろ丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE053",
+    "recipe_name": "鶏そぼろ丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE054",
+    "recipe_name": "豚そぼろ温玉風丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE054",
+    "recipe_name": "豚そぼろ温玉風丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE054",
+    "recipe_name": "豚そぼろ温玉風丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE054",
+    "recipe_name": "豚そぼろ温玉風丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE055",
+    "recipe_name": "牛そぼろビビンバ風丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE055",
+    "recipe_name": "牛そぼろビビンバ風丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE055",
+    "recipe_name": "牛そぼろビビンバ風丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE055",
+    "recipe_name": "牛そぼろビビンバ風丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE056",
+    "recipe_name": "鶏むね塩麹風丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE056",
+    "recipe_name": "鶏むね塩麹風丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE056",
+    "recipe_name": "鶏むね塩麹風丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE056",
+    "recipe_name": "鶏むね塩麹風丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE057",
+    "recipe_name": "豚ヒレみそ焼き丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE057",
+    "recipe_name": "豚ヒレみそ焼き丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE057",
+    "recipe_name": "豚ヒレみそ焼き丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE057",
+    "recipe_name": "豚ヒレみそ焼き丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE058",
+    "recipe_name": "牛肩ロース焼肉丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE058",
+    "recipe_name": "牛肩ロース焼肉丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE058",
+    "recipe_name": "牛肩ロース焼肉丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE058",
+    "recipe_name": "牛肩ロース焼肉丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE059",
+    "recipe_name": "鮭バター丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE059",
+    "recipe_name": "鮭バター丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE059",
+    "recipe_name": "鮭バター丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE059",
+    "recipe_name": "鮭バター丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE060",
+    "recipe_name": "たら卵とじ丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE060",
+    "recipe_name": "たら卵とじ丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE060",
+    "recipe_name": "たら卵とじ丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE060",
+    "recipe_name": "たら卵とじ丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE061",
+    "recipe_name": "まぐろごま醤油丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE061",
+    "recipe_name": "まぐろごま醤油丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE061",
+    "recipe_name": "まぐろごま醤油丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE061",
+    "recipe_name": "まぐろごま醤油丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE062",
+    "recipe_name": "鶏ももトマト丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE062",
+    "recipe_name": "鶏ももトマト丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE062",
+    "recipe_name": "鶏ももトマト丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE062",
+    "recipe_name": "鶏ももトマト丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE063",
+    "recipe_name": "豚肩ローススタミナ丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE063",
+    "recipe_name": "豚肩ローススタミナ丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE063",
+    "recipe_name": "豚肩ローススタミナ丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE063",
+    "recipe_name": "豚肩ローススタミナ丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE064",
+    "recipe_name": "牛ヒレ和風ステーキ丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE064",
+    "recipe_name": "牛ヒレ和風ステーキ丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE064",
+    "recipe_name": "牛ヒレ和風ステーキ丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE064",
+    "recipe_name": "牛ヒレ和風ステーキ丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE065",
+    "recipe_name": "いわし蒲焼き丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE065",
+    "recipe_name": "いわし蒲焼き丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE065",
+    "recipe_name": "いわし蒲焼き丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE065",
+    "recipe_name": "いわし蒲焼き丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE066",
+    "recipe_name": "鯛塩昆布風丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE066",
+    "recipe_name": "鯛塩昆布風丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE066",
+    "recipe_name": "鯛塩昆布風丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE066",
+    "recipe_name": "鯛塩昆布風丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE067",
+    "recipe_name": "かつおにんにく醤油丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE067",
+    "recipe_name": "かつおにんにく醤油丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE067",
+    "recipe_name": "かつおにんにく醤油丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE067",
+    "recipe_name": "かつおにんにく醤油丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE068",
+    "recipe_name": "鶏そぼろ青菜丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE068",
+    "recipe_name": "鶏そぼろ青菜丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE068",
+    "recipe_name": "鶏そぼろ青菜丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE068",
+    "recipe_name": "鶏そぼろ青菜丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE069",
+    "recipe_name": "豚そぼろキムチ風丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE069",
+    "recipe_name": "豚そぼろキムチ風丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE069",
+    "recipe_name": "豚そぼろキムチ風丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE069",
+    "recipe_name": "豚そぼろキムチ風丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE070",
+    "recipe_name": "牛そぼろトマトチーズ丼",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、丼に盛り付ける準備をする。"
+  },
+  {
+    "recipe_id": "RICE070",
+    "recipe_name": "牛そぼろトマトチーズ丼",
+    "step_no": 2,
+    "step_description": "主材料は一口大に切り、野菜は火の通りがそろう大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE070",
+    "recipe_name": "牛そぼろトマトチーズ丼",
+    "step_no": 3,
+    "step_description": "フライパンまたは鍋で具材を加熱し、調味料で味を整える。卵を使う場合は最後に回し入れて半熟〜全熟にまとめる。"
+  },
+  {
+    "recipe_id": "RICE070",
+    "recipe_name": "牛そぼろトマトチーズ丼",
+    "step_no": 4,
+    "step_description": "ごはんの上に具材をのせ、必要に応じてのりやごまを散らして仕上げる。"
+  },
+  {
+    "recipe_id": "RICE071",
+    "recipe_name": "鶏むねチャーハン",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE071",
+    "recipe_name": "鶏むねチャーハン",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE071",
+    "recipe_name": "鶏むねチャーハン",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE071",
+    "recipe_name": "鶏むねチャーハン",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE072",
+    "recipe_name": "鮭レタス風チャーハン",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE072",
+    "recipe_name": "鮭レタス風チャーハン",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE072",
+    "recipe_name": "鮭レタス風チャーハン",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE072",
+    "recipe_name": "鮭レタス風チャーハン",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE073",
+    "recipe_name": "豚ヒレガーリックライス",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE073",
+    "recipe_name": "豚ヒレガーリックライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE073",
+    "recipe_name": "豚ヒレガーリックライス",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE073",
+    "recipe_name": "豚ヒレガーリックライス",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE074",
+    "recipe_name": "牛ももペッパーライス風",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE074",
+    "recipe_name": "牛ももペッパーライス風",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE074",
+    "recipe_name": "牛ももペッパーライス風",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE074",
+    "recipe_name": "牛ももペッパーライス風",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE075",
+    "recipe_name": "鶏そぼろチャーハン",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE075",
+    "recipe_name": "鶏そぼろチャーハン",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE075",
+    "recipe_name": "鶏そぼろチャーハン",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE075",
+    "recipe_name": "鶏そぼろチャーハン",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE076",
+    "recipe_name": "豚そぼろキムチ炒飯",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE076",
+    "recipe_name": "豚そぼろキムチ炒飯",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE076",
+    "recipe_name": "豚そぼろキムチ炒飯",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE076",
+    "recipe_name": "豚そぼろキムチ炒飯",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE077",
+    "recipe_name": "牛そぼろカレーピラフ",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE077",
+    "recipe_name": "牛そぼろカレーピラフ",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE077",
+    "recipe_name": "牛そぼろカレーピラフ",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE077",
+    "recipe_name": "牛そぼろカレーピラフ",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE078",
+    "recipe_name": "たらとブロッコリーのピラフ",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE078",
+    "recipe_name": "たらとブロッコリーのピラフ",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE078",
+    "recipe_name": "たらとブロッコリーのピラフ",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE078",
+    "recipe_name": "たらとブロッコリーのピラフ",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE079",
+    "recipe_name": "まぐろと枝豆の和風炒飯",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE079",
+    "recipe_name": "まぐろと枝豆の和風炒飯",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE079",
+    "recipe_name": "まぐろと枝豆の和風炒飯",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE079",
+    "recipe_name": "まぐろと枝豆の和風炒飯",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE080",
+    "recipe_name": "さばとしょうがの炒めごはん",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE080",
+    "recipe_name": "さばとしょうがの炒めごはん",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE080",
+    "recipe_name": "さばとしょうがの炒めごはん",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE080",
+    "recipe_name": "さばとしょうがの炒めごはん",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE081",
+    "recipe_name": "鶏ももバターライス",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE081",
+    "recipe_name": "鶏ももバターライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE081",
+    "recipe_name": "鶏ももバターライス",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE081",
+    "recipe_name": "鶏ももバターライス",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE082",
+    "recipe_name": "鮭きのこピラフ",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE082",
+    "recipe_name": "鮭きのこピラフ",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE082",
+    "recipe_name": "鮭きのこピラフ",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE082",
+    "recipe_name": "鮭きのこピラフ",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE083",
+    "recipe_name": "豚ももしょうゆ炒飯",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE083",
+    "recipe_name": "豚ももしょうゆ炒飯",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE083",
+    "recipe_name": "豚ももしょうゆ炒飯",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE083",
+    "recipe_name": "豚ももしょうゆ炒飯",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE084",
+    "recipe_name": "牛ヒレガーリックライス",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE084",
+    "recipe_name": "牛ヒレガーリックライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE084",
+    "recipe_name": "牛ヒレガーリックライス",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE084",
+    "recipe_name": "牛ヒレガーリックライス",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE085",
+    "recipe_name": "鯛青のり炒めごはん",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE085",
+    "recipe_name": "鯛青のり炒めごはん",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE085",
+    "recipe_name": "鯛青のり炒めごはん",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE085",
+    "recipe_name": "鯛青のり炒めごはん",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE086",
+    "recipe_name": "かつお和風ピラフ",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE086",
+    "recipe_name": "かつお和風ピラフ",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE086",
+    "recipe_name": "かつお和風ピラフ",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE086",
+    "recipe_name": "かつお和風ピラフ",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE087",
+    "recipe_name": "鶏そぼろトマトライス",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE087",
+    "recipe_name": "鶏そぼろトマトライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE087",
+    "recipe_name": "鶏そぼろトマトライス",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE087",
+    "recipe_name": "鶏そぼろトマトライス",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE088",
+    "recipe_name": "豚そぼろ和風ピラフ",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE088",
+    "recipe_name": "豚そぼろ和風ピラフ",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE088",
+    "recipe_name": "豚そぼろ和風ピラフ",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE088",
+    "recipe_name": "豚そぼろ和風ピラフ",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE089",
+    "recipe_name": "牛ももしそ風炒めごはん",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE089",
+    "recipe_name": "牛ももしそ風炒めごはん",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE089",
+    "recipe_name": "牛ももしそ風炒めごはん",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE089",
+    "recipe_name": "牛ももしそ風炒めごはん",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE090",
+    "recipe_name": "鮭枝豆バターライス",
+    "step_no": 1,
+    "step_description": "米はかために炊飯し、炒めやすいよう粗熱を取る。"
+  },
+  {
+    "recipe_id": "RICE090",
+    "recipe_name": "鮭枝豆バターライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は小さめの角切りまたは粗みじん切りにする。"
+  },
+  {
+    "recipe_id": "RICE090",
+    "recipe_name": "鮭枝豆バターライス",
+    "step_no": 3,
+    "step_description": "フライパンで油を熱し、主材料、野菜、卵の順に加熱してからごはんを加え、全体をほぐしながら炒める。"
+  },
+  {
+    "recipe_id": "RICE090",
+    "recipe_name": "鮭枝豆バターライス",
+    "step_no": 4,
+    "step_description": "調味料で味を調え、全体が均一になったら仕上げる。"
+  },
+  {
+    "recipe_id": "RICE091",
+    "recipe_name": "鶏むね卵雑炊",
+    "step_no": 1,
+    "step_description": "米は洗い、雑炊またはおかゆ用の水分量でやわらかく煮る。"
+  },
+  {
+    "recipe_id": "RICE091",
+    "recipe_name": "鶏むね卵雑炊",
+    "step_no": 2,
+    "step_description": "主材料は火が通りやすい大きさに切り、野菜は薄切りにする。"
+  },
+  {
+    "recipe_id": "RICE091",
+    "recipe_name": "鶏むね卵雑炊",
+    "step_no": 3,
+    "step_description": "鍋に主材料と野菜を加えて煮て、調味料で味を整える。"
+  },
+  {
+    "recipe_id": "RICE091",
+    "recipe_name": "鶏むね卵雑炊",
+    "step_no": 4,
+    "step_description": "卵を使う場合は最後に回し入れ、全体がまとまったら器に盛る。"
+  },
+  {
+    "recipe_id": "RICE092",
+    "recipe_name": "鮭と小松菜の雑炊",
+    "step_no": 1,
+    "step_description": "米は洗い、雑炊またはおかゆ用の水分量でやわらかく煮る。"
+  },
+  {
+    "recipe_id": "RICE092",
+    "recipe_name": "鮭と小松菜の雑炊",
+    "step_no": 2,
+    "step_description": "主材料は火が通りやすい大きさに切り、野菜は薄切りにする。"
+  },
+  {
+    "recipe_id": "RICE092",
+    "recipe_name": "鮭と小松菜の雑炊",
+    "step_no": 3,
+    "step_description": "鍋に主材料と野菜を加えて煮て、調味料で味を整える。"
+  },
+  {
+    "recipe_id": "RICE092",
+    "recipe_name": "鮭と小松菜の雑炊",
+    "step_no": 4,
+    "step_description": "卵を使う場合は最後に回し入れ、全体がまとまったら器に盛る。"
+  },
+  {
+    "recipe_id": "RICE093",
+    "recipe_name": "たらのやさしいおかゆ",
+    "step_no": 1,
+    "step_description": "米は洗い、雑炊またはおかゆ用の水分量でやわらかく煮る。"
+  },
+  {
+    "recipe_id": "RICE093",
+    "recipe_name": "たらのやさしいおかゆ",
+    "step_no": 2,
+    "step_description": "主材料は火が通りやすい大きさに切り、野菜は薄切りにする。"
+  },
+  {
+    "recipe_id": "RICE093",
+    "recipe_name": "たらのやさしいおかゆ",
+    "step_no": 3,
+    "step_description": "鍋に主材料と野菜を加えて煮て、調味料で味を整える。"
+  },
+  {
+    "recipe_id": "RICE093",
+    "recipe_name": "たらのやさしいおかゆ",
+    "step_no": 4,
+    "step_description": "卵を使う場合は最後に回し入れ、全体がまとまったら器に盛る。"
+  },
+  {
+    "recipe_id": "RICE094",
+    "recipe_name": "豚ヒレ中華風がゆ",
+    "step_no": 1,
+    "step_description": "米は洗い、雑炊またはおかゆ用の水分量でやわらかく煮る。"
+  },
+  {
+    "recipe_id": "RICE094",
+    "recipe_name": "豚ヒレ中華風がゆ",
+    "step_no": 2,
+    "step_description": "主材料は火が通りやすい大きさに切り、野菜は薄切りにする。"
+  },
+  {
+    "recipe_id": "RICE094",
+    "recipe_name": "豚ヒレ中華風がゆ",
+    "step_no": 3,
+    "step_description": "鍋に主材料と野菜を加えて煮て、調味料で味を整える。"
+  },
+  {
+    "recipe_id": "RICE094",
+    "recipe_name": "豚ヒレ中華風がゆ",
+    "step_no": 4,
+    "step_description": "卵を使う場合は最後に回し入れ、全体がまとまったら器に盛る。"
+  },
+  {
+    "recipe_id": "RICE095",
+    "recipe_name": "鯛しょうががゆ",
+    "step_no": 1,
+    "step_description": "米は洗い、雑炊またはおかゆ用の水分量でやわらかく煮る。"
+  },
+  {
+    "recipe_id": "RICE095",
+    "recipe_name": "鯛しょうががゆ",
+    "step_no": 2,
+    "step_description": "主材料は火が通りやすい大きさに切り、野菜は薄切りにする。"
+  },
+  {
+    "recipe_id": "RICE095",
+    "recipe_name": "鯛しょうががゆ",
+    "step_no": 3,
+    "step_description": "鍋に主材料と野菜を加えて煮て、調味料で味を整える。"
+  },
+  {
+    "recipe_id": "RICE095",
+    "recipe_name": "鯛しょうががゆ",
+    "step_no": 4,
+    "step_description": "卵を使う場合は最後に回し入れ、全体がまとまったら器に盛る。"
+  },
+  {
+    "recipe_id": "RICE096",
+    "recipe_name": "鶏そぼろ卵がゆ",
+    "step_no": 1,
+    "step_description": "米は洗い、雑炊またはおかゆ用の水分量でやわらかく煮る。"
+  },
+  {
+    "recipe_id": "RICE096",
+    "recipe_name": "鶏そぼろ卵がゆ",
+    "step_no": 2,
+    "step_description": "主材料は火が通りやすい大きさに切り、野菜は薄切りにする。"
+  },
+  {
+    "recipe_id": "RICE096",
+    "recipe_name": "鶏そぼろ卵がゆ",
+    "step_no": 3,
+    "step_description": "鍋に主材料と野菜を加えて煮て、調味料で味を整える。"
+  },
+  {
+    "recipe_id": "RICE096",
+    "recipe_name": "鶏そぼろ卵がゆ",
+    "step_no": 4,
+    "step_description": "卵を使う場合は最後に回し入れ、全体がまとまったら器に盛る。"
+  },
+  {
+    "recipe_id": "RICE097",
+    "recipe_name": "鮭とブロッコリーのリゾット風ごはん",
+    "step_no": 1,
+    "step_description": "米は洗い、雑炊またはおかゆ用の水分量でやわらかく煮る。"
+  },
+  {
+    "recipe_id": "RICE097",
+    "recipe_name": "鮭とブロッコリーのリゾット風ごはん",
+    "step_no": 2,
+    "step_description": "主材料は火が通りやすい大きさに切り、野菜は薄切りにする。"
+  },
+  {
+    "recipe_id": "RICE097",
+    "recipe_name": "鮭とブロッコリーのリゾット風ごはん",
+    "step_no": 3,
+    "step_description": "鍋に主材料と野菜を加えて煮て、調味料で味を整える。"
+  },
+  {
+    "recipe_id": "RICE097",
+    "recipe_name": "鮭とブロッコリーのリゾット風ごはん",
+    "step_no": 4,
+    "step_description": "卵を使う場合は最後に回し入れ、全体がまとまったら器に盛る。"
+  },
+  {
+    "recipe_id": "RICE098",
+    "recipe_name": "まぐろとトマトのリゾット風ごはん",
+    "step_no": 1,
+    "step_description": "米は洗い、雑炊またはおかゆ用の水分量でやわらかく煮る。"
+  },
+  {
+    "recipe_id": "RICE098",
+    "recipe_name": "まぐろとトマトのリゾット風ごはん",
+    "step_no": 2,
+    "step_description": "主材料は火が通りやすい大きさに切り、野菜は薄切りにする。"
+  },
+  {
+    "recipe_id": "RICE098",
+    "recipe_name": "まぐろとトマトのリゾット風ごはん",
+    "step_no": 3,
+    "step_description": "鍋に主材料と野菜を加えて煮て、調味料で味を整える。"
+  },
+  {
+    "recipe_id": "RICE098",
+    "recipe_name": "まぐろとトマトのリゾット風ごはん",
+    "step_no": 4,
+    "step_description": "卵を使う場合は最後に回し入れ、全体がまとまったら器に盛る。"
+  },
+  {
+    "recipe_id": "RICE099",
+    "recipe_name": "豚もも和風がゆ",
+    "step_no": 1,
+    "step_description": "米は洗い、雑炊またはおかゆ用の水分量でやわらかく煮る。"
+  },
+  {
+    "recipe_id": "RICE099",
+    "recipe_name": "豚もも和風がゆ",
+    "step_no": 2,
+    "step_description": "主材料は火が通りやすい大きさに切り、野菜は薄切りにする。"
+  },
+  {
+    "recipe_id": "RICE099",
+    "recipe_name": "豚もも和風がゆ",
+    "step_no": 3,
+    "step_description": "鍋に主材料と野菜を加えて煮て、調味料で味を整える。"
+  },
+  {
+    "recipe_id": "RICE099",
+    "recipe_name": "豚もも和風がゆ",
+    "step_no": 4,
+    "step_description": "卵を使う場合は最後に回し入れ、全体がまとまったら器に盛る。"
+  },
+  {
+    "recipe_id": "RICE100",
+    "recipe_name": "牛もも卵雑炊",
+    "step_no": 1,
+    "step_description": "米は洗い、雑炊またはおかゆ用の水分量でやわらかく煮る。"
+  },
+  {
+    "recipe_id": "RICE100",
+    "recipe_name": "牛もも卵雑炊",
+    "step_no": 2,
+    "step_description": "主材料は火が通りやすい大きさに切り、野菜は薄切りにする。"
+  },
+  {
+    "recipe_id": "RICE100",
+    "recipe_name": "牛もも卵雑炊",
+    "step_no": 3,
+    "step_description": "鍋に主材料と野菜を加えて煮て、調味料で味を整える。"
+  },
+  {
+    "recipe_id": "RICE100",
+    "recipe_name": "牛もも卵雑炊",
+    "step_no": 4,
+    "step_description": "卵を使う場合は最後に回し入れ、全体がまとまったら器に盛る。"
+  },
+  {
+    "recipe_id": "RICE101",
+    "recipe_name": "鶏そぼろ和風カレーライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE101",
+    "recipe_name": "鶏そぼろ和風カレーライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE101",
+    "recipe_name": "鶏そぼろ和風カレーライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE101",
+    "recipe_name": "鶏そぼろ和風カレーライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE102",
+    "recipe_name": "豚そぼろトマトカレーライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE102",
+    "recipe_name": "豚そぼろトマトカレーライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE102",
+    "recipe_name": "豚そぼろトマトカレーライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE102",
+    "recipe_name": "豚そぼろトマトカレーライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE103",
+    "recipe_name": "牛ももハヤシライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE103",
+    "recipe_name": "牛ももハヤシライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE103",
+    "recipe_name": "牛ももハヤシライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE103",
+    "recipe_name": "牛ももハヤシライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE104",
+    "recipe_name": "鮭クリームライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE104",
+    "recipe_name": "鮭クリームライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE104",
+    "recipe_name": "鮭クリームライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE104",
+    "recipe_name": "鮭クリームライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE105",
+    "recipe_name": "鶏そぼろドライカレーライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE105",
+    "recipe_name": "鶏そぼろドライカレーライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE105",
+    "recipe_name": "鶏そぼろドライカレーライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE105",
+    "recipe_name": "鶏そぼろドライカレーライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE106",
+    "recipe_name": "豚そぼろキーマライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE106",
+    "recipe_name": "豚そぼろキーマライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE106",
+    "recipe_name": "豚そぼろキーマライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE106",
+    "recipe_name": "豚そぼろキーマライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE107",
+    "recipe_name": "牛そぼろチーズキーマライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE107",
+    "recipe_name": "牛そぼろチーズキーマライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE107",
+    "recipe_name": "牛そぼろチーズキーマライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE107",
+    "recipe_name": "牛そぼろチーズキーマライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE108",
+    "recipe_name": "たらトマトリゾット風ライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE108",
+    "recipe_name": "たらトマトリゾット風ライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE108",
+    "recipe_name": "たらトマトリゾット風ライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE108",
+    "recipe_name": "たらトマトリゾット風ライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE109",
+    "recipe_name": "まぐろ和風ガーリックライスボウル",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE109",
+    "recipe_name": "まぐろ和風ガーリックライスボウル",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE109",
+    "recipe_name": "まぐろ和風ガーリックライスボウル",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE109",
+    "recipe_name": "まぐろ和風ガーリックライスボウル",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE110",
+    "recipe_name": "さばトマト煮込みライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE110",
+    "recipe_name": "さばトマト煮込みライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE110",
+    "recipe_name": "さばトマト煮込みライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE110",
+    "recipe_name": "さばトマト煮込みライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE111",
+    "recipe_name": "鶏ももバターカレーライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE111",
+    "recipe_name": "鶏ももバターカレーライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE111",
+    "recipe_name": "鶏ももバターカレーライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE111",
+    "recipe_name": "鶏ももバターカレーライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE112",
+    "recipe_name": "豚もも生姜カレーライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE112",
+    "recipe_name": "豚もも生姜カレーライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE112",
+    "recipe_name": "豚もも生姜カレーライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE112",
+    "recipe_name": "豚もも生姜カレーライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE113",
+    "recipe_name": "牛ヒレガーリックライスプレート",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE113",
+    "recipe_name": "牛ヒレガーリックライスプレート",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE113",
+    "recipe_name": "牛ヒレガーリックライスプレート",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE113",
+    "recipe_name": "牛ヒレガーリックライスプレート",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE114",
+    "recipe_name": "鮭枝豆クリームライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE114",
+    "recipe_name": "鮭枝豆クリームライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE114",
+    "recipe_name": "鮭枝豆クリームライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE114",
+    "recipe_name": "鮭枝豆クリームライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE115",
+    "recipe_name": "鶏むねトマトチーズライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE115",
+    "recipe_name": "鶏むねトマトチーズライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE115",
+    "recipe_name": "鶏むねトマトチーズライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE115",
+    "recipe_name": "鶏むねトマトチーズライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE116",
+    "recipe_name": "豚ヒレ和風ハヤシライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE116",
+    "recipe_name": "豚ヒレ和風ハヤシライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE116",
+    "recipe_name": "豚ヒレ和風ハヤシライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE116",
+    "recipe_name": "豚ヒレ和風ハヤシライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE117",
+    "recipe_name": "牛もも赤米スタミナライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE117",
+    "recipe_name": "牛もも赤米スタミナライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE117",
+    "recipe_name": "牛もも赤米スタミナライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE117",
+    "recipe_name": "牛もも赤米スタミナライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE118",
+    "recipe_name": "たらブロッコリークリームライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE118",
+    "recipe_name": "たらブロッコリークリームライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE118",
+    "recipe_name": "たらブロッコリークリームライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE118",
+    "recipe_name": "たらブロッコリークリームライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE119",
+    "recipe_name": "鯛和風トマトライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE119",
+    "recipe_name": "鯛和風トマトライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE119",
+    "recipe_name": "鯛和風トマトライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE119",
+    "recipe_name": "鯛和風トマトライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  },
+  {
+    "recipe_id": "RICE120",
+    "recipe_name": "かつおしょうがライス",
+    "step_no": 1,
+    "step_description": "米は洗って炊飯し、主食部分を先に準備する。"
+  },
+  {
+    "recipe_id": "RICE120",
+    "recipe_name": "かつおしょうがライス",
+    "step_no": 2,
+    "step_description": "主材料と野菜は食べやすい大きさに切る。"
+  },
+  {
+    "recipe_id": "RICE120",
+    "recipe_name": "かつおしょうがライス",
+    "step_no": 3,
+    "step_description": "鍋またはフライパンで香味野菜を炒め、主材料、野菜の順に加熱し、調味料で煮込むまたは炒め合わせる。"
+  },
+  {
+    "recipe_id": "RICE120",
+    "recipe_name": "かつおしょうがライス",
+    "step_no": 4,
+    "step_description": "炊き上がったごはんに合わせて盛り付ける。"
+  }
+]
