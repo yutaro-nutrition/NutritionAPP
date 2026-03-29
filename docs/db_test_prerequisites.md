@@ -65,7 +65,8 @@ docs 間の矛盾（明示）:
   - `create_tables.sql` 適用
   - `app_api/sql/migrations/*.sql` 適用
   - session内 schema 初期化/終了時クリーンアップ（`TEST_POSTGRES_SCHEMA` 未指定時）
-- `app_api/tests` は自動初期化fixtureを持たないため、以下が事前に必要:
+- `app_api/tests` は自動seed fixtureを持つ（`app_api/tests/conftest.py`）ため、通常は事前投入不要。
+  - fixture無効化時のみ、以下が事前に必要:
   - `recipes` テーブルに少なくとも1件
   - その `recipe_id` に対応する `recipe_ingredients` / `recipe_steps` が少なくとも1件
 
@@ -73,11 +74,12 @@ docs 間の矛盾（明示）:
 - integration tests (`tests/test_*_db_integration_postgres.py`):
   - seedは原則不要（テスト側で workbook 生成 + pipeline投入）。
 - `app_api/tests`:
-  - seed前提が必要。
-  - 推奨導線: `scripts/run_db_import.ps1`（`app_api/scripts/import_integrated_csv.py` を実行）で統合CSV投入。
+  - 最小seedは自動投入（`app_api/tests/fixtures/minimum_seed.py`）。
+  - `APP_API_TEST_AUTO_SEED=1` が既定。
+  - 手動導線が必要な場合のみ `scripts/run_db_import.ps1` を利用。
 
 不明点（明示）:
-- `app_api/tests/test_menu_api.py` と `test_vocabulary_api.py` が安定通過する最小データ件数・分布は現時点で未固定。
+- なし（`docs/app_api_minimum_seed_spec.md` で固定）。
 
 # 8. 典型失敗パターンと確認項目
 1. 接続失敗 (`test_db_connection` 失敗 / integrationがskip)
@@ -115,11 +117,12 @@ python -m pytest app_api/tests/test_db_connection.py app_api/tests/test_recipe_r
 
 ## 9.3 app_api向け seed 導線（推奨）
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts/run_db_import.ps1
+$env:APP_API_TEST_AUTO_SEED='1'
+python -m pytest app_api/tests/test_db_connection.py app_api/tests/test_recipe_repository.py app_api/tests/test_menu_api.py app_api/tests/test_vocabulary_api.py -q
 ```
 
 # 10. 注意事項
 - 本ガイドは「前提固定」が目的であり、テストコード変更は含まない。
 - `app_api/tests` は marker未付与でも運用上は `db_required` として扱う。
 - `docker start recipe-postgres-test` は標準ではなく、compose失敗時の例外手順。
-- 不明点（app_api最小seed要件）は後続タスクで固定する。
+- `app_api/tests` の最小seed仕様は `docs/app_api_minimum_seed_spec.md` を正本とする。

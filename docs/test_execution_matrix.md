@@ -28,10 +28,10 @@
 | `app_api/tests/test_openapi_error_responses.py` | optional | OpenAPI エラースキーマ契約確認 | FastAPI app import 可（DB依存は相対的に低い） | `python -m pytest app_api/tests/test_openapi_error_responses.py -q` | 変更時 | OpenAPI description/schema 変更 |
 | `tests/test_option2_db_integration_postgres.py` | db_required | Option2 の実DB契約（列/制約/backfill） | PostgreSQL + `TEST_POSTGRES_*` | `python -m pytest tests/test_option2_db_integration_postgres.py -m integration -q` | DB変更時 | DB未起動、接続設定不一致、schema/migration不整合 |
 | `tests/test_pipeline_db_integration_postgres.py` | db_required | pipeline + 実DB統合契約（skip/replace/update含む） | PostgreSQL + `TEST_POSTGRES_*` | `python -m pytest tests/test_pipeline_db_integration_postgres.py -m integration -q` | DB変更時 | DB未起動、schema指定誤り、loader実行失敗 |
-| `app_api/tests/test_db_connection.py` | db_required | API層 DB疎通確認 | `POSTGRES_*` 設定と接続先DB | `python -m pytest app_api/tests/test_db_connection.py -q` | 変更時 | `check_db_connection()` が False、接続情報不一致 |
-| `app_api/tests/test_recipe_repository.py` | db_required | repository の検索/詳細取得契約 | `POSTGRES_*` + recipes/ingredients/steps に最低1件以上 | `python -m pytest app_api/tests/test_recipe_repository.py -q` | 変更時 | DB空、テーブル欠落、データ前提不足 |
-| `app_api/tests/test_menu_api.py` | db_required | menu/recipes API 応答契約 | `POSTGRES_*` + メニュー生成可能な最低データ | `python -m pytest app_api/tests/test_menu_api.py -q` | リリース前 | 404増加、候補データ不足、DB接続不良 |
-| `app_api/tests/test_vocabulary_api.py` | db_required | vocabulary/menu正規化契約 | `POSTGRES_*` + `/recipes`,`/menu` が成立するデータ | `python -m pytest app_api/tests/test_vocabulary_api.py -q` | リリース前 | alias結果差異、DBデータ不足 |
+| `app_api/tests/test_db_connection.py` | db_required | API層 DB疎通確認 | `POSTGRES_*` 設定、`APP_API_TEST_AUTO_SEED=1`（既定） | `python -m pytest app_api/tests/test_db_connection.py -q` | 変更時 | `check_db_connection()` が False、接続情報不一致 |
+| `app_api/tests/test_recipe_repository.py` | db_required | repository の検索/詳細取得契約 | `POSTGRES_*`、自動seedで最小8 recipe | `python -m pytest app_api/tests/test_recipe_repository.py -q` | 変更時 | DB空、テーブル欠落、seed無効化 |
+| `app_api/tests/test_menu_api.py` | db_required | menu/recipes API 応答契約 | `POSTGRES_*`、slot別最小seed（staple/main/side/soup 各2） | `python -m pytest app_api/tests/test_menu_api.py -q` | リリース前 | 404増加、栄養条件を満たすseed不足、DB接続不良 |
+| `app_api/tests/test_vocabulary_api.py` | db_required | vocabulary/menu正規化契約 | `POSTGRES_*`、scene/meal_type語彙を含む最小seed | `python -m pytest app_api/tests/test_vocabulary_api.py -q` | リリース前 | alias結果差異、seed無効化、DB接続不良 |
 
 # 5. 常時実行セット
 - `tests/test_validator_canonical_v1.py`
@@ -85,6 +85,8 @@ python -m pytest app_api/tests/test_db_connection.py app_api/tests/test_recipe_r
 ## 8.2 運用判断
 - `app_api/tests` 全体を `always` には入れない。
 - 実運用では `db_required` として明示分離する。
+- 最小seedは `app_api/tests/conftest.py` が自動投入する（`APP_API_TEST_AUTO_SEED=1` 既定）。
+- seed詳細の正本は `docs/app_api_minimum_seed_spec.md`。
 
 # 9. pipeline系テストの責務境界
 - `tests/test_pipeline_loader_canonical_v1.py`
@@ -129,6 +131,6 @@ python -m pytest app_api/tests/test_db_connection.py app_api/tests/test_recipe_r
   - seed不足（特に app_api/repository/menu 系）
 
 # 12. 今後の整理候補
-- `app_api/tests` の seed 前提を deterministic に固定（専用fixtureまたはseed手順）。
+- 自動seedを pytest外から実行する薄いCLIを追加し、トラブルシュート時の再投入を簡単化。
 - `pipeline_loader_canonical_v1` と `pipeline_acceptance` の責務重複削減。
 - root と `scripts/` の二重エントリポイントの正本宣言。
