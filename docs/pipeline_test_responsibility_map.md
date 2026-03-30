@@ -97,3 +97,6 @@ pipeline系テストの重複を、単なる件数ではなく「担保してい
 - pipeline系の重複は「不要な重複」より「層差による必要重複」が主。
 - 直近は削除ではなく、責務名と境界の固定を先行する。
 - 実行順としては、非DB acceptance（速い）→疑似DB acceptance（契約）→実DB integration（最終担保）を維持しつつ、loader混在ケースのみ段階的に整理する。
+
+補足:
+- テスト関数単位の削減候補は `docs/pipeline_test_reduction_candidates.md` を正本とする。
