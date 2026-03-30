@@ -32,7 +32,7 @@ pipeline系テストを削減する前段として、テスト関数単位で「
 # 4. テストケース一覧
 | file | test function | label | layer | duplicate_with | decision | reason |
 |---|---|---|---|---|---|---|
-| `tests/test_pipeline_loader_canonical_v1.py` | `test_pipeline_accepts_canonical_template_as_valid_structure` | `pipeline_loader_mixed_gate` | non-db gate | `test_pipeline_acceptance::test_pipeline_accepts_canonical_template` | 移管候補 | gate正本は acceptance 側に寄せる方が責務整合 |
+| `tests/test_pipeline_loader_canonical_v1.py` | `test_pipeline_accepts_canonical_template_as_valid_structure` | `pipeline_loader_mixed_gate` | non-db gate | `tests/test_pipeline_acceptance.py::test_pipeline_accepts_canonical_template_as_valid_structure` | 実施済み（移管完了） | Prompt 13 で acceptance 側へ移管し、元位置から削減済み |
 | `tests/test_pipeline_loader_canonical_v1.py` | `test_pipeline_stops_on_invalid_sheet_name_and_keeps_first_failure` | `pipeline_loader_mixed_gate` | non-db gate | `test_pipeline_acceptance::test_pipeline_blocks_on_structure_error_invalid_sheet_name` | 移管候補 | gate重複。first_failure確認は acceptance 側へ移せる |
 | `tests/test_pipeline_loader_canonical_v1.py` | `test_pipeline_stops_on_required_invalid_samples` | `pipeline_loader_mixed_gate` | non-db gate | `tests/test_pipeline_acceptance.py::test_pipeline_blocks_on_required_invalid_samples` | 実施済み（移管完了） | Prompt 12 で acceptance 側へ移管し、元位置から削減済み |
 | `tests/test_pipeline_loader_canonical_v1.py` | `test_pipeline_does_not_call_db_loader_when_phase1_fails` | `pipeline_loader_mixed_gate` | pipeline orchestration (non-db) | `test_pipeline_db_import_acceptance::test_pipeline_blocks_db_import_on_validation_fail` | 将来削減候補 | fake-db acceptance で同層同期待を既に担保。移管後に削減候補 |
@@ -40,6 +40,7 @@ pipeline系テストを削減する前段として、テスト関数単位で「
 | `tests/test_pipeline_loader_canonical_v1.py` | `test_loader_sets_weight_g_only_for_unit_g` | `pipeline_loader_mixed_gate` | loader transform | 近似は `test_option2_g_unit...`（層差あり） | 保持必須 | loader段の変換規則であり実DB検証と別層 |
 | `tests/test_pipeline_loader_canonical_v1.py` | `test_loader_does_not_do_1to1_ml_to_g_for_shoyu` | `pipeline_loader_mixed_gate` | loader transform | 近似は `test_option2_ml_unit...`（層差あり） | 保持必須 | 密度推定しない変換ルールの固有担保 |
 | `tests/test_pipeline_acceptance.py` | `test_pipeline_accepts_canonical_template` | `pipeline_acceptance_gate_non_db` | non-db gate | loader_mixed 先頭ケース | 保持必須 | non-DB gate正本として維持 |
+| `tests/test_pipeline_acceptance.py` | `test_pipeline_accepts_canonical_template_as_valid_structure` | `pipeline_acceptance_gate_non_db` | non-db gate | 旧: `test_pipeline_loader_canonical_v1.py::test_pipeline_accepts_canonical_template_as_valid_structure` | 保持必須（移管受皿） | canonical成功の最小gate確認の受け皿として維持 |
 | `tests/test_pipeline_acceptance.py` | `test_pipeline_blocks_on_structure_error_invalid_sheet_name` | `pipeline_acceptance_gate_non_db` | non-db gate | loader_mixed invalid_sheet | 保持必須 | 構造エラー分類の正本 |
 | `tests/test_pipeline_acceptance.py` | `test_pipeline_blocks_on_structure_error_missing_recipe_column` | `pipeline_acceptance_gate_non_db` | non-db gate | loader_mixed invalid_samples群 | 保持必須 | 必須列欠落の独立確認 |
 | `tests/test_pipeline_acceptance.py` | `test_pipeline_blocks_on_value_error_invalid_bad_unit` | `pipeline_acceptance_gate_non_db` | non-db gate | loader_mixed invalid_samples群 | 保持必須 | VALUE_ERROR分類の明示担保 |
@@ -78,7 +79,6 @@ pipeline系テストを削減する前段として、テスト関数単位で「
 
 # 6. 移管候補ケース
 - `test_pipeline_loader_canonical_v1.py`
-  - `test_pipeline_accepts_canonical_template_as_valid_structure`
   - `test_pipeline_stops_on_invalid_sheet_name_and_keeps_first_failure`
 
 移管先候補:
@@ -125,4 +125,12 @@ pipeline系テストを削減する前段として、テスト関数単位で「
     -> `test_pipeline_acceptance.py::test_pipeline_blocks_on_required_invalid_samples`
 - 検証結果:
   - collect-only: 移管元 6件 / 移管先 6件
+  - 実行: 対象2ファイルで `12 passed`
+
+## 実施履歴（Prompt 13）
+- 実施済み2件目:
+  - `test_pipeline_loader_canonical_v1.py::test_pipeline_accepts_canonical_template_as_valid_structure`
+    -> `test_pipeline_acceptance.py::test_pipeline_accepts_canonical_template_as_valid_structure`
+- 検証結果:
+  - collect-only: 移管元 5件 / 移管先 7件
   - 実行: 対象2ファイルで `12 passed`

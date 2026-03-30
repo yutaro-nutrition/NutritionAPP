@@ -35,13 +35,6 @@ def run_pipeline(*args: str) -> tuple[int, dict]:
     return proc.returncode, payload
 
 
-def test_pipeline_accepts_canonical_template_as_valid_structure(tmp_path: Path) -> None:
-    rc, payload = run_pipeline(str(TEMPLATE), "--output-dir", str(tmp_path))
-    assert rc == 0
-    assert payload["status"] == "passed"
-    assert payload["summary"]["validation_status"] == "passed"
-
-
 def test_pipeline_stops_on_invalid_sheet_name_and_keeps_first_failure(tmp_path: Path) -> None:
     rc, payload = run_pipeline(str(INVALID_DIR / "invalid_sheet_name.xlsx"), "--output-dir", str(tmp_path))
     assert rc == 1

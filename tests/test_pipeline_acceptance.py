@@ -44,6 +44,15 @@ def test_pipeline_accepts_canonical_template(tmp_path: Path) -> None:
     assert report["errors"] == []
 
 
+def test_pipeline_accepts_canonical_template_as_valid_structure(tmp_path: Path) -> None:
+    proc = run_cli(str(TEMPLATE), "--output-dir", str(tmp_path))
+    report = parse_json_stdout(proc)
+
+    assert proc.returncode == 0
+    assert report["status"] == "passed"
+    assert report["summary"]["validation_status"] == "passed"
+
+
 def test_pipeline_blocks_on_structure_error_invalid_sheet_name(tmp_path: Path) -> None:
     proc = run_cli(str(INVALID_DIR / "invalid_sheet_name.xlsx"), "--output-dir", str(tmp_path))
     report = parse_json_stdout(proc)
