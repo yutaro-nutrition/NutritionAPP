@@ -64,6 +64,17 @@ def test_pipeline_blocks_on_structure_error_invalid_sheet_name(tmp_path: Path) -
     assert report["errors"][0]["all_errors"]
 
 
+def test_pipeline_stops_on_invalid_sheet_name_and_keeps_first_failure(tmp_path: Path) -> None:
+    proc = run_cli(str(INVALID_DIR / "invalid_sheet_name.xlsx"), "--output-dir", str(tmp_path))
+    report = parse_json_stdout(proc)
+
+    assert proc.returncode == 1
+    assert report["status"] == "failed"
+    assert report["errors"][0]["code"] == "P004_VALIDATION_FAILED"
+    assert report["errors"][0]["first_failure"]["error_class"] == "STRUCTURE_ERROR"
+    assert report["errors"][0]["all_errors"]
+
+
 def test_pipeline_blocks_on_structure_error_missing_recipe_column(tmp_path: Path) -> None:
     proc = run_cli(str(INVALID_DIR / "invalid_missing_recipe_column.xlsx"), "--output-dir", str(tmp_path))
     report = parse_json_stdout(proc)

@@ -35,15 +35,6 @@ def run_pipeline(*args: str) -> tuple[int, dict]:
     return proc.returncode, payload
 
 
-def test_pipeline_stops_on_invalid_sheet_name_and_keeps_first_failure(tmp_path: Path) -> None:
-    rc, payload = run_pipeline(str(INVALID_DIR / "invalid_sheet_name.xlsx"), "--output-dir", str(tmp_path))
-    assert rc == 1
-    assert payload["status"] == "failed"
-    assert payload["errors"][0]["code"] == "P004_VALIDATION_FAILED"
-    assert payload["errors"][0]["first_failure"]["error_class"] == "STRUCTURE_ERROR"
-    assert payload["errors"][0]["all_errors"]
-
-
 def test_pipeline_does_not_call_db_loader_when_phase1_fails(tmp_path: Path) -> None:
     marker = tmp_path / "db_loader_called.txt"
     fake_loader = tmp_path / "fake_loader.py"
