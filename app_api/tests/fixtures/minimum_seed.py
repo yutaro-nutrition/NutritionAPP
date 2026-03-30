@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from contextlib import contextmanager
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
@@ -11,6 +12,8 @@ from sqlalchemy.engine import Engine
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 CREATE_TABLES_SQL = PROJECT_ROOT / "app_api" / "sql" / "create_tables.sql"
 MIGRATIONS_DIR = PROJECT_ROOT / "app_api" / "sql" / "migrations"
+SEED_LOCK_KEY_1 = 90210
+SEED_LOCK_KEY_2 = 20260330
 
 
 @dataclass(frozen=True)
@@ -42,6 +45,23 @@ SEED_RECIPES: tuple[SeedRecipe, ...] = (
 
 def _read_sql(path: Path) -> str:
     return path.read_text(encoding="utf-8")
+
+
+@contextmanager
+def _seed_lock(engine: Engine):
+    raw = engine.raw_connection()
+    try:
+        with raw.cursor() as cur:
+            cur.execute("SELECT pg_advisory_lock(%s, %s)", (SEED_LOCK_KEY_1, SEED_LOCK_KEY_2))
+        yield
+        with raw.cursor() as cur:
+            cur.execute("SELECT pg_advisory_unlock(%s, %s)", (SEED_LOCK_KEY_1, SEED_LOCK_KEY_2))
+        raw.commit()
+    except Exception:
+        raw.rollback()
+        raise
+    finally:
+        raw.close()
 
 
 def apply_schema(engine: Engine) -> None:
@@ -109,6 +129,25 @@ def _insert_seed_rows(engine: Engine, recipes: Iterable[SeedRecipe]) -> None:
                         :tags, :cooking_method, :notes,
                         :source_file, :source_batch, :qa_status, :version
                     )
+                    ON CONFLICT (recipe_id) DO UPDATE SET
+                        recipe_name = EXCLUDED.recipe_name,
+                        category_lv1 = EXCLUDED.category_lv1,
+                        category_lv2 = EXCLUDED.category_lv2,
+                        category_lv3 = EXCLUDED.category_lv3,
+                        energy_kcal = EXCLUDED.energy_kcal,
+                        protein_g = EXCLUDED.protein_g,
+                        fat_g = EXCLUDED.fat_g,
+                        carbohydrate_g = EXCLUDED.carbohydrate_g,
+                        p_ratio = EXCLUDED.p_ratio,
+                        f_ratio = EXCLUDED.f_ratio,
+                        c_ratio = EXCLUDED.c_ratio,
+                        tags = EXCLUDED.tags,
+                        cooking_method = EXCLUDED.cooking_method,
+                        notes = EXCLUDED.notes,
+                        source_file = EXCLUDED.source_file,
+                        source_batch = EXCLUDED.source_batch,
+                        qa_status = EXCLUDED.qa_status,
+                        version = EXCLUDED.version
                     """
                 ),
                 {
@@ -145,6 +184,19 @@ def _insert_seed_rows(engine: Engine, recipes: Iterable[SeedRecipe]) -> None:
                         :food_id, 'RAW', :weight_g, :amount_value, 'g',
                         NULL, 'app_api_test_seed.csv', 'app_api_tests_minimum_seed', 'passed', 'v1'
                     )
+                    ON CONFLICT (recipe_id, line_no) DO UPDATE SET
+                        ingredient_name = EXCLUDED.ingredient_name,
+                        ingredient_alias = EXCLUDED.ingredient_alias,
+                        food_id = EXCLUDED.food_id,
+                        process = EXCLUDED.process,
+                        weight_g = EXCLUDED.weight_g,
+                        amount_value = EXCLUDED.amount_value,
+                        unit = EXCLUDED.unit,
+                        notes = EXCLUDED.notes,
+                        source_file = EXCLUDED.source_file,
+                        source_batch = EXCLUDED.source_batch,
+                        qa_status = EXCLUDED.qa_status,
+                        version = EXCLUDED.version
                     """
                 ),
                 {
@@ -165,6 +217,12 @@ def _insert_seed_rows(engine: Engine, recipes: Iterable[SeedRecipe]) -> None:
                         :recipe_id, 1, :instruction,
                         'app_api_test_seed.csv', 'app_api_tests_minimum_seed', 'passed', 'v1'
                     )
+                    ON CONFLICT (recipe_id, step_number) DO UPDATE SET
+                        instruction = EXCLUDED.instruction,
+                        source_file = EXCLUDED.source_file,
+                        source_batch = EXCLUDED.source_batch,
+                        qa_status = EXCLUDED.qa_status,
+                        version = EXCLUDED.version
                     """
                 ),
                 {
@@ -175,7 +233,8 @@ def _insert_seed_rows(engine: Engine, recipes: Iterable[SeedRecipe]) -> None:
 
 
 def ensure_minimum_seed(engine: Engine) -> None:
-    apply_schema(engine)
-    recipe_ids = [x.recipe_id for x in SEED_RECIPES]
-    _reset_seed_rows(engine, recipe_ids)
-    _insert_seed_rows(engine, SEED_RECIPES)
+    with _seed_lock(engine):
+        apply_schema(engine)
+        recipe_ids = [x.recipe_id for x in SEED_RECIPES]
+        _reset_seed_rows(engine, recipe_ids)
+        _insert_seed_rows(engine, SEED_RECIPES)

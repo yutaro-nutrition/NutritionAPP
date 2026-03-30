@@ -43,7 +43,7 @@
 | `test_vocabulary_api.py` | `/meta/options` + `/recipes` + `/menu/generate` | 語彙aliasで検索可能、menu生成が200を返せる |
 
 # 6. 採用した seed 戦略
-採用: **A + D（pytest fixture 自動seed + 専用 helper モジュール）**
+採用: **A + B + D（advisory lock 排他 + UPSERT冪等化 + 共通 helper）**
 
 理由:
 - 再現性: テスト開始時に毎回同じID群を再投入して状態を固定できる。
@@ -51,6 +51,7 @@
 - 保守性: seed定義を `app_api/tests/fixtures/minimum_seed.py` に集約。
 - 影響最小: API本体や既存assertionを変更しない。
 - 運用容易性: `pytest` 実行だけで seed が整う。
+- 競合耐性: `pg_advisory_lock` で seed 全体を最小排他し、`ON CONFLICT ... DO UPDATE` で挿入衝突を吸収。
 
 非採用:
 - 全量import導線（`scripts/run_db_import.ps1`）は重く、最小seed用途として過剰。
@@ -67,6 +68,8 @@
 - 実行内容:
   - schema適用（`create_tables.sql` + migrations）
   - 固定ID minimum seed 再投入
+- 実装上の共有:
+  - pytest autoseed と同じ `ensure_minimum_seed()` を呼び出す（正本一本化）。
 - 安全ガード:
   - DB名 allowlist（既定: `recipe_test_db`）に一致しない場合は停止。
   - `prod` / `production` / `live` を含む危険DB名は停止。
@@ -97,6 +100,7 @@ python -m pytest app_api/tests/test_db_connection.py app_api/tests/test_recipe_r
 - 自動seedは `recipe_test_db` 前提で運用することを推奨（本番DB流用は禁止）。
 - seed無効時、既存DBデータに依存して結果が不安定になる。
 - `APP_API_MENU_RANDOM_SEED` 未設定時は menu 生成候補の探索順が非決定になる（本番挙動）。
+- 本対応は「最低限の競合耐性」であり、pytest並列の完全最適化（速度最適化）までは対象外。
 - 起動標準は `scripts/start_test_postgres.ps1`。直接 compose 実行は環境依存で失敗し得る。
 - `docker start recipe-postgres-test` は標準失敗時の代替/復旧手順。
 

@@ -66,6 +66,7 @@ docs 間の矛盾（明示）:
   - `app_api/sql/migrations/*.sql` 適用
   - session内 schema 初期化/終了時クリーンアップ（`TEST_POSTGRES_SCHEMA` 未指定時）
 - `app_api/tests` は自動seed fixtureを持つ（`app_api/tests/conftest.py`）ため、通常は事前投入不要。
+  - `ensure_minimum_seed()` 内で advisory lock + UPSERT を使い、同時起動時の `UniqueViolation` を起こしにくくしている。
   - fixture無効化時のみ、以下が事前に必要:
   - `recipes` テーブルに少なくとも1件
   - その `recipe_id` に対応する `recipe_ingredients` / `recipe_steps` が少なくとも1件
@@ -76,6 +77,7 @@ docs 間の矛盾（明示）:
 - `app_api/tests`:
   - 最小seedは自動投入（`app_api/tests/fixtures/minimum_seed.py`）。
   - `APP_API_TEST_AUTO_SEED=1` が既定。
+  - seed CLI（`app_api/scripts/load_minimum_test_seed.py`）も同じ `ensure_minimum_seed()` を呼ぶ。
   - 手動導線が必要な場合のみ `scripts/run_db_import.ps1` を利用。
 
 不明点（明示）:
@@ -104,6 +106,13 @@ docs 間の矛盾（明示）:
   - `TEST_POSTGRES_SCHEMA` の指定値
   - 固定schema利用時の権限/存在
 
+5. 並列起動時競合（旧既知）
+- 症状:
+  - `recipes_pkey` の `UniqueViolation`
+- 現在の扱い:
+  - advisory lock + UPSERT で再発を抑制済み
+  - ただし完全な並列最適化（処理時間短縮）は未対応
+
 # 9. 実行コマンド例
 ## 9.1 integration tests
 ```bash
@@ -131,6 +140,6 @@ python app_api/scripts/load_minimum_test_seed.py
 
 # 10. 注意事項
 - 本ガイドは「前提固定」が目的であり、テストコード変更は含まない。
-- `app_api/tests` は marker未付与でも運用上は `db_required` として扱う。
+- `app_api/tests` は `integration` marker 付与済みテストを `db_required` として扱う。
 - `docker start recipe-postgres-test` は標準ではなく、compose失敗時の例外手順。
 - `app_api/tests` の最小seed仕様は `docs/app_api_minimum_seed_spec.md` を正本とする。
