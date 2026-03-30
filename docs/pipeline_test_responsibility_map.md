@@ -8,6 +8,15 @@ pipeline系テストの重複を、単なる件数ではなく「担保してい
 - `tests/test_option2_db_integration_postgres.py`
 - `tests/test_pipeline_db_integration_postgres.py`
 
+# 2.1 名称と責務のズレ（現状）
+| 現在名 | 実際の責務 | ズレ評価 | 誤解ポイント |
+|---|---|---|---|
+| `test_pipeline_loader_canonical_v1.py` | loader近接 + gate混在 | 大 | loader単体に見えるが gateケースが含まれる |
+| `test_pipeline_acceptance.py` | 非DB gate | 小 | 概ね一致 |
+| `test_pipeline_db_import_acceptance.py` | 疑似DB import受入 | 小 | `integration` と混同される余地はある |
+| `test_option2_db_integration_postgres.py` | Option2固有 実DB契約 | 小 | Option2固有である点は伝わる |
+| `test_pipeline_db_integration_postgres.py` | pipeline実DB運用契約 | 小 | `db_import_acceptance` との差が初見では曖昧 |
+
 # 3. 各テストの責務分解
 | test file | 主目的 | 入力 | 依存 | 保証内容 | 検知できる異常層 | 重なる相手 | 重なり評価 |
 |---|---|---|---|---|---|---|---|
@@ -66,6 +75,13 @@ pipeline系テストの重複を、単なる件数ではなく「担保してい
 - 片方を削っても、別層テストで同種回帰を検知できること
 3. Option2固有担保（migration/制約/backfill）は削減対象にしない。
 4. `skip/update/replace` と rollback 原子性は `test_pipeline_db_integration_postgres.py` を正本として維持する。
+
+# 7.1 名称・分類明確化の今回方針
+- 採用: **A + D（docs責務ラベル強化 + テストファイル先頭ラベル）**
+- 非採用: ファイル rename / ディレクトリ再配置
+  - 理由: 既存実行導線と docs 参照への影響が大きく、削減計画前の段階ではコストに対して効果が小さいため。
+- 追加実施:
+  - 対象5ファイルの先頭に `Responsibility label` を明記し、ファイルを開いた瞬間の判別性を上げた。
 
 # 8. 今すぐ削除しない理由
 - 現在の重複には「層が違うため必要な重複」が多く、先に削ると回帰検知力が落ちる。

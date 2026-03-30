@@ -107,6 +107,13 @@ python -m pytest app_api/tests -m integration -q
 # 9. pipeline系テストの責務境界
 詳細な責務分解と重複分類は `docs/pipeline_test_responsibility_map.md` を正本とする。
 
+責務ラベル（ファイル先頭コメント）:
+- `tests/test_pipeline_loader_canonical_v1.py`: `pipeline_loader_mixed_gate`
+- `tests/test_pipeline_acceptance.py`: `pipeline_acceptance_gate_non_db`
+- `tests/test_pipeline_db_import_acceptance.py`: `pipeline_db_import_acceptance_fake_db`
+- `tests/test_option2_db_integration_postgres.py`: `option2_db_integration_postgres_schema_contract`
+- `tests/test_pipeline_db_integration_postgres.py`: `pipeline_db_integration_postgres_runtime_contract`
+
 - `tests/test_pipeline_loader_canonical_v1.py`
   - **canonical loader責務**: loader近接の項目マッピング/値保持（amount/unit/weight）検証。
 - `tests/test_pipeline_acceptance.py`

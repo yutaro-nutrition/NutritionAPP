@@ -1,3 +1,8 @@
+"""Responsibility label: pipeline_db_integration_postgres_runtime_contract.
+
+Real-DB integration for pipeline runtime contract (skip/update/replace, atomicity, rollback).
+"""
+
 from __future__ import annotations
 
 import json

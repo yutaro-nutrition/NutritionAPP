@@ -1,3 +1,10 @@
+"""Responsibility label: pipeline_loader_mixed_gate.
+
+This module intentionally mixes:
+- non-DB pipeline gate checks (pass/fail on canonical/invalid samples)
+- loader-near canonical mapping checks (amount/unit/weight behavior)
+"""
+
 from __future__ import annotations
 
 import json

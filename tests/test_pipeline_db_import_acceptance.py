@@ -1,3 +1,8 @@
+"""Responsibility label: pipeline_db_import_acceptance_fake_db.
+
+Acceptance for `--import-db` orchestration using a fake DB loader (no real PostgreSQL).
+"""
+
 from __future__ import annotations
 
 import json

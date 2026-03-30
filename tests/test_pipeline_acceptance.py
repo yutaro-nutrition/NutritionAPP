@@ -1,3 +1,8 @@
+"""Responsibility label: pipeline_acceptance_gate_non_db.
+
+Non-DB acceptance gate for pipeline JSON contract and validation error classes.
+"""
+
 from __future__ import annotations
 
 import json

@@ -1,3 +1,8 @@
+"""Responsibility label: option2_db_integration_postgres_schema_contract.
+
+Real-DB integration for Option2-specific schema/constraint/backfill behavior.
+"""
+
 from __future__ import annotations
 
 import json
