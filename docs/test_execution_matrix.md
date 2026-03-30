@@ -105,6 +105,8 @@ python -m pytest app_api/tests -m integration -q
 - seed詳細の正本は `docs/app_api_minimum_seed_spec.md`。
 
 # 9. pipeline系テストの責務境界
+詳細な責務分解と重複分類は `docs/pipeline_test_responsibility_map.md` を正本とする。
+
 - `tests/test_pipeline_loader_canonical_v1.py`
   - **canonical loader責務**: loader近接の項目マッピング/値保持（amount/unit/weight）検証。
 - `tests/test_pipeline_acceptance.py`
