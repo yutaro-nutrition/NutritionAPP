@@ -60,6 +60,7 @@
 - `app_api/tests/conftest.py` の session/autouse fixture が自動実行:
   - schema適用（`create_tables.sql` + migrations）
   - 固定ID seed の再投入
+  - `APP_API_MENU_RANDOM_SEED` の既定値設定（menu生成結果の再現性確保）
 
 ## 7.2 pytest非依存の手動再投入（追加CLI）
 - `app_api/scripts/load_minimum_test_seed.py` を実行する。
@@ -88,16 +89,18 @@ python app_api/scripts/load_minimum_test_seed.py
 
 # app_api DB依存テスト（自動seed有効）
 set APP_API_TEST_AUTO_SEED=1
+set APP_API_MENU_RANDOM_SEED=20260330
 python -m pytest app_api/tests/test_db_connection.py app_api/tests/test_recipe_repository.py app_api/tests/test_menu_api.py app_api/tests/test_vocabulary_api.py -q
 ```
 
 # 9. 既知の制約
 - 自動seedは `recipe_test_db` 前提で運用することを推奨（本番DB流用は禁止）。
 - seed無効時、既存DBデータに依存して結果が不安定になる。
+- `APP_API_MENU_RANDOM_SEED` 未設定時は menu 生成候補の探索順が非決定になる（本番挙動）。
 - 起動標準は `scripts/start_test_postgres.ps1`。直接 compose 実行は環境依存で失敗し得る。
 - `docker start recipe-postgres-test` は標準失敗時の代替/復旧手順。
 
 # 10. 今後の改善候補
 - seed ID/値を JSON 定義に分離し、データ更新差分を見やすくする。
 - seed CLI の実行ログを `reports/` 配下へ残すオプション追加。
-- menu生成テスト向けに deterministic random 制御を検討する（現状はデータ量で安定化）。
+- menu生成テストの deterministic random 制御を seed更新手順とセットで運用文書化する。

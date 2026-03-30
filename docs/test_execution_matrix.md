@@ -100,6 +100,7 @@ python -m pytest app_api/tests -m integration -q
 - `app_api/tests` 全体を `always` には入れない。
 - 実運用では `db_required` として明示分離する。
 - 最小seedは `app_api/tests/conftest.py` が自動投入する（`APP_API_TEST_AUTO_SEED=1` 既定）。
+- menu生成の再現性は `APP_API_MENU_RANDOM_SEED` で固定する（`app_api/tests/conftest.py` 既定値あり）。
 - seed詳細の正本は `docs/app_api_minimum_seed_spec.md`。
 
 # 9. pipeline系テストの責務境界

@@ -12,6 +12,7 @@ if str(APP_ROOT) not in sys.path:
     sys.path.insert(0, str(APP_ROOT))
 
 os.environ.setdefault("POSTGRES_DB", "recipe_db")
+os.environ.setdefault("APP_API_MENU_RANDOM_SEED", "20260330")
 
 from app.db.session import engine
 from fixtures.minimum_seed import ensure_minimum_seed
