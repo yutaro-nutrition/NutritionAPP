@@ -51,19 +51,6 @@ def test_pipeline_stops_on_invalid_sheet_name_and_keeps_first_failure(tmp_path: 
     assert payload["errors"][0]["all_errors"]
 
 
-def test_pipeline_stops_on_required_invalid_samples(tmp_path: Path) -> None:
-    targets = [
-        "invalid_missing_recipe_column.xlsx",
-        "invalid_bad_unit.xlsx",
-        "invalid_duplicate_ingredient_no.xlsx",
-        "invalid_step_no_duplicate.xlsx",
-    ]
-    for name in targets:
-        rc, payload = run_pipeline(str(INVALID_DIR / name), "--output-dir", str(tmp_path))
-        assert rc == 1, name
-        assert payload["errors"][0]["code"] == "P004_VALIDATION_FAILED", name
-
-
 def test_pipeline_does_not_call_db_loader_when_phase1_fails(tmp_path: Path) -> None:
     marker = tmp_path / "db_loader_called.txt"
     fake_loader = tmp_path / "fake_loader.py"

@@ -34,7 +34,7 @@ pipeline系テストを削減する前段として、テスト関数単位で「
 |---|---|---|---|---|---|---|
 | `tests/test_pipeline_loader_canonical_v1.py` | `test_pipeline_accepts_canonical_template_as_valid_structure` | `pipeline_loader_mixed_gate` | non-db gate | `test_pipeline_acceptance::test_pipeline_accepts_canonical_template` | 移管候補 | gate正本は acceptance 側に寄せる方が責務整合 |
 | `tests/test_pipeline_loader_canonical_v1.py` | `test_pipeline_stops_on_invalid_sheet_name_and_keeps_first_failure` | `pipeline_loader_mixed_gate` | non-db gate | `test_pipeline_acceptance::test_pipeline_blocks_on_structure_error_invalid_sheet_name` | 移管候補 | gate重複。first_failure確認は acceptance 側へ移せる |
-| `tests/test_pipeline_loader_canonical_v1.py` | `test_pipeline_stops_on_required_invalid_samples` | `pipeline_loader_mixed_gate` | non-db gate | `test_pipeline_acceptance` の missing/bad_unit/duplicate群 | 移管候補 | invalid sample群の受け皿を acceptance に一本化可能 |
+| `tests/test_pipeline_loader_canonical_v1.py` | `test_pipeline_stops_on_required_invalid_samples` | `pipeline_loader_mixed_gate` | non-db gate | `tests/test_pipeline_acceptance.py::test_pipeline_blocks_on_required_invalid_samples` | 実施済み（移管完了） | Prompt 12 で acceptance 側へ移管し、元位置から削減済み |
 | `tests/test_pipeline_loader_canonical_v1.py` | `test_pipeline_does_not_call_db_loader_when_phase1_fails` | `pipeline_loader_mixed_gate` | pipeline orchestration (non-db) | `test_pipeline_db_import_acceptance::test_pipeline_blocks_db_import_on_validation_fail` | 将来削減候補 | fake-db acceptance で同層同期待を既に担保。移管後に削減候補 |
 | `tests/test_pipeline_loader_canonical_v1.py` | `test_loader_reads_canonical_sheets_and_maps_amount_value_unit` | `pipeline_loader_mixed_gate` | loader transform | 近似なし | 保持必須 | loader変換仕様の固有担保 |
 | `tests/test_pipeline_loader_canonical_v1.py` | `test_loader_sets_weight_g_only_for_unit_g` | `pipeline_loader_mixed_gate` | loader transform | 近似は `test_option2_g_unit...`（層差あり） | 保持必須 | loader段の変換規則であり実DB検証と別層 |
@@ -43,6 +43,7 @@ pipeline系テストを削減する前段として、テスト関数単位で「
 | `tests/test_pipeline_acceptance.py` | `test_pipeline_blocks_on_structure_error_invalid_sheet_name` | `pipeline_acceptance_gate_non_db` | non-db gate | loader_mixed invalid_sheet | 保持必須 | 構造エラー分類の正本 |
 | `tests/test_pipeline_acceptance.py` | `test_pipeline_blocks_on_structure_error_missing_recipe_column` | `pipeline_acceptance_gate_non_db` | non-db gate | loader_mixed invalid_samples群 | 保持必須 | 必須列欠落の独立確認 |
 | `tests/test_pipeline_acceptance.py` | `test_pipeline_blocks_on_value_error_invalid_bad_unit` | `pipeline_acceptance_gate_non_db` | non-db gate | loader_mixed invalid_samples群 | 保持必須 | VALUE_ERROR分類の明示担保 |
+| `tests/test_pipeline_acceptance.py` | `test_pipeline_blocks_on_required_invalid_samples` | `pipeline_acceptance_gate_non_db` | non-db gate | 旧: `test_pipeline_loader_canonical_v1.py::test_pipeline_stops_on_required_invalid_samples` | 保持必須（移管受皿） | invalid sample一括gate確認の受け皿として維持 |
 | `tests/test_pipeline_acceptance.py` | `test_pipeline_blocks_on_uniqueness_error_samples` | `pipeline_acceptance_gate_non_db` | non-db gate | loader_mixed invalid_samples群 | 保持必須 | UNIQUENESS_ERROR分類の正本 |
 | `tests/test_pipeline_db_import_acceptance.py` | `test_pipeline_imports_to_db_only_when_validation_passes` | `pipeline_db_import_acceptance_fake_db` | fake-db orchestration | `test_postgres_normal_import_only_after_validation_passes`（層差） | 保持必須 | 実DB不要で import経路契約を高速担保 |
 | `tests/test_pipeline_db_import_acceptance.py` | `test_pipeline_loader_workbook_keeps_food_id_and_process` | `pipeline_db_import_acceptance_fake_db` | loader-compat artifact | `test_postgres_persists_food_id...`（層差） | 保持必須 | loader互換ブック生成契約の固有担保 |
@@ -79,7 +80,6 @@ pipeline系テストを削減する前段として、テスト関数単位で「
 - `test_pipeline_loader_canonical_v1.py`
   - `test_pipeline_accepts_canonical_template_as_valid_structure`
   - `test_pipeline_stops_on_invalid_sheet_name_and_keeps_first_failure`
-  - `test_pipeline_stops_on_required_invalid_samples`
 
 移管先候補:
 - `tests/test_pipeline_acceptance.py`（non-db gate正本）
@@ -118,3 +118,11 @@ pipeline系テストを削減する前段として、テスト関数単位で「
 1. 第1段階: gate混在ケースの移管（loader_mixed -> pipeline_acceptance）
 2. 第2段階: 移管後に loader_mixed から重複1件を最小削減
 3. 第3段階: Option2非固有候補の再判定（削減ではなく再分類）
+
+## 実施履歴（Prompt 12）
+- 実施済み1件:
+  - `test_pipeline_loader_canonical_v1.py::test_pipeline_stops_on_required_invalid_samples`
+    -> `test_pipeline_acceptance.py::test_pipeline_blocks_on_required_invalid_samples`
+- 検証結果:
+  - collect-only: 移管元 6件 / 移管先 6件
+  - 実行: 対象2ファイルで `12 passed`

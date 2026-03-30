@@ -100,3 +100,4 @@ pipeline系テストの重複を、単なる件数ではなく「担保してい
 
 補足:
 - テスト関数単位の削減候補は `docs/pipeline_test_reduction_candidates.md` を正本とする。
+- Prompt 12 で `loader_mixed` から gate混在1件を acceptance 側へ移管済み（候補表の実施履歴参照）。
