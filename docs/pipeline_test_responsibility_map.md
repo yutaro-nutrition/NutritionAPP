@@ -103,3 +103,4 @@ pipeline系テストの重複を、単なる件数ではなく「担保してい
 - Prompt 12 で `loader_mixed` から gate混在1件を acceptance 側へ移管済み（候補表の実施履歴参照）。
 - Prompt 13 で `loader_mixed` から gate混在2件目を acceptance 側へ移管済み（候補表の実施履歴参照）。
 - Prompt 14 で `loader_mixed` から gate混在3件目を acceptance 側へ移管済み（この系列の実削減は一旦区切り）。
+- Prompt 15 で loader残件を再判定し、残件4件中3件は保持必須、1件は将来再検討候補として固定（`docs/pipeline_loader_remaining_cases_review.md`）。

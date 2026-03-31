@@ -94,6 +94,12 @@ pipeline系テストを削減する前段として、テスト関数単位で「
 - `test_pipeline_db_import_acceptance.py::test_pipeline_blocks_db_import_on_validation_fail` 側で同一期待（`db_import_executed=False` など）を維持できること。
 - 受け皿側の入力性質（invalid sample）と期待が同等であることを確認すること。
 
+補足（Prompt 15）:
+- `docs/pipeline_loader_remaining_cases_review.md` により、loader残件4件のうち
+  - 保持必須: 3件（loader変換固有）
+  - 将来再検討: 1件（`test_pipeline_does_not_call_db_loader_when_phase1_fails`）
+  を固定。
+
 # 8. 今は触らないケース
 - `test_option2_db_integration_postgres.py::test_option2_validator_gate_blocks_invalid_before_db_write`
 - `test_option2_db_integration_postgres.py::test_option2_canonical_template_with_header_only_is_db_safe`

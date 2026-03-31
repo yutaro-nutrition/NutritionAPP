@@ -107,6 +107,7 @@ python -m pytest app_api/tests -m integration -q
 # 9. pipeline系テストの責務境界
 詳細な責務分解と重複分類は `docs/pipeline_test_responsibility_map.md` を正本とする。
 テスト関数単位の削減候補は `docs/pipeline_test_reduction_candidates.md` を参照する。
+loader残件の再判定は `docs/pipeline_loader_remaining_cases_review.md` を参照する。
 
 責務ラベル（ファイル先頭コメント）:
 - `tests/test_pipeline_loader_canonical_v1.py`: `pipeline_loader_mixed_gate`
