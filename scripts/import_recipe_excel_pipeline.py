@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import shutil
 import subprocess
 import sys
 import uuid
@@ -175,6 +176,12 @@ def run_db_import(
     )
 
 
+def materialize_loader_compat_workbook(source_excel: Path, output_path: Path) -> Path:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(source_excel, output_path)
+    return output_path
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Canonical recipe import pipeline")
     parser.add_argument("input_excel", help="Path to canonical recipe .xlsx")
@@ -231,6 +238,7 @@ def main() -> int:
     run_id = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S") + "_" + uuid.uuid4().hex[:8]
     pipeline_report_path = output_dir / f"import_pipeline_report_{run_id}.json"
     db_report_path = output_dir / f"db_import_report_{run_id}.json"
+    loader_compat_path = output_dir / f"loader_compat_{run_id}.xlsx"
 
     started_at = now_utc_iso()
     steps: list[StepRun] = []
@@ -238,6 +246,7 @@ def main() -> int:
     errors: list[dict[str, Any]] = []
     validation_result: dict[str, Any] = {}
     validation_status = "skipped"
+    loader_compat_excel: Path | None = None
 
     detect_started = now_utc_iso()
     detection = detect_workbook(input_excel)
@@ -289,9 +298,21 @@ def main() -> int:
                 }
             )
 
+    if args.import_db and not errors:
+        try:
+            loader_compat_excel = materialize_loader_compat_workbook(input_excel, loader_compat_path)
+        except Exception as exc:
+            errors.append(
+                {
+                    "code": "P005_LOADER_COMPAT_BUILD_FAILED",
+                    "message": "Failed to create loader-compatible workbook.",
+                    "details": {"error": str(exc)},
+                }
+            )
+
     db_import_executed = False
     if args.import_db and not errors:
-        db_step = run_db_import(input_excel, db_report_path, args, loader_script)
+        db_step = run_db_import(loader_compat_excel or input_excel, db_report_path, args, loader_script)
         steps.append(db_step)
         db_import_executed = True
         if db_step.status == "failed":
@@ -323,6 +344,7 @@ def main() -> int:
         "db_import_executed": db_import_executed,
         "artifacts": {
             "pipeline_report": str(pipeline_report_path),
+            "loader_compat_excel": str(loader_compat_excel) if loader_compat_excel and loader_compat_excel.exists() else None,
             "db_import_report": str(db_report_path) if db_report_path.exists() else None,
         },
         "summary": {

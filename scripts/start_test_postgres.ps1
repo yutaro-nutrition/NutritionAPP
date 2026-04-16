@@ -15,6 +15,27 @@ if (-not (Test-Path $ComposeFile)) {
 
 Write-Host "ProjectRoot: $ProjectRoot"
 Write-Host "ComposeFile: $ComposeFile"
+
+$existingNames = & docker ps -a --format "{{.Names}}"
+$legacyExists = $existingNames | Select-String -SimpleMatch $LegacyContainer
+
+if ($legacyExists) {
+    $isRunning = (& docker inspect -f "{{.State.Running}}" $LegacyContainer).Trim()
+    if ($isRunning -eq "true") {
+        Write-Host "Legacy test container is already running: $LegacyContainer"
+        exit 0
+    }
+
+    Write-Host "Legacy test container exists. Starting $LegacyContainer directly..."
+    & docker start $LegacyContainer
+    if ($LASTEXITCODE -eq 0) {
+        Write-Host "Started by legacy direct-start successfully."
+        exit 0
+    }
+
+    throw "Failed to start existing test container: $LegacyContainer"
+}
+
 Write-Host "Trying standard startup via docker compose..."
 
 $outFile = Join-Path $env:TEMP "codex_compose_out.txt"

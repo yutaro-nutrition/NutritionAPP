@@ -1,4 +1,4 @@
-﻿import { ActivityLevel, DayPlanType, GoalType, NutrientMap, Sex } from "@/types";
+import { ActivityLevel, GoalType, NutrientMap, Sex } from "@/types";
 
 export const ZERO_NUTRIENTS: NutrientMap = {
   kcal: 0,
@@ -164,11 +164,3 @@ export const NUTRIENT_DISPLAY = {
   vitamin_d: { label: "ビタミンD", unit: "μg" },
   retinol_activity_equivalent: { label: "レチノール活性当量", unit: "μg" },
 } as const;
-
-
-export const WEEK_DAY_TYPE_LABELS: Record<DayPlanType, string> = {
-  training: "練習日",
-  pre_game: "試合前日",
-  game_day: "試合当日",
-  off_day: "オフ日",
-};

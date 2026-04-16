@@ -22,7 +22,7 @@ class IngredientItem(BaseModel):
     line_no: int
     ingredient_name: str
     ingredient_alias: str | None = None
-    weight_g: float
+    weight_g: float | None = None
     notes: str | None = None
 
 
