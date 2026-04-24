@@ -81,11 +81,11 @@ Map UI components to API fields so frontend implementation can start immediately
 - component_name: `ingredients_list`
 - source_api: `GET /recipes/{recipe_id}`
 - request_dependency: `recipe_id`
-- response_fields: `ingredients[].line_no`, `ingredient_name`, `weight_g`, `notes`
+- response_fields: `ingredients[].line_no`, `ingredient_name`, `amount_value`, `unit`, `weight_g`, `notes`
 - display_purpose: materials section
 - empty_state: show empty message
 - error_state: inherit page-level error
-- implementation_note: sort already provided by API
+- implementation_note: sort already provided by API; display `amount_value unit` when present, otherwise fallback to `weight_g`
 
 ### Steps List
 - component_name: `steps_list`

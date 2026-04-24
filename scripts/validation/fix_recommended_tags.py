@@ -14,10 +14,40 @@ TAG_POST_GAME = "試合後"
 TAG_BULKING = "増量期"
 TAG_CUTTING = "減量期"
 TAG_PRE_GAME = "試合前"
+NUTRITION_TAGS = {
+    TAG_HIGH_PROTEIN,
+    TAG_LOW_FAT,
+    TAG_HIGH_CARB,
+    TAG_POST_GAME,
+    TAG_BULKING,
+    TAG_CUTTING,
+    TAG_PRE_GAME,
+}
 
 HARD_KEYWORDS = ["揚げ", "フライ", "唐辛子", "激辛", "にんにく", "ガーリック", "こってり", "脂身", "脂っこい"]
 
 TARGET_SHEETS = ["Ingredients", "Steps", "Recipe_Master"]
+
+
+def _fallback_tags_for_path(path: Path) -> list[str]:
+    name = path.name.lower()
+    if "main_seafood" in name or "main_fish" in name:
+        return ["魚介主菜"]
+    if "main_beef" in name:
+        return ["牛肉主菜"]
+    if "main_pork" in name:
+        return ["豚肉主菜"]
+    if "main_chicken" in name:
+        return ["鶏肉主菜"]
+    if "side_lowprotein" in name:
+        return ["副菜低タンパク"]
+    if "side_protein5" in name:
+        return ["副菜タンパク質5g程度"]
+    if "soup" in name:
+        return ["汁物"]
+    if "dessert" in name:
+        return ["デザート"]
+    return []
 
 
 def _normalize_text(v: Any) -> str:
@@ -106,6 +136,7 @@ def fix_tags_in_workbook(path: Path, write: bool = True) -> dict[str, Any]:
     master = sheets["Recipe_Master"].copy()
     ingredients = sheets["Ingredients"]
     steps = sheets["Steps"]
+    fallback_tags = _fallback_tags_for_path(path)
 
     required_master_cols = ["Recipe_ID", "Recipe_Name", "Energy(kcal)", "Protein(g)", "Fat(g)", "Carbohydrate(g)", "Tag"]
     if any(col not in master.columns for col in required_master_cols):
@@ -139,10 +170,13 @@ def fix_tags_in_workbook(path: Path, write: bool = True) -> dict[str, Any]:
                 instruction_text=step_map.get(rid, ""),
             )
 
-        merged = declared[:]
+        expected_set = set(expected)
+        merged = [tag for tag in declared if tag not in NUTRITION_TAGS or tag in expected_set]
         for tag in expected:
             if tag not in merged:
                 merged.append(tag)
+        if not merged:
+            merged.extend(fallback_tags)
         merged = [t for t in merged if set(t) != {"?"}]
         new_tag = ", ".join(merged)
         if _normalize_text(row.get("Tag")) != new_tag:

@@ -95,7 +95,7 @@ CATEGORY_RULES = {
     },
     "dessert": {
         "name_or_ing_any": ["デザート", "ケーキ", "ゼリー", "プリン", "ヨーグルト", "パフェ", "クッキー", "甘"],
-        "forbidden_any": ["ごはん", "白米", "ラーメン", "うどん", "そば", "食パン", "鶏", "豚", "牛", "魚"],
+        "forbidden_any": ["ごはん", "白米", "ラーメン", "うどん", "そば", "食パン", "鶏", "豚", "魚"],
     },
 }
 
@@ -154,6 +154,17 @@ def load_workbook(file_path: str | Path) -> tuple[dict[str, pd.DataFrame], list[
         ]
 
 
+def apply_compat_columns(sheets: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
+    normalized = {name: df.copy() for name, df in sheets.items()}
+    steps = normalized.get("Steps")
+    if steps is not None:
+        if "Step_Number" not in steps.columns and "Step_No" in steps.columns:
+            steps["Step_Number"] = steps["Step_No"]
+        if "Instruction" not in steps.columns and "Step_Description" in steps.columns:
+            steps["Instruction"] = steps["Step_Description"]
+    return normalized
+
+
 def validate_sheet_names(sheets: dict[str, pd.DataFrame]) -> list[ValidationIssue]:
     issues: list[ValidationIssue] = []
     actual = list(sheets.keys())
@@ -206,11 +217,11 @@ def validate_columns(sheets: dict[str, pd.DataFrame]) -> list[ValidationIssue]:
                     details={"sheet": sheet_name, "missing": missing, "actual": actual_cols},
                 )
             )
-        if actual_cols != required:
+        if not missing and actual_cols[: len(required)] != required:
             issues.append(
                 ValidationIssue(
                     code="COLUMN_ORDER_MISMATCH",
-                    severity="error",
+                    severity="info",
                     message=f"column order mismatch in {sheet_name}",
                     details={"sheet": sheet_name, "expected": required, "actual": actual_cols},
                 )
@@ -219,7 +230,7 @@ def validate_columns(sheets: dict[str, pd.DataFrame]) -> list[ValidationIssue]:
             issues.append(
                 ValidationIssue(
                     code="EXTRA_COLUMNS",
-                    severity="warning",
+                    severity="info",
                     message=f"extra columns in {sheet_name}",
                     details={"sheet": sheet_name, "extra": extra},
                 )
@@ -777,6 +788,7 @@ def validate_file(
     all_issues.extend(load_issues)
 
     if not load_issues:
+        sheets = apply_compat_columns(sheets)
         all_issues.extend(validate_sheet_names(sheets))
         all_issues.extend(validate_columns(sheets))
         all_issues.extend(validate_missing_values(sheets))

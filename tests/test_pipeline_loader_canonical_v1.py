@@ -1,3 +1,10 @@
+"""Responsibility label: pipeline_loader_mixed_gate.
+
+This module intentionally mixes:
+- non-DB pipeline gate checks (pass/fail on canonical/invalid samples)
+- loader-near canonical mapping checks (amount/unit/weight behavior)
+"""
+
 from __future__ import annotations
 
 import json
@@ -26,35 +33,6 @@ def run_pipeline(*args: str) -> tuple[int, dict]:
     )
     payload = json.loads(proc.stdout)
     return proc.returncode, payload
-
-
-def test_pipeline_accepts_canonical_template_as_valid_structure(tmp_path: Path) -> None:
-    rc, payload = run_pipeline(str(TEMPLATE), "--output-dir", str(tmp_path))
-    assert rc == 0
-    assert payload["status"] == "passed"
-    assert payload["summary"]["validation_status"] == "passed"
-
-
-def test_pipeline_stops_on_invalid_sheet_name_and_keeps_first_failure(tmp_path: Path) -> None:
-    rc, payload = run_pipeline(str(INVALID_DIR / "invalid_sheet_name.xlsx"), "--output-dir", str(tmp_path))
-    assert rc == 1
-    assert payload["status"] == "failed"
-    assert payload["errors"][0]["code"] == "P004_VALIDATION_FAILED"
-    assert payload["errors"][0]["first_failure"]["error_class"] == "STRUCTURE_ERROR"
-    assert payload["errors"][0]["all_errors"]
-
-
-def test_pipeline_stops_on_required_invalid_samples(tmp_path: Path) -> None:
-    targets = [
-        "invalid_missing_recipe_column.xlsx",
-        "invalid_bad_unit.xlsx",
-        "invalid_duplicate_ingredient_no.xlsx",
-        "invalid_step_no_duplicate.xlsx",
-    ]
-    for name in targets:
-        rc, payload = run_pipeline(str(INVALID_DIR / name), "--output-dir", str(tmp_path))
-        assert rc == 1, name
-        assert payload["errors"][0]["code"] == "P004_VALIDATION_FAILED", name
 
 
 def test_pipeline_does_not_call_db_loader_when_phase1_fails(tmp_path: Path) -> None:

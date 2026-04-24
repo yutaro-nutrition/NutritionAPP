@@ -26,26 +26,6 @@ export const recipeSearchSchema = z.object({
   keyword: z.string().optional(),
 });
 
-export const calculateRecipeSchema = z.object({
-  recipe_id: z.string().min(1),
-});
-
-export const evaluateNutritionSchema = z.object({
-  dailyNutrition: z.record(z.string(), z.number()),
-  targets: z.record(z.string(), z.number()),
-});
-
-export const generateDailyPlanSchema = z.object({
-  profile: profileSchema,
-  week_day_types: z.array(z.enum(["training", "pre_game", "game_day", "off_day"]))
-    .length(7)
-    .optional(),
-});
-
-export const shoppingListSchema = z.object({
-  recipe_ids: z.array(z.string().min(1)).min(1),
-});
-
 export const recipeIngredientsPerRecipeSchema = z
   .array(
     z.object({

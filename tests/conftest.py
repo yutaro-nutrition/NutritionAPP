@@ -51,7 +51,7 @@ def run_pipeline_cli(*args: str) -> subprocess.CompletedProcess[str]:
 def postgres_test_config() -> PostgresTestConfig:
     return PostgresTestConfig(
         host=os.getenv("TEST_POSTGRES_HOST", "127.0.0.1"),
-        port=int(os.getenv("TEST_POSTGRES_PORT", "55432")),
+        port=int(os.getenv("TEST_POSTGRES_PORT", "5432")),
         db_name=os.getenv("TEST_POSTGRES_DB", "recipe_test_db"),
         user=os.getenv("TEST_POSTGRES_USER", "recipe_test_user"),
         password=os.getenv("TEST_POSTGRES_PASSWORD", "recipe_test_password"),

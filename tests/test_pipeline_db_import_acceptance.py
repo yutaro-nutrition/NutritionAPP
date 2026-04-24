@@ -1,3 +1,8 @@
+"""Responsibility label: pipeline_db_import_acceptance_fake_db.
+
+Acceptance for `--import-db` orchestration using a fake DB loader (no real PostgreSQL).
+"""
+
 from __future__ import annotations
 
 import json
@@ -65,14 +70,34 @@ def norm(v: object) -> str | None:
     return s or None
 
 
+def to_int(v: object) -> int | None:
+    s = norm(v)
+    if s is None:
+        return None
+    try:
+        return int(float(s))
+    except ValueError:
+        return None
+
+
+def to_float(v: object) -> float | None:
+    s = norm(v)
+    if s is None:
+        return None
+    try:
+        return float(s)
+    except ValueError:
+        return None
+
+
 def read_keys(excel_path: Path) -> tuple[set[str], set[str], set[str]]:
     sheets = pd.read_excel(
         excel_path,
-        sheet_name=["Recipe_Master", "Ingredients", "Steps"],
+        sheet_name=["Recipes", "Ingredients", "Steps"],
         dtype=object,
         engine="openpyxl",
     )
-    recipes_df = sheets["Recipe_Master"].copy()
+    recipes_df = sheets["Recipes"].copy()
     ingredients_df = sheets["Ingredients"].copy()
     steps_df = sheets["Steps"].copy()
 
@@ -83,26 +108,22 @@ def read_keys(excel_path: Path) -> tuple[set[str], set[str], set[str]]:
         if rid and name:
             recipes.add(rid)
 
-    ingredients_df = ingredients_df.copy()
-    ingredients_df["Recipe_ID"] = ingredients_df["Recipe_ID"].map(norm)
-    ingredients_df = ingredients_df[ingredients_df["Recipe_ID"].notna()]
-    ingredients_df["line_no"] = ingredients_df.groupby("Recipe_ID").cumcount() + 1
-
     ingredients: set[str] = set()
     for _, row in ingredients_df.iterrows():
         rid = norm(row.get("Recipe_ID"))
+        ingredient_no = to_int(row.get("Ingredient_No"))
         name = norm(row.get("Ingredient_Name"))
-        weight = row.get("Weight(g)")
-        if rid and name and weight is not None and not pd.isna(weight) and float(weight) > 0:
-            ingredients.add(f"{rid}::{int(row['line_no'])}")
+        amount_value = to_float(row.get("Amount_Value"))
+        if rid and ingredient_no is not None and name and amount_value is not None and amount_value > 0:
+            ingredients.add(f"{rid}::{ingredient_no}")
 
     steps: set[str] = set()
     for _, row in steps_df.iterrows():
         rid = norm(row.get("Recipe_ID"))
-        step_no = row.get("Step_Number")
+        step_no = to_int(row.get("Step_No"))
         instruction = norm(row.get("Instruction"))
-        if rid and step_no is not None and not pd.isna(step_no) and instruction:
-            steps.add(f"{rid}::{int(float(step_no))}")
+        if rid and step_no is not None and instruction:
+            steps.add(f"{rid}::{step_no}")
 
     return recipes, ingredients, steps
 
@@ -204,7 +225,7 @@ def load_db_report_from_pipeline_report(pipeline_report: dict) -> dict:
 def load_loader_workbook_from_pipeline_report(pipeline_report: dict) -> dict[str, pd.DataFrame]:
     loader_workbook = pipeline_report["artifacts"]["loader_compat_excel"]
     assert loader_workbook
-    return pd.read_excel(loader_workbook, sheet_name=["Recipe_Master", "Ingredients", "Steps"], dtype=object, engine="openpyxl")
+    return pd.read_excel(loader_workbook, sheet_name=["Recipes", "Ingredients", "Steps"], dtype=object, engine="openpyxl")
 
 
 def test_pipeline_imports_to_db_only_when_validation_passes(tmp_path: Path) -> None:
@@ -244,7 +265,7 @@ def test_pipeline_loader_workbook_keeps_food_id_and_process(tmp_path: Path) -> N
     canonical = write_canonical_workbook(
         tmp_path / "canonical_food_process.xlsx",
         food_id="F9001",
-        process="みじん切り",
+        process="BOIL",
     )
     fake_loader = write_fake_db_loader(tmp_path / "fake_db_loader.py")
     state_file = tmp_path / "fake_db_state.json"
@@ -268,9 +289,9 @@ def test_pipeline_loader_workbook_keeps_food_id_and_process(tmp_path: Path) -> N
     assert pipeline.returncode == 0
     assert report["status"] == "passed"
     assert "Food_ID" in ingredients.columns
-    assert "Process" in ingredients.columns
+    assert "Process_Code" in ingredients.columns
     assert str(ingredients.loc[0, "Food_ID"]) == "F9001"
-    assert str(ingredients.loc[0, "Process"]) == "みじん切り"
+    assert str(ingredients.loc[0, "Process_Code"]) == "BOIL"
 
 
 def test_pipeline_blocks_db_import_on_validation_fail(tmp_path: Path) -> None:

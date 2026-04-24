@@ -1,5 +1,6 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
+import os
 import random
 from dataclasses import dataclass
 
@@ -45,6 +46,25 @@ def _score(candidate: MenuCandidate, target_kcal: float, target_protein_g: float
     return (protein_gap, kcal_gap, -protein)
 
 
+def _recipe_sort_key(recipe: object) -> str:
+    return str(getattr(recipe, "recipe_id", ""))
+
+
+def _candidate_key(candidate: MenuCandidate) -> tuple[str, ...]:
+    return tuple(sorted(_recipe_sort_key(recipe) for recipe in candidate.recipes))
+
+
+def _build_rng() -> random.Random:
+    seed_raw = os.getenv("APP_API_MENU_RANDOM_SEED")
+    if seed_raw in (None, ""):
+        return random.Random()
+    try:
+        seed: int | str = int(seed_raw)
+    except ValueError:
+        seed = seed_raw
+    return random.Random(seed)
+
+
 class MenuService:
     def __init__(self, repository: RecipeRepository) -> None:
         self.repository = repository
@@ -71,7 +91,7 @@ class MenuService:
                 scene=attempt[1],
             )
             if pool:
-                return pool, idx > 0
+                return sorted(pool, key=_recipe_sort_key), idx > 0
         return [], False
 
     @staticmethod
@@ -131,21 +151,22 @@ class MenuService:
         kcal_max = target_kcal * 1.2
 
         attempts = 2000
+        rng = _build_rng()
         candidates: list[MenuCandidate] = []
         seen_keys: set[tuple[str, ...]] = set()
 
         for _ in range(attempts):
             dessert = None
-            if include_dessert and dessert_pool and random.random() < 0.35:
-                dessert = random.choice(dessert_pool)
+            if include_dessert and dessert_pool and rng.random() < 0.35:
+                dessert = rng.choice(dessert_pool)
             candidate = MenuCandidate(
-                staple=random.choice(staple_pool),
-                main=random.choice(main_pool),
-                side=random.choice(side_pool),
-                soup=random.choice(soup_pool),
+                staple=rng.choice(staple_pool),
+                main=rng.choice(main_pool),
+                side=rng.choice(side_pool),
+                soup=rng.choice(soup_pool),
                 dessert=dessert,
             )
-            key = tuple(sorted([r.recipe_id for r in candidate.recipes]))
+            key = _candidate_key(candidate)
             if key in seen_keys:
                 continue
             seen_keys.add(key)
@@ -167,11 +188,14 @@ class MenuService:
         if not protein_matched:
             raise MenuGenerationError("No menu candidates satisfy the protein target.")
 
-        ranked = sorted(in_range, key=lambda c: _score(c, target_kcal, target_protein_g))
+        ranked = sorted(
+            in_range,
+            key=lambda c: (_score(c, target_kcal, target_protein_g), _candidate_key(c)),
+        )
         if len(ranked) < pattern_count:
             ranked += sorted(
                 [cand for cand in fallback if cand in protein_matched],
-                key=lambda c: _score(c, target_kcal, target_protein_g),
+                key=lambda c: (_score(c, target_kcal, target_protein_g), _candidate_key(c)),
             )
 
         picked = ranked[:pattern_count]
@@ -242,4 +266,3 @@ class MenuService:
                 }
             )
         return patterns
-

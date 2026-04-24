@@ -27,7 +27,7 @@ docker compose up -d postgres_test
 
 デフォルト接続情報（`docker-compose.yml`）:
 - host: `127.0.0.1`
-- port: `55432`
+- port: `5432`
 - db: `recipe_test_db`
 - user: `recipe_test_user`
 - password: `recipe_test_password`
@@ -74,7 +74,7 @@ python -m pytest tests/test_pipeline_db_import_acceptance.py tests/test_pipeline
 
 ## 失敗時の確認ポイント
 - `docker compose ps` で `postgres_test` が `healthy` か
-- ポート `55432` が他プロセスと競合していないか
+- ポート `5432` が他プロセスと競合していないか
 - `TEST_POSTGRES_*` 設定が compose と一致しているか
 - `python -m pytest ... -m integration -q -s` で詳細ログ確認
 

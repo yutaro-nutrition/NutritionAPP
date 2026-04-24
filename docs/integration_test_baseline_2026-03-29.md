@@ -21,7 +21,7 @@
 - 必須ではない（未指定時はデフォルトを利用）。
 - 任意設定可能な変数:
   - `TEST_POSTGRES_HOST` (default: `127.0.0.1`)
-  - `TEST_POSTGRES_PORT` (default: `55432`)
+  - `TEST_POSTGRES_PORT` (default: `5432`)
   - `TEST_POSTGRES_DB` (default: `recipe_test_db`)
   - `TEST_POSTGRES_USER` (default: `recipe_test_user`)
   - `TEST_POSTGRES_PASSWORD` (default: `recipe_test_password`)

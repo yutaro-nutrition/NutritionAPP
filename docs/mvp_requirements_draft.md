@@ -1,236 +1,183 @@
-# 文書の目的
-- 本書は、献立アプリのMVPスコープを固定し、初回検証に必要な要件を明文化するための要件定義ドラフトである。
-- 対象は「保護者が条件入力から候補を確認し、詳細を見て採用判断できる体験」に限定する。
-- 本書は文書化のみを目的とし、実装方針の拡張提案や将来機能の深掘りは行わない。
+# MVP Requirements Draft
 
-# MVPの価値仮説
-- 保護者が生活言語ベースの条件を入力すると、実データに基づく妥当な献立候補を短時間で確認できる。
-- 候補一覧と詳細表示の2段階で、保護者が採用可否を判断できる。
-- DB/API/UIを通した最小導線（入力→一覧→詳細）が成立すれば、MVPとして実用性検証が可能である。
+- Last synchronized: 2026-04-24
+- Implementation sources: `src/app/**`, `app_api/app/**`
+- Related specs: `docs/api_contract_mvp.md`, `docs/screen_io_specification_mvp.md`
 
-# 想定ユーザー
-- 主対象ユーザー: 保護者
-- 利用状況: 日々の食事準備時に、子どもの状況や目的に合う献立候補を短時間で探したい。
-- 利用上の前提: 専門的な栄養知識は前提にせず、生活言語で選択できるUIを用いる。
+# 1. Purpose
+This document fixes the current MVP scope for the meal planning application.
 
-# MVPスコープ
-- 対象画面は以下の3画面に限定する。
-  - 条件入力画面
-  - 献立候補一覧画面
-  - レシピ詳細画面
-- 対象フローは以下に限定する。
-  - 条件入力
-  - APIによる候補取得
-  - 候補一覧表示
-  - 一覧から詳細遷移
-  - 詳細表示による採用判断
-- 本MVPで判断する事項は以下に限定する。
-  - 候補の妥当性
-  - 実データを使ったDB/API返却の実用性
-  - UI上で一覧・詳細表示が成立するか
+The MVP verifies whether a user can:
+1. enter and save a profile,
+2. generate menu patterns from target kcal/protein and simple context,
+3. compare generated menu patterns,
+4. open recipe details and judge whether the recipe is usable.
 
-# 必須機能
-- 条件入力画面
-- 献立候補一覧画面
-- レシピ詳細画面
-- 該当候補なし表示
-- 入力エラー表示
-- API通信エラー表示
+# 2. Value Hypothesis
+- A user can get realistic menu candidates from actual recipe data without manual recipe browsing.
+- Kcal/protein gaps and generated notes are enough for an initial adoption decision.
+- Recipe detail pages provide enough ingredients, steps, and nutrition data to judge whether the menu can be cooked.
 
-# 後回し機能
-- 週間献立
-- 高度な栄養条件指定
-- 自動最適化
-- 代替食材提案
-- 推薦理由の高度化
-- 複数候補比較
+# 3. Target User
+- Primary user: guardian / household meal planner.
+- Usage context: choosing practical meals for a child or family member around training, daily meals, recovery, or performance goals.
+- Required knowledge level: no professional nutrition knowledge assumed.
 
-# 非対応機能
-- ログイン / 会員機能
-- 課金
-- 外部連携
-- AIチャット
-- お気に入り
-- 履歴
-- 比較
-- 共有
-- PDF出力
-- 買い物リスト
-- 条件保存
+# 4. Current MVP Scope
+## Included Screens
+| Route | Purpose |
+|---|---|
+| `/profile` | profile input and validation |
+| `/generate` | menu condition input and menu generation |
+| `/result` | generated menu pattern comparison |
+| `/recipes/[recipeId]` | recipe detail |
 
-# 画面別要件
-## 条件入力画面
-### 入力項目一覧
-- 基本情報
-  - 年齢（必須）
-  - 性別（必須）
-  - 身長（必須）
-  - 体重（必須）
-- 条件
-  - 食事の場面（朝食 / 昼食 / 夕食 / 補食）（必須）
-  - 目的（試合前 / 試合後 / 増量 / 普段の食事 / 疲労回復）（必須）
-  - 調理負担（すぐ作れる / 普通）（必須）
-  - 除外食材（任意）
+## Included APIs
+| API | Purpose |
+|---|---|
+| `POST /api/users/profile` | profile validation |
+| `GET /api/meta/options` | vocabulary options |
+| `POST /api/menu/generate` | menu generation |
+| `GET /api/recipes/{recipeId}` | recipe detail proxy |
+| `GET /api/recipes/search` | recipe search proxy |
+| `GET /meta/options` | FastAPI vocabulary options |
+| `POST /menu/generate` | FastAPI menu generation |
+| `GET /recipes` | FastAPI recipe list |
+| `GET /recipes/{recipe_id}` | FastAPI recipe detail |
 
-### 各入力項目の目的
-- 年齢・性別・身長・体重: 目安エネルギー帯の内部算出に使用する。
-- 食事の場面: 候補表示および並び順に反映する。
-- 目的: 候補の適合性判定（用途タグ整合）に反映する。
-- 調理負担: 調理時間や手軽さに応じた候補選定に反映する。
-- 除外食材: 候補から除外するために使用する。
+# 5. Required Features
+- Profile form validation and local persistence.
+- Target kcal/protein derivation from profile.
+- Editable target kcal/protein on the generation screen.
+- Meal timing and scene selectors driven by `/meta/options`, with frontend fallback options.
+- Optional dessert toggle.
+- Menu generation returning up to 3 patterns.
+- Result screen showing slots, total kcal/protein, kcal/protein gaps, condition evaluation, and generation note.
+- Recipe detail screen showing name, categories, tags, notes, ingredients, steps, and nutrition.
+- Error states for profile validation, options fetch failure, menu generation failure, missing result data, and recipe detail fetch failure.
 
-### 必須/任意の区分
-- 必須: 年齢、性別、身長、体重、食事の場面、目的、調理負担
-- 任意: 除外食材
+# 6. Out of Scope
+- login / membership
+- billing
+- external integrations
+- AI chat
+- favorites
+- history
+- comparison beyond current 3 pattern selector
+- sharing
+- PDF export
+- shopping list
+- server-side condition saving
+- weekly menu planning
+- automatic optimization beyond the current rule-based generator
+- advanced recommendation reasons
+- strict medical or diagnostic nutrition calculation
 
-### MVPで扱わない入力
-- 体脂肪率はMVP入力項目に含めない。
-- 理由は以下の2点に固定する。
-  - 保護者入力での値の信頼性にばらつきが出やすい。
-  - MVPでは候補選定体験の成立確認を優先し、入力項目を簡素化する。
+# 7. Profile Input Requirements
+Current profile fields:
+- age
+- sex
+- height_cm
+- weight_kg
+- optional body_fat_percent
+- sport
+- activity_level
+- goal_type
+- likes[]
+- dislikes[]
+- allergies[]
+- family_size
+- cook_time_breakfast_min
+- cook_time_dinner_min
+- budget_per_meal_jpy
 
-### 入力不備時の扱い
-- 必須項目未入力時はAPI送信を行わず、項目単位でエラー表示する。
-- 数値項目（年齢・身長・体重）が不正値の場合は、入力直下に修正指示を表示する。
-- エラー表示は「どの項目をどう直すか」が分かる文言に限定する。
+Current behavior:
+- profile validation is handled by `POST /api/users/profile`
+- accepted profile is saved to `localStorage` as `kondate_profile`
+- likes/dislikes/allergies and cook-time preferences are captured but not yet applied to `POST /menu/generate`
 
-### エネルギー帯の内部算出前提
-- 目安エネルギー帯は、年齢・性別・身長・体重をもとにアプリ内部で自動算出する。
-- 算出値は厳密な栄養診断値ではなく、候補提示の参考帯として扱う。
-- 食事の場面に応じて、候補表示または並び順に反映する。
-- エネルギー帯のみで適否を決めず、目的・場面・調理負担との整合を加味する。
-- 計算式の厳密な実装詳細はMVPスコープ外とする。ただし、参考帯として扱う前提は固定する。
+# 8. Menu Generation Requirements
+Input sent to the menu API:
+- `target_kcal`
+- `target_protein_g`
+- `meal_type`
+- `scene`
+- `include_dessert`
 
-## 献立候補一覧画面
-### 表示項目一覧
-- レシピ名
-- 主な用途
-- エネルギー
-- たんぱく質
-- 調理時間目安
-- 簡単な特徴
-- 詳細画面への導線
+Generation behavior:
+- required slots: staple, main, side, soup
+- optional slot: dessert
+- return target: 3 patterns when enough candidates exist
+- kcal fit: target kcal plus/minus 20%
+- protein fit: target protein as lower bound
+- if strict context filters are too narrow, the service may relax constraints and expose that through `constraint_evaluation.constraint_relaxed`
 
-### 候補の並び順の考え方
-- 優先順は以下とする。
-  1. 入力した目的との整合（用途タグ一致）
-  2. 食事の場面との整合
-  3. 目安エネルギー帯との近さ
-  4. 調理負担との整合
-- 並び順は「採用判断しやすい順」を目的とし、単一指標（エネルギー帯のみ）で決定しない。
+Not currently implemented:
+- `cooking_load`
+- `exclude_ingredients`
+- allergy exclusion
+- dislike exclusion
+- budget filtering
+- cook-time filtering
 
-### 該当候補がない場合の表示
-- 「該当する献立候補が見つかりませんでした」を表示する。
-- 再入力を促す最小導線（条件入力画面へ戻る）を表示する。
+# 9. Result Requirements
+The result screen must show:
+- generation conditions
+- selectable patterns
+- slot-level recipe names and categories
+- kcal/protein per slot
+- total kcal/protein per pattern
+- kcal/protein target vs actual gap
+- match level and constraint-relaxation state
+- generation note
+- link to each recipe detail
 
-### API返却失敗時の表示
-- 一覧領域に「候補の取得に失敗しました。時間をおいて再度お試しください。」を表示する。
-- 再試行導線を表示する。
-- 入力内容は保持し、再入力負担を増やさない。
+If no result is stored locally, the screen must guide the user back to `/generate`.
 
-## レシピ詳細画面
-### 表示項目一覧
-- レシピ名
-- 向いている場面
-- 材料
-- 分量
-- 手順
-- 栄養価
-- 補足コメント
+# 10. Recipe Detail Requirements
+The detail screen must show:
+- recipe name
+- category chips
+- tag chips when present
+- cooking method when present
+- notes when present
+- ingredients
+- steps
+- energy, protein, fat, carbohydrate
 
-### 一覧から遷移する前提
-- 本画面は候補一覧画面からの遷移を前提とする。
-- 一覧で選択した候補IDをもとに詳細を表示する。
+Current display fallback:
+- missing ingredient weight: "量未登録"
+- empty ingredients: "材料情報はまだ登録されていません。"
+- empty steps: "手順情報はまだ登録されていません。"
+- fetch failure: error panel with link back to `/result`
 
-### 実データを表示する前提
-- ダミー値ではなく、API/DBの実データを表示対象とする。
-- 一覧と詳細でレシピ情報が矛盾しないことを要件とする。
+# 11. Content Sufficiency Requirements
+The content corpus must support menu generation across the required slots:
+- staple
+- main
+- side
+- soup
+- dessert, if `include_dessert=true`
 
-### 採用判断に必要な情報
-- 保護者が「作れるか」「目的に合うか」を判断できる情報を必須表示とする。
-- 最低限、材料・分量・手順・栄養価・用途情報が欠けないこと。
+Minimum useful recipe data:
+- `recipe_id`
+- `recipe_name`
+- category or recipe-id prefix sufficient for slot inference
+- energy/protein/fat/carbohydrate
+- tags
+- cooking_method
+- notes
+- ingredient rows
+- step rows
 
-# 入出力の概要
-- 入力（条件入力画面）
-  - 基本情報: 年齢、性別、身長、体重
-  - 条件: 食事の場面、目的、調理負担、除外食材
-- 内部処理
-  - 基本情報から目安エネルギー帯を自動算出
-  - 条件と合わせて候補検索APIを呼び出し
-- 出力（候補一覧画面）
-  - 候補リスト（名称、用途、栄養、調理時間、特徴）
-- 出力（レシピ詳細画面）
-  - 選択候補の詳細情報（材料、分量、手順、栄養価、補足）
+Current known gaps are tracked in `docs/content_inventory_report_2026-04-24.md`.
 
-# 表示項目とDB/API項目の対応関係
-## 条件入力項目 → API入力想定
-| 画面入力項目 | API入力想定 | 備考 |
-| --- | --- | --- |
-| 年齢 | `age` | 内部でエネルギー帯算出に使用 |
-| 性別 | `sex` | 内部でエネルギー帯算出に使用 |
-| 身長 | `height_cm` | 内部でエネルギー帯算出に使用 |
-| 体重 | `weight_kg` | 内部でエネルギー帯算出に使用 |
-| 食事の場面 | `meal_type` | 候補抽出・並び順に使用 |
-| 目的 | `scene` | 候補抽出・並び順に使用 |
-| 調理負担 | `cooking_load` | 候補抽出・並び順に使用 |
-| 除外食材 | `exclude_ingredients[]` | 除外条件として使用 |
-| 目安エネルギー帯（内部算出） | `target_energy_band` | ユーザー直接入力なし |
-
-## 候補一覧の表示項目 → API返却項目想定
-| 一覧表示項目 | API返却項目想定 | 不足時の扱い |
-| --- | --- | --- |
-| レシピ名 | `items[].name` | 必須。未返却はデータ不備扱い |
-| 主な用途 | `items[].tags` または `items[].notes` | 既存データで代替する |
-| エネルギー | `items[].energy_kcal` | 必須。未返却は「-」表示 |
-| たんぱく質 | `items[].protein_g` | 必須。未返却は「-」表示 |
-| 調理時間目安 | `items[].cooking_time_min` | 未保持時は仮表示項目として「不明」表示 |
-| 簡単な特徴 | `items[].notes` または `items[].tags` | 既存データで代替する |
-| 詳細画面への導線 | `items[].recipe_id` | 必須。詳細API呼び出しに使用 |
-
-## 詳細画面の表示項目 → API返却項目想定
-| 詳細表示項目 | API返却項目想定 | 不足時の扱い |
-| --- | --- | --- |
-| レシピ名 | `name` | 必須。未返却はエラー表示 |
-| 向いている場面 | `tags` または `notes` | 既存データで代替する |
-| 材料 | `ingredients[]` | 必須。配列0件はデータ不備扱い |
-| 分量 | `ingredients[].amount` | 未保持時は仮表示項目として「記載なし」表示 |
-| 手順 | `steps[]` | 必須。配列0件はデータ不備扱い |
-| 栄養価 | `energy_kcal`, `protein_g`, `fat_g`, `carbohydrate_g` | 必須。不足は「-」表示 |
-| 補足コメント | `notes` | 既存データで代替する |
-
-## 不足項目に関する固定方針
-- 「主な用途」「簡単な特徴」「向いている場面」「補足コメント」は、MVPでは `tags` と `notes` による既存データ代替を優先する。
-- `cooking_time_min` や分量表記が未整備な場合は仮表示項目として扱い、UI上で欠損を明示する。
-- 項目自体の新規DB追加やAPI大幅拡張はMVPスコープ外とし、将来追加候補に分類する。
-
-# エラー時の考慮
-- 入力不備
-  - 必須未入力・不正値を項目単位で表示し、API未送信とする。
-- 該当候補なし
-  - 結果0件を正常系として表示し、再入力導線を提供する。
-- API通信エラー
-  - 一覧画面で失敗メッセージと再試行導線を表示する。
-- 詳細取得エラー
-  - 詳細画面でエラーメッセージを表示し、一覧へ戻る導線を提供する。
-
-# 候補の妥当性を確認する評価観点
-- 入力条件とレシピの目的タグが一致しているか。
-- 明らかに不適切な献立が混ざっていないか。
-- 保護者が見て現実的に作れそうと思えるか。
-- 候補一覧だけで大まかな選別ができるか。
-- 詳細画面を見れば採用判断できるか。
-
-# 完了条件
-- 条件入力を送信したとき、候補一覧は「1件以上」または「0件（該当なし）」のいずれかで必ず返る。
-- 候補一覧に表示された各候補から、詳細画面へ遷移できる。
-- 詳細画面で、レシピ名・材料・手順・栄養価の主要項目が実データで表示される。
-- 入力不備、0件、API失敗の各状態について、画面表示とユーザー導線が定義されている。
-- 必須機能 / 後回し機能 / 非対応機能の分類が本書内で維持され、混在していない。
-- 保護者が一覧で大まかに選別し、詳細で採用判断できることを確認できる。
-
-# スコープを広げないための注意点
-- このMVPは「保護者が候補を選べる体験」の成立確認に限定する。
-- コード実装、API仕様の大幅拡張、管理画面追加は本書の対象外とする。
-- 認証、課金、買い物リスト、週間献立、条件保存はMVPに含めない。
-- 「あると便利」な機能を必須化しない。
-- 将来拡張の抽象論は最小限にとどめ、現行MVPの画面・入力・表示・完了条件を優先する。
+# 12. Completion Criteria
+MVP is considered usable when:
+- profile save succeeds with valid input,
+- menu generation returns at least one pattern for representative conditions,
+- result screen shows generated patterns from real data,
+- recipe detail can be opened from result recipes,
+- detail screen contains ingredients, steps, and nutrition,
+- known no-result/API-failure states are visible and recoverable,
+- content coverage includes staple/main/side/soup for the active import path.

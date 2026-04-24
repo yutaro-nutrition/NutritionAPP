@@ -138,7 +138,7 @@ Compatibility policy:
 
 ## Category Slot Inference (MVP)
 Because many records have `category_lv1='unknown'`, slot classification uses both category and recipe_id prefixes:
-- staple: `category_lv1='主食'` or `RICE|UDON|SOBA|RAMEN|BREAD|DONBURI`
+- staple: `category_lv1='主食'`, `category_lv1/category_lv2='丼'`, or `RICE|UDON|SOBA|RAMEN|BREAD|DONBURI|DON_`
 - main: `category_lv1='主菜'` or `MAIN_`
 - side: `category_lv1='副菜'` or `SIDE_`
 - soup: `category_lv1='汁物'` or `SOUP_`

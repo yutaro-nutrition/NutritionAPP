@@ -1,21 +1,38 @@
-﻿import { NextResponse } from "next/server";
-import { getRecipeMaster } from "@/lib/data/loaders";
+import { NextResponse } from "next/server";
+import { AppApiError, buildAppApiUrl, fetchAppApi } from "@/lib/api/appApi";
+import { AppApiRecipeListResponse } from "@/types/api";
 
-export async function GET(req: Request) {
-  const { searchParams } = new URL(req.url);
-  const category = searchParams.get("category")?.trim();
-  const maxCookTime = searchParams.get("maxCookTime");
-  const maxBudget = searchParams.get("maxBudget");
-  const keyword = searchParams.get("keyword")?.trim().toLowerCase();
+const passThroughParams = (requestUrl: string) => {
+  const url = new URL(requestUrl);
+  const nextUrl = new URL(buildAppApiUrl("/recipes"));
 
-  let recipes = getRecipeMaster();
-
-  if (category) recipes = recipes.filter((r) => r.category === category);
-  if (maxCookTime) recipes = recipes.filter((r) => r.cook_time_min <= Number(maxCookTime));
-  if (maxBudget) recipes = recipes.filter((r) => r.budget_jpy <= Number(maxBudget));
-  if (keyword) {
-    recipes = recipes.filter((r) => `${r.recipe_name} ${r.main_food} ${(r.tags ?? []).join(" ")}`.toLowerCase().includes(keyword));
+  for (const [key, value] of url.searchParams.entries()) {
+    if (value.trim()) {
+      nextUrl.searchParams.set(key, value);
+    }
   }
 
-  return NextResponse.json({ ok: true, recipes });
+  return nextUrl.pathname + nextUrl.search;
+};
+
+export async function GET(request: Request) {
+  try {
+    const payload = await fetchAppApi<AppApiRecipeListResponse>(passThroughParams(request.url));
+    return NextResponse.json(payload);
+  } catch (error) {
+    if (error instanceof AppApiError) {
+      return NextResponse.json(
+        error.payload ?? { error_code: error.message, detail: "Recipe API request failed." },
+        { status: error.status },
+      );
+    }
+
+    return NextResponse.json(
+      {
+        error_code: "APP_API_UNAVAILABLE",
+        detail: error instanceof Error ? error.message : "Recipe API request failed.",
+      },
+      { status: 502 },
+    );
+  }
 }

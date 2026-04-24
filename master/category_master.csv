@@ -1,4 +1,5 @@
 file_pattern,category_lv1,category_lv2,default_batch,default_version
+recipe_db_gohan_*.xlsx,主食,ごはん,gohan_batch1,v1.0_gohan
 recipe_db_udon_*.xlsx,主食,うどん,udon_batch1,v1.0_udon
 recipe_db_soba_*.xlsx,主食,そば,soba_batch1,v1.0_soba
 recipe_db_ramen_*.xlsx,主食,らーめん,ramen_batch1,v1.0_ramen

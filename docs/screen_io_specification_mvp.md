@@ -1,322 +1,208 @@
-# 文書の目的
-- 本書は、`docs/mvp_requirements_draft.md` で定義したMVP要件を、実装前に必要な画面別I/O仕様（入力・出力・状態・遷移）まで具体化するための文書である。
-- 対象は以下の3画面に限定する。
-  - 条件入力画面
-  - 献立候補一覧画面
-  - レシピ詳細画面
-- 本書は文書化のみを目的とし、コード実装・機能追加・スコープ拡張は行わない。
+# Screen I/O Specification MVP
 
-# 参照文書
-- `docs/mvp_requirements_draft.md`（最優先の要件基準）
-- `docs/api_menu_mvp_spec.md`（既存APIの参照）
-- `docs/frontend_api_integration_guide.md`（既存画面/API連携情報の参照）
+- Last synchronized: 2026-04-24
+- Implementation sources: `src/app/profile/page.tsx`, `src/app/generate/page.tsx`, `src/app/result/page.tsx`, `src/app/recipes/[recipeId]/page.tsx`, `src/types/api.ts`
+- API contract: `docs/api_contract_mvp.md`
 
-# 対象範囲
-- MVP対象ユーザー（保護者）が、条件入力から候補選定・詳細確認・採用判断まで実施できる最小導線。
-- DB/API実データを前提とした一覧表示・詳細表示の成立確認。
-- 入力不備、候補0件、API失敗、必須データ欠損の画面状態定義。
+# 1. Purpose
+This document describes the current MVP screen inputs, outputs, state, and API usage.
 
-以下は対象外。
-- 認証、課金、外部連携、AIチャット、お気に入り、履歴、比較、共有、PDF出力、買い物リスト、条件保存
-- 週間献立、自動最適化、高度な栄養条件指定
-- エネルギー計算式の厳密実装仕様
+The current implementation has 4 user-facing screens:
+- `/profile`
+- `/generate`
+- `/result`
+- `/recipes/[recipeId]`
 
-# 想定ユーザー
-- 保護者
+The earlier 3-screen draft treated condition input and profile input as one screen. In the current implementation, profile values are saved first, then menu generation uses derived target kcal/protein values.
 
-# 画面一覧
-| 画面ID | 画面名 | 主目的 |
-| --- | --- | --- |
-| SCR-01 | 条件入力画面 | 基本情報と条件を入力し、候補検索を開始する |
-| SCR-02 | 献立候補一覧画面 | 条件に合う候補を一覧表示し、選別する |
-| SCR-03 | レシピ詳細画面 | 選択候補の詳細を確認し、採用判断する |
+# 2. Screen List
+| Screen ID | Route | Name | Main purpose |
+|---|---|---|---|
+| SCR-01 | `/profile` | Profile input | Validate and save user profile in browser local storage |
+| SCR-02 | `/generate` | Menu condition input | Derive target nutrition values, choose meal/scene, and call menu generation |
+| SCR-03 | `/result` | Menu result | Compare generated menu patterns and open recipe details |
+| SCR-04 | `/recipes/[recipeId]` | Recipe detail | Show ingredients, steps, nutrition, tags, and notes for one recipe |
 
-# 画面遷移概要
-| 遷移元 | 遷移先 | 遷移条件 | 備考 |
-| --- | --- | --- | --- |
-| SCR-01 条件入力 | SCR-02 候補一覧 | 入力バリデーションOKかつAPI呼び出し完了 | 0件時もSCR-02で空状態表示 |
-| SCR-02 候補一覧 | SCR-03 詳細 | 候補カード選択（`recipe_id`取得） | 詳細取得APIを呼び出し |
-| SCR-02 候補一覧（0件） | SCR-01 条件入力 | 「条件を見直す」導線押下 | 入力値は保持して戻る |
-| SCR-02 候補一覧（API失敗） | SCR-02 候補一覧 | 「再試行」押下 | 同一条件で再取得 |
-| SCR-03 詳細 | SCR-02 候補一覧 | 「一覧へ戻る」押下 | 一覧の絞り込み状態を維持 |
-| SCR-03 詳細（API失敗/欠損） | SCR-02 候補一覧 | エラー導線押下 | 安全に復帰可能であること |
+# 3. Navigation
+| From | To | Trigger | State passed |
+|---|---|---|---|
+| `/profile` | `/generate` | "生成画面へ" button | Profile is stored in `localStorage` as `kondate_profile` |
+| `/generate` | `/result` | successful `POST /api/menu/generate` | Menu result is stored in `localStorage` as `kondate_result` |
+| `/result` | `/recipes/[recipeId]` | recipe link click | `recipe_id` in the URL |
+| `/recipes/[recipeId]` | `/result` | back link | Result page reloads `kondate_result` from local storage |
 
-# 条件入力画面 仕様
-## 画面の目的
-- 保護者が生活言語ベースで必要最小限の条件を入力し、候補検索に必要な入力データを確定する。
+The current result page opens recipe detail links with `target="_blank"`.
 
-## 想定利用タイミング
-- 食事準備前に「子どもの状況に合う候補を探したい」とき。
+# 4. SCR-01 Profile Input
+## Input Fields
+| UI field | Type | Required | Stored field |
+|---|---|---|---|
+| age | number | yes | `age` |
+| sex | enum | yes | `sex` |
+| sport | string | yes | `sport` |
+| height | number | yes | `height_cm` |
+| weight | number | yes | `weight_kg` |
+| body fat percent | number | no | `body_fat_percent` |
+| family size | number | yes | `family_size` |
+| activity level | enum | yes | `activity_level` |
+| goal type | enum | yes | `goal_type` |
+| budget per meal | number | yes | `budget_per_meal_jpy` |
+| breakfast cook time | number | yes | `cook_time_breakfast_min` |
+| dinner cook time | number | yes | `cook_time_dinner_min` |
+| likes | comma-separated text | no | `likes[]` |
+| dislikes | comma-separated text | no | `dislikes[]` |
+| allergies | comma-separated text | no | `allergies[]` |
 
-## 入力項目一覧
-| 項目名 | 型/値の種類 | 必須/任意 | 入力目的 | UI形式 | バリデーション観点 | API送信対象 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 年齢 | 整数 | 必須 | 参考エネルギー帯算出に使用 | 数値入力 | 未入力不可、0以下不可、上限は業務妥当範囲 | する（`age`想定） |
-| 性別 | 列挙（男/女/その他運用定義） | 必須 | 参考エネルギー帯算出に使用 | セレクト/ラジオ | 未選択不可 | する（`sex`想定） |
-| 身長 | 数値（cm） | 必須 | 参考エネルギー帯算出に使用 | 数値入力 | 未入力不可、0以下不可、単位固定 | する（`height_cm`想定） |
-| 体重 | 数値（kg） | 必須 | 参考エネルギー帯算出に使用 | 数値入力 | 未入力不可、0以下不可、単位固定 | する（`weight_kg`想定） |
-| 食事の場面 | 列挙（朝食/昼食/夕食/補食） | 必須 | 候補抽出と並び順に反映 | セレクト | 未選択不可 | する（`meal_type`想定） |
-| 目的 | 列挙（試合前/試合後/増量/普段の食事/疲労回復） | 必須 | 候補適合性判定に使用 | セレクト | 未選択不可 | する（`scene`想定） |
-| 調理負担 | 列挙（すぐ作れる/普通） | 必須 | 現実的な調理可否に反映 | セレクト/ラジオ | 未選択不可 | する（`cooking_load`想定） |
-| 除外食材 | 文字列配列 | 任意 | 候補除外条件 | テキスト入力/タグ入力 | 入力長上限、禁止文字最小チェック | する（`exclude_ingredients[]`想定） |
+## API Usage
+- `POST /api/users/profile`
 
-- 体脂肪率はMVPで扱わない。入力項目として表示しない。
+Success:
+- save the profile to `localStorage`
+- show a saved message
 
-## 表示項目一覧
-| 項目名 | 画面上の役割 | 表示元 | 必須表示/任意表示 | データ欠損時の扱い | DB/API未存在時の扱い |
-| --- | --- | --- | --- | --- | --- |
-| 画面タイトル/説明文 | 入力意図の明確化 | 固定文言 | 必須表示 | 固定文言のため欠損なし | 該当なし |
-| 入力項目ラベル | 入力補助 | 固定文言 | 必須表示 | 固定文言のため欠損なし | 該当なし |
-| 入力エラーメッセージ | 修正行動を促す | 内部バリデーション結果 | 必須表示（該当時） | 該当項目にのみ表示 | 該当なし |
-| 参考エネルギー帯（任意表示） | 条件解釈の補助 | 内部算出 | 任意表示 | 算出不可時は非表示または「算出不可」 | API未依存 |
+Failure:
+- show "入力値にエラーがあります"
+- do not overwrite saved profile
 
-## 入力値の制約・バリデーション
-- 必須項目が1つでも欠ける場合は送信不可。
-- 数値項目（年齢・身長・体重）は数値以外を拒否。
-- 不正値は項目単位で表示し、全体エラーだけで終わらせない。
-- 除外食材は任意。未入力時は空配列として扱う。
+## Notes
+- `body_fat_percent` is present in the current UI as an optional field.
+- Likes, dislikes, and allergies are collected but are not yet sent to `POST /menu/generate`.
 
-## 内部処理の前提
-- 年齢・性別・身長・体重から、目安エネルギー帯を内部で自動算出する。
-- 目安エネルギー帯は厳密な診断値ではなく、候補表示の参考帯として扱う。
-- 食事場面に応じて候補表示または並び順に反映する。
-- エネルギー帯のみで適否を判定せず、目的・食事場面・調理負担との整合を加味する。
-- 計算式の厳密実装詳細はMVPスコープ外。
+# 5. SCR-02 Menu Condition Input
+## Inputs
+| UI field | Type | Source | Sent to API |
+|---|---|---|---|
+| target energy | number | derived from profile, editable | `target_kcal` |
+| target protein | number | derived from profile, editable | `target_protein_g` |
+| meal timing | select | `GET /api/meta/options` or fallback constants | `meal_type` |
+| scene | select | `GET /api/meta/options` or fallback constants | `scene` |
+| include dessert | checkbox | local default `true` | `include_dessert` |
 
-## API入出力想定
-- 送信する入力データ
-  - `age`, `sex`, `height_cm`, `weight_kg`, `meal_type`, `scene`, `cooking_load`, `exclude_ingredients[]`, `target_energy_band`（内部算出値）
-- 受け取る出力データ
-  - 候補一覧表示に必要な配列データ（`items[]`）
-- 画面表示に最低限必要な返却項目
-  - `items[]`（0件を含む）
-- 返却不足時の扱い
-  - API失敗としてSCR-02でエラー状態表示
-- 画面成立に必要な最低データセット
-  - 条件入力値一式 + 候補件数情報（1件以上または0件）
+## API Usage
+- `GET /api/meta/options`
+- `POST /api/menu/generate`
 
-## 正常時の画面状態
-- 初期表示: 全入力が未入力、送信待機。
-- 入力完了: 必須項目充足で送信可能。
-- 送信成功: SCR-02へ遷移。
+The generation request body is:
 
-## 異常時の画面状態
-- 入力不備: 項目単位エラー表示、送信不可。
-- 形式不正: 数値項目エラー表示、送信不可。
-- API失敗（遷移先で発生）: SCR-02で再試行導線表示。
+```json
+{
+  "target_kcal": 800,
+  "target_protein_g": 35,
+  "meal_type": "dinner",
+  "scene": "post_game",
+  "include_dessert": true
+}
+```
 
-## 次画面・前画面との関係
-- 次画面: SCR-02（送信成功時）
-- 前画面: なし（MVP導線の起点）
-- 0件・API失敗時にSCR-02から戻る際は、入力内容を維持して再編集可能とする。
+## Normal State
+- Load saved profile from `kondate_profile`; if absent, use `defaultProfile`.
+- Calculate initial `target_kcal` and `target_protein_g`.
+- Load vocabulary options.
+- On success, save the response to `kondate_result` and navigate to `/result`.
 
-## 備考
-- 本画面では候補評価ロジックの詳細表示を行わない。
-- 参考エネルギー帯の表示有無はUI判断だが、内部算出は必須前提。
+## Error State
+| Condition | UI behavior |
+|---|---|
+| options API failure | show warning and use fallback options |
+| `VALIDATION_ERROR` | show input check message |
+| `INVALID_PARAMETER` | show condition review message |
+| `NO_RECIPES_FOUND` | show no-candidate message |
+| `MENU_GENERATION_FAILED` | show retry/relax condition message |
+| `APP_API_UNAVAILABLE` | show backend connection message |
 
-# 献立候補一覧画面 仕様
-## 画面の目的
-- 条件に合う候補を比較し、詳細確認対象を選ぶ。
+## Current Limitations
+- `cooking_load` is not implemented.
+- `exclude_ingredients` is not implemented.
+- Profile likes/dislikes/allergies are not applied to menu generation yet.
 
-## 想定利用タイミング
-- 条件入力送信直後、または条件調整後の再検索時。
+# 6. SCR-03 Menu Result
+## Input Source
+- `localStorage` key: `kondate_result`
 
-## 入力項目一覧
-| 項目名 | 型/値の種類 | 必須/任意 | 入力目的 | UI形式 | バリデーション観点 | API送信対象 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 再試行操作 | クリックイベント | 任意 | API失敗時の再取得 | ボタン | 二重送信抑止 | する（同条件再送） |
-| 条件見直し操作 | クリックイベント | 任意 | 条件再入力へ戻る | ボタン/リンク | なし | しない |
-| 候補選択 | `recipe_id`選択 | 必須（詳細遷移時） | 詳細表示対象の確定 | カード/行クリック | `recipe_id`存在確認 | する（詳細取得） |
+## Display Fields
+| Area | Source fields |
+|---|---|
+| generation conditions | `request.meal_type_label`, `request.scene_label`, `request.target_kcal`, `request.target_protein_g`, `request.include_dessert` |
+| pattern selector | `patterns[].pattern_no`, `patterns[].total_kcal`, `patterns[].total_protein_g` |
+| slot list | `patterns[].slots[].slot`, `recipe.recipe_id`, `recipe.recipe_name`, category fields, kcal, protein, tags |
+| nutrition summary | `nutrition_summary.target_*`, `nutrition_summary.actual_*`, `nutrition_summary.*_gap` |
+| fit state | `constraint_evaluation.*`, `within_kcal_range`, `protein_target_met` |
+| generation note | `generation_note`, `applied_conditions.*` |
 
-## 表示項目一覧
-| 項目名 | 画面上の役割 | 表示元 | 必須表示/任意表示 | データ欠損時の扱い | DB/API未存在時の扱い |
-| --- | --- | --- | --- | --- | --- |
-| レシピ名 | 候補識別 | API返却（`items[].name`） | 必須表示 | 欠損時は該当候補を非表示またはデータ不備表示 | 必須項目として扱う |
-| 主な用途 | 条件適合性の把握 | API返却（`items[].tags` / `items[].notes`） | 必須表示 | 代替不可時は「用途情報なし」 | 既存データで代替 |
-| エネルギー | 栄養目安比較 | API返却（`items[].energy_kcal`） | 必須表示 | 「-」表示 | 必須項目として扱う |
-| たんぱく質 | 栄養目安比較 | API返却（`items[].protein_g`） | 必須表示 | 「-」表示 | 必須項目として扱う |
-| 調理時間目安 | 実行可能性判断 | API返却（`items[].cooking_time_min`想定） | 必須表示 | 「不明」表示 | 仮表示項目 |
-| 簡単な特徴 | 候補の粗選別 | API返却（`items[].notes` / `items[].tags`） | 必須表示 | 「特徴情報なし」 | 既存データで代替 |
-| 詳細画面への導線 | 詳細遷移 | 内部状態（`items[].recipe_id`） | 必須表示 | `recipe_id`欠損時は導線非活性 | 必須項目として扱う |
-| 0件メッセージ | 空状態通知 | 固定文言 | 必須表示（0件時） | 該当なし | 該当なし |
-| API失敗メッセージ | 失敗通知 | 固定文言 | 必須表示（失敗時） | 該当なし | 該当なし |
+## Normal State
+- Show pattern selector.
+- Show the selected pattern's slots.
+- Recipe names link to `/recipes/{recipe_id}`.
 
-## 入力値の制約・バリデーション
-- 候補選択時は`recipe_id`が存在する項目のみ遷移可能。
-- API再試行は前回と同一条件で実行する。
-- 0件時は詳細遷移を許可しない。
+## Empty State
+- If `kondate_result` is missing or unreadable, show "結果データがありません。先に献立を生成してください。" and link to `/generate`.
 
-## 内部処理の前提
-- 候補並び順は以下の優先で解釈する。
-  1. 目的整合
-  2. 食事場面整合
-  3. 参考エネルギー帯との近さ
-  4. 調理負担整合
-- 単一指標（エネルギー帯のみ）では並び順を決めない。
+## Current Limitations
+- Result history is not persisted server-side.
+- Pattern comparison is limited to kcal/protein and existing explanation fields.
+- There is no direct condition-edit retry shortcut yet.
 
-## API入出力想定
-- 送信する入力データ
-  - 条件入力画面で確定した検索条件一式
-- 受け取る出力データ
-  - `total`, `items[]`
-- 画面表示に最低限必要な返却項目
-  - `items[].recipe_id`, `items[].name`, `items[].energy_kcal`, `items[].protein_g`
-- 返却不足時の扱い
-  - 必須キー欠損候補は非表示または欠損表示。件数全体の成立を優先。
-- 画面成立に必要な最低データセット
-  - 件数（`total`）と候補配列（`items[]`）。0件も正常系として成立。
+# 7. SCR-04 Recipe Detail
+## Input
+| Input | Source |
+|---|---|
+| `recipeId` | URL parameter |
 
-## 正常時の画面状態
-- 候補1件以上: 一覧表示、詳細導線活性。
-- 候補0件: 空状態メッセージ + 条件見直し導線。
+## API Usage
+- Server component calls FastAPI detail through `fetchAppApi("/recipes/{recipeId}")`.
+- Next.js proxy route `GET /api/recipes/{recipeId}` also exists for client/API consumers.
 
-## 異常時の画面状態
-- API失敗: 失敗メッセージ + 再試行導線 + 条件入力へ戻る導線。
-- 必須データ欠損: 欠損候補を識別可能な表示にし、詳細遷移を制限。
+## Display Fields
+| UI area | API fields |
+|---|---|
+| title | `recipe_name` |
+| category chips | `category_lv1`, `category_lv2`, `category_lv3` |
+| tag chips | `tags` split by comma or pipe |
+| cooking method | `cooking_method` |
+| notes | `notes` |
+| ingredients | `ingredients[].ingredient_name`, `ingredient_alias`, `amount_value`, `unit`, `weight_g` |
+| steps | `steps[].step_number`, `instruction` |
+| nutrition | `energy_kcal`, `protein_g`, `fat_g`, `carbohydrate_g` |
 
-## 次画面・前画面との関係
-- 前画面: SCR-01（条件見直し時）
-- 次画面: SCR-03（候補選択時）
-- 0件時はSCR-01へ戻る導線を提供。
-- API失敗時は同画面再試行またはSCR-01へ戻る導線を提供。
+## Normal State
+- Show recipe header, materials, steps, nutrition, and back link to `/result`.
 
-## 備考
-- 一覧のみで大まかな選別ができる情報密度を維持する。
-- 「主な用途」「簡単な特徴」は既存データ代替が前提。
+## Error State
+| Condition | UI behavior |
+|---|---|
+| `404 RECIPE_NOT_FOUND` | render Next.js `notFound()` |
+| FastAPI/proxy failure | show detail acquisition failure panel and link back to `/result` |
+| ingredients empty | show "材料情報はまだ登録されていません。" |
+| steps empty | show "手順情報はまだ登録されていません。" |
+| missing weight | show "量未登録" |
 
-# レシピ詳細画面 仕様
-## 画面の目的
-- 候補の採用判断に必要な情報を提示する。
+# 8. Field Availability Matrix
+| MVP display need | Current field | Status |
+|---|---|---|
+| recipe identifier | `recipe_id` | available |
+| recipe name | `recipe_name` | available |
+| category / slot | category fields plus slot inference in service | available |
+| tags / purpose hints | `tags` | available as string |
+| notes / explanation | `notes`, `generation_note` | available |
+| kcal | `energy_kcal` | available |
+| protein | `protein_g` | available |
+| fat | `fat_g` | available |
+| carbohydrate | `carbohydrate_g` | available |
+| ingredients | `ingredients[]` | available |
+| ingredient amount | `amount_value` / `unit`, fallback `weight_g` | available |
+| steps | `steps[]` | available |
+| cooking time | none | not available |
+| cooking load filter | none | not implemented |
+| excluded ingredients | none | not implemented |
 
-## 想定利用タイミング
-- 候補一覧で候補を選択した直後。
+# 9. Next Implementation Candidates
+1. Add condition-edit/retry flow from `/result` back to `/generate`.
+2. Decide whether `likes`, `dislikes`, and `allergies` should feed into menu generation.
+3. Decide whether `cooking_load` and `exclude_ingredients` belong in the current MVP API.
+4. Add or derive `cooking_time_min` if cooking burden must be visible in MVP.
 
-## 入力項目一覧
-| 項目名 | 型/値の種類 | 必須/任意 | 入力目的 | UI形式 | バリデーション観点 | API送信対象 |
-| --- | --- | --- | --- | --- | --- | --- |
-| 対象レシピID | 文字列 | 必須 | 詳細取得対象の識別 | 遷移パラメータ（内部） | 空/null不可 | する（`recipe_id`） |
-| 一覧へ戻る操作 | クリックイベント | 任意 | 前画面復帰 | ボタン/リンク | なし | しない |
-| 再試行操作 | クリックイベント | 任意 | 詳細再取得 | ボタン | 二重送信抑止 | する（同ID再送） |
-
-## 表示項目一覧
-| 項目名 | 画面上の役割 | 表示元 | 必須表示/任意表示 | データ欠損時の扱い | DB/API未存在時の扱い |
-| --- | --- | --- | --- | --- | --- |
-| レシピ名 | 候補識別 | API返却（`name`） | 必須表示 | 欠損時はエラー状態へ | 必須項目 |
-| 向いている場面 | 適合性説明 | API返却（`tags` / `notes`） | 必須表示 | 「情報なし」表示 | 既存データで代替 |
-| 材料 | 調達判断 | API返却（`ingredients[]`） | 必須表示 | 0件時はデータ不備表示 | 必須項目 |
-| 分量 | 調理判断 | API返却（`ingredients[].amount`想定） | 必須表示 | 欠損時は「記載なし」 | 仮表示項目 |
-| 手順 | 実行判断 | API返却（`steps[]`） | 必須表示 | 0件時はデータ不備表示 | 必須項目 |
-| 栄養価 | 適合性判断 | API返却（`energy_kcal`, `protein_g`, `fat_g`, `carbohydrate_g`） | 必須表示 | 欠損値は「-」 | 必須項目 |
-| 補足コメント | 最終判断補助 | API返却（`notes`） | 任意表示 | 欠損時は非表示可 | 既存データで代替 |
-| 詳細取得エラーメッセージ | 異常通知 | 固定文言 | 必須表示（失敗時） | 該当なし | 該当なし |
-
-## 入力値の制約・バリデーション
-- `recipe_id`は必須。欠損時は詳細表示を開始しない。
-- 不正な`recipe_id`で404の場合は一覧へ戻る導線を必ず表示。
-
-## 内部処理の前提
-- 本画面はSCR-02からの遷移を前提とする。
-- 表示データはダミー値ではなく実データ。
-- 一覧表示内容と詳細表示内容の整合（同一`recipe_id`）を維持する。
-
-## API入出力想定
-- 送信する入力データ
-  - `recipe_id`
-- 受け取る出力データ
-  - レシピマスタ項目 + `ingredients[]` + `steps[]` + 栄養項目 + `tags/notes`
-- 画面表示に最低限必要な返却項目
-  - `name`, `ingredients[]`, `steps[]`, `energy_kcal`, `protein_g`
-- 返却不足時の扱い
-  - 主要項目欠損時はデータ不備状態を表示し、一覧へ戻る導線を優先。
-- 画面成立に必要な最低データセット
-  - 識別子付き詳細1件 + 主要表示項目（名称、材料、手順、栄養価）。
-
-## 正常時の画面状態
-- 主要項目が表示され、保護者が採用可否を判断できる。
-
-## 異常時の画面状態
-- API失敗: 失敗メッセージ + 再試行 + 一覧へ戻る。
-- 404（対象なし）: 一覧へ戻る導線を表示。
-- 必須データ欠損: 欠損明示 + 一覧へ戻る導線を表示。
-
-## 次画面・前画面との関係
-- 前画面: SCR-02
-- 次画面: なし（MVP終端）
-- 戻る時は一覧の状態（検索条件・スクロール位置等）を維持する設計を推奨。
-
-## 備考
-- 「向いている場面」「補足コメント」は既存の`tags/notes`代替を前提とする。
-- 分量表記のデータ整備度は実データ確認が必要。
-
-# 画面別の正常系 / 異常系状態
-| 画面 | 正常系 | 異常系 |
-| --- | --- | --- |
-| SCR-01 条件入力 | 必須入力完了で送信可能、SCR-02へ遷移 | 入力不備（必須不足/形式不正） |
-| SCR-02 候補一覧 | 1件以上表示、または0件表示（空状態） | API失敗、候補必須キー欠損 |
-| SCR-03 詳細 | 主要項目表示で採用判断可能 | API失敗、404、主要項目欠損 |
-
-# 画面項目とDB/API項目の対応関係
-## SCR-01 条件入力
-| 画面項目 | API入力想定 | DB/API実在確認 |
-| --- | --- | --- |
-| 年齢 | `age` | 要確認（現行`GET /recipes`直接項目ではない） |
-| 性別 | `sex` | 要確認（同上） |
-| 身長 | `height_cm` | 要確認（同上） |
-| 体重 | `weight_kg` | 要確認（同上） |
-| 食事の場面 | `meal_type` | 既存APIに近い概念あり |
-| 目的 | `scene` | 既存APIに近い概念あり |
-| 調理負担 | `cooking_load` | 要確認 |
-| 除外食材 | `exclude_ingredients[]` | 要確認 |
-| 参考エネルギー帯（内部） | `target_energy_band` | 要確認 |
-
-## SCR-02 候補一覧
-| 画面項目 | API返却想定 | DB/API実在確認 |
-| --- | --- | --- |
-| レシピ名 | `items[].name` | 要確認（名称キー定義） |
-| 主な用途 | `items[].tags` / `items[].notes` | 代替前提で確認要 |
-| エネルギー | `items[].energy_kcal` | 既存栄養列と整合確認要 |
-| たんぱく質 | `items[].protein_g` | 既存栄養列と整合確認要 |
-| 調理時間目安 | `items[].cooking_time_min` | 未存在の可能性あり |
-| 簡単な特徴 | `items[].notes` / `items[].tags` | 代替前提で確認要 |
-| 詳細導線 | `items[].recipe_id` | 既存詳細APIとの接続必須 |
-
-## SCR-03 レシピ詳細
-| 画面項目 | API返却想定 | DB/API実在確認 |
-| --- | --- | --- |
-| レシピ名 | `name` | 確認要 |
-| 向いている場面 | `tags` / `notes` | 代替前提で確認要 |
-| 材料 | `ingredients[]` | 既存API仕様に概念あり |
-| 分量 | `ingredients[].amount` | 未存在の可能性あり |
-| 手順 | `steps[]` | 既存API仕様に概念あり |
-| 栄養価 | `energy_kcal`, `protein_g`, `fat_g`, `carbohydrate_g` | 既存栄養列と整合確認要 |
-| 補足コメント | `notes` | 代替前提で確認要 |
-
-# DB/API不足項目の扱い方針
-| 項目 | MVPでの扱い | 方針区分 | 補足 |
-| --- | --- | --- | --- |
-| 主な用途 | `tags` / `notes`で代替 | 既存データで代替 | 代替不可時は「用途情報なし」 |
-| 簡単な特徴 | `notes`中心で代替 | 既存データで代替 | 文章長をUIで制御 |
-| 向いている場面 | `tags` / `notes`で代替 | 既存データで代替 | 正規タグ不足時は文言簡略化 |
-| 補足コメント | `notes`を表示 | 既存データで代替 | 欠損時は非表示可 |
-| 調理時間目安 | `cooking_time_min`想定 | 仮表示項目 | 未保持時は「不明」表示 |
-| 分量（明確数値） | `ingredients[].amount`想定 | 仮表示項目 | 欠損時は「記載なし」 |
-
-- 上記で代替不能かつユーザー判断に必須な項目は、将来追加候補として管理する。
-- MVP時点で無理に新規項目を追加せず、欠損明示で運用する。
-
-# MVP範囲外として扱う事項
-- 3画面以外の新規画面
-- ログイン/会員、課金、外部連携、AIチャット
-- お気に入り、履歴、比較、共有、PDF出力
-- 買い物リスト、条件保存、週間献立
-- 自動最適化、高度な推薦理由生成
-- 厳密なエネルギー算出式仕様の固定
-
-# 実装前確認が必要な論点
-- 一覧画面の表示項目（特に`name`, `tags/notes`, `energy_kcal`, `protein_g`, `cooking_time_min`）が現APIで返却可能か。
-- 詳細画面の表示項目（特に`ingredients[].amount`, `notes`, 栄養項目）が現APIで返却可能か。
-- 参考エネルギー帯を画面に表示するか、内部ロジックのみに使うか。
-- 候補並び順の優先ロジックを表示仕様としてどこまで固定するか。
-- 既存DBのタグ/分類のみで「主な用途」「向いている場面」を安定代替できるか。
-- 入力APIとして`age/sex/height_cm/weight_kg/cooking_load/exclude_ingredients[]`を受ける経路をどこに置くか。
-- 必須データ欠損時の挙動（候補非表示か、欠損表示で残すか）の実装方針を統一できるか。
+# 10. Related Docs
+- `docs/api_contract_mvp.md`
+- `docs/frontend_api_integration_guide.md`
+- `docs/ui_component_api_mapping.md`
+- `docs/error_ui_mapping_guide.md`

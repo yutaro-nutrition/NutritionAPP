@@ -1,278 +1,365 @@
-# 1. 文書の目的
-- 本書は、献立アプリMVP（3画面: 条件入力・候補一覧・レシピ詳細）に必要なAPI契約を実装前に固定するための文書である。
-- 対象は以下の2APIのみとする。
-  - 献立候補一覧取得API
-  - レシピ詳細取得API
-- 本書は文書化のみを目的とし、実装コード作成や機能拡張は行わない。
+# API Contract MVP
 
-# 2. 参照文書
-- `docs/mvp_requirements_draft.md`
-- `docs/screen_io_specification_mvp.md`
+- Last synchronized: 2026-04-24
+- Implementation sources: `app_api/app/api/routes/*.py`, `app_api/app/schemas/recipe_api.py`, `src/app/api/**/route.ts`, `src/types/api.ts`
+- Scope: current MVP implementation contract, not the older pre-implementation `menu-candidates` draft.
 
-# 3. 対象API一覧
-| API名 | エンドポイント（MVP契約上） | 用途 |
-| --- | --- | --- |
-| 献立候補一覧取得API | `POST /api/v1/menu-candidates/search` | 条件入力に基づき候補一覧を取得する |
-| レシピ詳細取得API | `GET /api/v1/recipes/{recipe_id}` | 選択した候補の詳細を取得する |
+# 1. Purpose
+This document fixes the API contract used by the current MVP screens:
+- profile validation
+- menu condition input
+- menu result
+- recipe detail
+- optional recipe search / browse
 
-# 4. API設計方針
-- MVP範囲は3画面導線成立に必要な最小契約に限定する。
-- `target_energy_band` は**外部入力として受け付けない**。API内部で `age`, `sex`, `height_cm`, `weight_kg` から派生算出する。
-- エネルギー帯は候補提示の参考帯であり、厳密診断値として扱わない。
-- UIから送る入力項目は原則として以下に固定する。
-  - `age`, `sex`, `height_cm`, `weight_kg`, `meal_scene`, `purpose`, `cooking_load`, `exclude_ingredients[]`
-- `meal_scene` / `purpose` はUI入力値をAPIが直接受ける。DB都合の内部コード（例: `meal_type` / `scene`）への変換はAPI内部マッピングで吸収する。
-- 体脂肪率は扱わない。
-- 「0件」は正常系レスポンスとする。
-- 項目欠損は「API全体失敗」と「項目単位フォールバック」を分離して扱う。
-- 栄養項目は一覧API・詳細APIともに `nutrition` ネスト構造で統一し、フラット構造は採用しない。
+The current implementation does not expose `POST /api/v1/menu-candidates/search`. Menu creation is handled by `POST /menu/generate` on FastAPI and `POST /api/menu/generate` on Next.js.
 
-# 5. 献立候補一覧取得API 契約
-## 5.1 API名
-- 献立候補一覧取得API
+# 2. Endpoint Summary
+| Layer | Endpoint | Purpose |
+|---|---|---|
+| Next.js | `POST /api/users/profile` | Validate profile input before saving it to browser local storage |
+| Next.js | `GET /api/meta/options` | Proxy to FastAPI vocabulary options |
+| Next.js | `GET /api/recipes/search` | Proxy to FastAPI recipe list search |
+| Next.js | `GET /api/recipes/{recipeId}` | Proxy to FastAPI recipe detail |
+| Next.js | `POST /api/menu/generate` | Proxy to FastAPI menu generation |
+| FastAPI | `GET /health` | API health check |
+| FastAPI | `GET /meta/options` | Vocabulary options for fixed UI choices |
+| FastAPI | `GET /recipes` | Recipe list search |
+| FastAPI | `GET /recipes/{recipe_id}` | Recipe detail |
+| FastAPI | `POST /menu/generate` | Rule-based menu generation |
 
-## 5.2 目的
-- 条件入力画面で確定した条件から、候補一覧画面に表示する候補を返却する。
+Next.js proxy routes return the FastAPI payload unchanged when FastAPI succeeds. On connection failure, they return `502` with `APP_API_UNAVAILABLE`.
 
-## 5.3 呼び出しタイミング
-- 条件入力画面で必須項目バリデーション通過後に呼び出す。
-- 候補一覧画面の「再試行」操作時に同条件で再呼び出しする。
+# 3. Common Error Shape
+FastAPI error responses use:
 
-## 5.4 リクエスト項目一覧
-### リクエストボディ
-| 項目名 | 型 | 必須/任意 | UI送信値 | バリデーション |
-| --- | --- | --- | --- | --- |
-| `age` | integer | 必須 | 年齢 | `1 <= age <= 99`（MVP暫定固定値） |
-| `sex` | string(enum) | 必須 | 性別 | `male` / `female` のみ受理 |
-| `height_cm` | number | 必須 | 身長(cm) | `80 <= height_cm <= 250`（MVP暫定固定値） |
-| `weight_kg` | number | 必須 | 体重(kg) | `10 <= weight_kg <= 300` |
-| `meal_scene` | string(enum) | 必須 | 食事の場面 | `breakfast` / `lunch` / `dinner` / `snack` |
-| `purpose` | string(enum) | 必須 | 目的 | `pre_game` / `post_game` / `bulk_up` / `daily_meal` / `recovery` |
-| `cooking_load` | string(enum) | 必須 | 調理負担 | `quick` / `normal` |
-| `exclude_ingredients` | string[] | 任意 | 除外食材配列 | 各要素1〜50文字、最大20件、未指定時`[]`。正規化後の完全一致で除外判定 |
-
-### 内部派生値
-| 項目名 | 生成元 | 外部入力可否 | 用途 |
-| --- | --- | --- | --- |
-| `target_energy_band` | `age`, `sex`, `height_cm`, `weight_kg` | 不可（内部のみ） | 候補抽出・並び順の参考帯 |
-
-## 5.5 レスポンス項目一覧
-### 正常応答（HTTP 200）
 ```json
 {
-  "total": 2,
-  "items": [
+  "error_code": "RECIPE_NOT_FOUND",
+  "detail": "Recipe not found: MAIN_001"
+}
+```
+
+Current error codes:
+- `RECIPE_NOT_FOUND`
+- `INVALID_PARAMETER`
+- `MENU_GENERATION_FAILED`
+- `NO_RECIPES_FOUND`
+- `VALIDATION_ERROR`
+- `APP_API_UNAVAILABLE` on the Next.js proxy layer
+
+Profile validation is the only exception. `POST /api/users/profile` returns `{ "ok": false, "error": ... }` on validation failure because it is a Next.js-local validator, not a FastAPI proxy.
+
+# 4. `POST /api/users/profile`
+## Purpose
+Validate the profile form before storing it in `localStorage` under `kondate_profile`.
+
+## Request Body
+Uses `UserProfile`:
+
+```json
+{
+  "age": 28,
+  "sex": "male",
+  "height_cm": 172,
+  "weight_kg": 68,
+  "body_fat_percent": 15,
+  "sport": "ランニング",
+  "activity_level": "moderate",
+  "goal_type": "performance",
+  "likes": ["鶏肉", "ご飯", "魚"],
+  "dislikes": ["パクチー"],
+  "allergies": ["えび"],
+  "family_size": 2,
+  "cook_time_breakfast_min": 15,
+  "cook_time_dinner_min": 40,
+  "budget_per_meal_jpy": 700
+}
+```
+
+## Response
+Success:
+
+```json
+{
+  "ok": true,
+  "profile": {}
+}
+```
+
+Failure:
+
+```json
+{
+  "ok": false,
+  "error": {}
+}
+```
+
+# 5. `GET /meta/options`
+## Purpose
+Provide stable code values and Japanese labels for menu generation controls.
+
+## Response
+```json
+{
+  "meal_type": [
+    { "code": "breakfast", "label_ja": "朝食", "aliases": [] }
+  ],
+  "scene": [
+    { "code": "post_game", "label_ja": "試合後", "aliases": [] }
+  ],
+  "tags_recommended": {
+    "performance_goal": ["high_protein"]
+  },
+  "notes": []
+}
+```
+
+Current recommended `meal_type` codes:
+- `breakfast`
+- `lunch`
+- `dinner`
+- `snack`
+
+Current recommended `scene` codes:
+- `pre_game`
+- `post_game`
+- `bulking`
+- `cutting`
+- `recovery`
+- `normal`
+
+# 6. `POST /menu/generate`
+## Purpose
+Generate up to 3 menu patterns from target nutrition values and optional context.
+
+## Request Body
+```json
+{
+  "target_kcal": 800,
+  "target_protein_g": 35,
+  "meal_type": "dinner",
+  "scene": "post_game",
+  "include_dessert": true
+}
+```
+
+Fields:
+| Field | Required | Rule |
+|---|---|---|
+| `target_kcal` | yes | number, `> 0` |
+| `target_protein_g` | yes | number, `>= 0` |
+| `meal_type` | no | recommended code from `/meta/options`; aliases are accepted |
+| `scene` | no | recommended code from `/meta/options`; aliases are accepted |
+| `include_dessert` | no | boolean, default `true` |
+
+The frontend derives `target_kcal` and `target_protein_g` from the saved profile, then lets the user adjust them on `/generate`. The API does not receive `age`, `sex`, `height_cm`, `weight_kg`, `cooking_load`, or `exclude_ingredients` in the current implementation.
+
+## Response
+```json
+{
+  "target_kcal": 800,
+  "target_protein_g": 35,
+  "meal_type": "dinner",
+  "scene": "post_game",
+  "patterns": [
     {
-      "recipe_id": "r_001",
-      "name": "鶏むねと野菜の丼",
-      "nutrition": {
-        "energy_kcal": 620,
-        "protein_g": 32.1
+      "pattern_no": 1,
+      "total_kcal": 812.5,
+      "total_protein_g": 42.1,
+      "kcal_min": 640,
+      "kcal_max": 960,
+      "protein_target_g": 35,
+      "within_kcal_range": true,
+      "protein_target_met": true,
+      "nutrition_summary": {
+        "target_kcal": 800,
+        "actual_kcal": 812.5,
+        "kcal_gap": 12.5,
+        "target_protein_g": 35,
+        "actual_protein_g": 42.1,
+        "protein_gap": 7.1
       },
-      "tags": ["試合後", "夕食"],
-      "notes": "高たんぱくで作りやすい",
-      "cooking_time_min": 20
+      "constraint_evaluation": {
+        "kcal_match_level": "high",
+        "protein_match_level": "high",
+        "constraint_relaxed": false
+      },
+      "applied_conditions": {
+        "scene": "post_game",
+        "scene_normalized": "post_game",
+        "meal_type": "dinner",
+        "meal_type_normalized": "dinner",
+        "include_dessert": true
+      },
+      "generation_note": "高タンパク質を優先した構成です",
+      "slots": [
+        {
+          "slot": "main",
+          "recipe": {
+            "recipe_id": "MAIN_CHICKEN_001",
+            "recipe_name": "鶏むねの照り焼き",
+            "category_lv1": "主菜",
+            "category_lv2": "鶏肉",
+            "category_lv3": null,
+            "tags": "高たんぱく, 試合後",
+            "energy_kcal": 300,
+            "protein_g": 30,
+            "fat_g": 8,
+            "carbohydrate_g": 15
+          }
+        }
+      ]
     }
   ]
 }
 ```
 
-### `items[]` の最低必要項目
-| 項目名 | 必須/任意 | 欠損時の扱い |
-| --- | --- | --- |
-| `recipe_id` | 必須 | 当該候補を表示対象外（詳細遷移不可のため） |
-| `name` | 必須 | 当該候補を表示対象外 |
-| `nutrition.energy_kcal` | 必須 | `"-"`表示（候補表示は継続） |
-| `nutrition.protein_g` | 必須 | `"-"`表示（候補表示は継続） |
-| `tags` | 任意 | `notes`で代替、代替不可なら「用途情報なし」 |
-| `notes` | 任意 | `tags`で代替、代替不可なら「特徴情報なし」 |
-| `cooking_time_min` | 任意 | 「不明」表示 |
+Slot values:
+- `staple`
+- `main`
+- `side`
+- `soup`
+- `dessert`
 
-## 5.6 正常応答・0件応答
-- 1件以上: `total >= 1` かつ `items.length >= 1`
-- 0件: `HTTP 200` で `total = 0`, `items = []`
-- 0件は異常ではなく、UIは「該当する献立候補が見つかりませんでした」を表示し、条件見直し導線を出す。
+Generation rules:
+- required base composition is `staple + main + side + soup`
+- dessert is optional
+- kcal target range is `target_kcal * 0.8` through `target_kcal * 1.2`
+- protein target is treated as a lower bound
+- ranking prioritizes protein shortfall first, then kcal proximity
+- if strict context filters produce empty slot pools, the service relaxes `meal_type` / `scene` in stages and reports `constraint_relaxed=true`
 
-## 5.7 入力不備時のエラー方針
-- UIは必須未入力・形式不正時にAPI送信しない。
-- APIに不正値が到達した場合は `HTTP 400` + 項目単位エラーを返す。
+Errors:
+| HTTP | Error code | Meaning |
+|---|---|---|
+| 400 | `INVALID_PARAMETER` | Slot or parameter issue |
+| 404 | `NO_RECIPES_FOUND` | Required slot or protein target cannot be satisfied |
+| 422 | `VALIDATION_ERROR` | Pydantic request validation error |
 
+# 7. `GET /recipes`
+## Purpose
+Search recipe summaries. This is mainly for browse/search features and for proxy route `GET /api/recipes/search`.
+
+## Query Parameters
+| Parameter | Rule |
+|---|---|
+| `category` | optional category filter |
+| `meal_type` | optional partial match against tags/notes |
+| `tags` | optional comma-separated partial-match tags |
+| `min_energy_kcal`, `max_energy_kcal` | optional nutrition range |
+| `min_protein_g`, `max_protein_g` | optional nutrition range |
+| `min_fat_g`, `max_fat_g` | optional nutrition range |
+| `min_carbohydrate_g`, `max_carbohydrate_g` | optional nutrition range |
+| `limit` | integer, `1..100`, default `20` |
+| `offset` | integer, `>= 0`, default `0` |
+
+## Response
 ```json
 {
-  "error": {
-    "code": "VALIDATION_ERROR",
-    "message": "入力値に誤りがあります。",
-    "fields": [
-      { "name": "age", "reason": "must_be_between_1_and_99" }
-    ]
-  }
+  "total": 1,
+  "limit": 20,
+  "offset": 0,
+  "items": [
+    {
+      "recipe_id": "MAIN_CHICKEN_001",
+      "recipe_name": "鶏むねの照り焼き",
+      "category_lv1": "主菜",
+      "category_lv2": "鶏肉",
+      "category_lv3": null,
+      "tags": "高たんぱく, 試合後",
+      "energy_kcal": 300,
+      "protein_g": 30,
+      "fat_g": 8,
+      "carbohydrate_g": 15
+    }
+  ]
 }
 ```
 
-## 5.8 API失敗時の扱い
-- サーバ内部エラー: `HTTP 500`（`INTERNAL_SERVER_ERROR`）
-- タイムアウト/一時障害: `HTTP 503`（`SERVICE_UNAVAILABLE`）
-- UIは一覧領域に失敗文言を表示し、再試行導線を提供する。
+`total=0` and `items=[]` is a normal response, not an error.
 
-## 5.9 欠損項目がある候補の扱い
-- 候補成立に必須な識別項目（`recipe_id`, `name`）欠損時は当該候補を除外。
-- `recipe_id` または `name` 欠損候補の欠損カード表示は採用しない。
-- 栄養値・補助情報の欠損はプレースホルダ表示で吸収し、一覧全体の成立を優先。
+# 8. `GET /recipes/{recipe_id}`
+## Purpose
+Fetch recipe detail for `/recipes/[recipeId]`.
 
-## 5.10 画面との対応関係
-- SCR-01（条件入力）: リクエスト生成元
-- SCR-02（候補一覧）: レスポンス表示先
-
-## 5.11 備考
-- `sex` のUI表示値は、UI内部でAPI受理値へ変換して送信する（対応: 男性→`male`、女性→`female`）。
-- `exclude_ingredients[]` は正規化後の完全一致のみで除外判定する。部分一致は採用しない。
-- 同義語辞書がある場合のみ内部正規化で吸収する。同義語辞書未対応語は除外漏れが発生しうる。
-- 年齢・身長・体重の閾値はMVP暫定固定値であり、業務承認後に見直し可能とする。
-- 並び順は「目的整合 > 場面整合 > エネルギー帯近似 > 調理負担整合」を内部ロジック方針とする。
-
-# 6. レシピ詳細取得API 契約
-## 6.1 API名
-- レシピ詳細取得API
-
-## 6.2 目的
-- 候補一覧で選択した `recipe_id` の詳細情報を返却し、採用判断を可能にする。
-
-## 6.3 呼び出しタイミング
-- 候補一覧画面で候補選択後、詳細画面表示時に呼び出す。
-- 詳細画面の再試行操作時に同一 `recipe_id` で再呼び出しする。
-
-## 6.4 リクエスト項目一覧
-| 項目名 | 型 | 必須/任意 | バリデーション |
-| --- | --- | --- | --- |
-| `recipe_id`（path） | string | 必須 | 空不可、1〜64文字、`^[A-Za-z0-9_-]+$` |
-
-## 6.5 レスポンス項目一覧
-### 正常応答（HTTP 200）
+## Response
 ```json
 {
-  "recipe_id": "r_001",
-  "name": "鶏むねと野菜の丼",
-  "tags": ["試合後", "夕食"],
-  "notes": "高たんぱくで作りやすい",
+  "recipe_id": "MAIN_CHICKEN_001",
+  "recipe_name": "鶏むねの照り焼き",
+  "category_lv1": "主菜",
+  "category_lv2": "鶏肉",
+  "category_lv3": null,
+  "tags": "高たんぱく, 試合後",
+  "energy_kcal": 300,
+  "protein_g": 30,
+  "fat_g": 8,
+  "carbohydrate_g": 15,
+  "cooking_method": "焼く",
+  "notes": "高タンパク質を優先",
   "ingredients": [
-    { "name": "鶏むね肉", "amount": "200g" },
-    { "name": "ごはん", "amount": "1膳" }
+    {
+      "line_no": 1,
+      "ingredient_name": "鶏むね肉",
+      "ingredient_alias": "鶏むね肉",
+      "weight_g": 120,
+      "amount_value": 120,
+      "unit": "g",
+      "notes": null
+    }
   ],
   "steps": [
-    "鶏むね肉を切る",
-    "焼く",
-    "ごはんにのせる"
-  ],
-  "nutrition": {
-    "energy_kcal": 620,
-    "protein_g": 32.1,
-    "fat_g": 14.2,
-    "carbohydrate_g": 80.3
-  }
+    {
+      "step_number": 1,
+      "instruction": "材料を切る。"
+    }
+  ]
 }
 ```
 
-### 詳細画面に必要な最低返却項目
-| 項目名 | 必須/任意 | 欠損時の扱い |
-| --- | --- | --- |
-| `recipe_id` | 必須 | 異常扱い（一覧へ戻る導線表示） |
-| `name` | 必須 | 異常扱い（詳細表示中止） |
-| `ingredients[]` | 必須 | 0件は異常扱い（データ不備） |
-| `ingredients[].name` | 必須 | 欠損行を非表示、全欠損なら異常扱い |
-| `ingredients[].amount` | 任意 | 「記載なし」表示 |
-| `steps[]` | 必須 | 0件は異常扱い（データ不備） |
-| `nutrition.energy_kcal` | 任意 | `"-"`表示 |
-| `nutrition.protein_g` | 任意 | `"-"`表示 |
-| `nutrition.fat_g` | 任意 | `"-"`表示 |
-| `nutrition.carbohydrate_g` | 任意 | `"-"`表示 |
-| `tags` | 任意 | `notes`で代替、不可なら「情報なし」 |
-| `notes` | 任意 | 欠損時は非表示 |
+Important current limitations:
+- detail response uses flat nutrition fields, not a nested `nutrition` object
+- ingredient amount is exposed as `amount_value` / `unit`; `weight_g` is also retained for gram-equivalent nutrition use
+- `cooking_time_min` is not exposed
 
-## 6.6 404時の扱い
-- `HTTP 404` + `RECIPE_NOT_FOUND` を返す。
-- UIは「対象レシピが見つかりませんでした」を表示し、一覧へ戻る導線を必須表示する。
+Errors:
+| HTTP | Error code | Meaning |
+|---|---|---|
+| 404 | `RECIPE_NOT_FOUND` | Recipe id is unknown |
+| 422 | `VALIDATION_ERROR` | Request validation error |
 
-## 6.7 API失敗時の扱い
-- `HTTP 500` / `503` を返却。
-- UIは失敗文言、再試行導線、一覧へ戻る導線を表示する。
+# 9. Data Sufficiency Contract
+For the current MVP, a menu result card needs:
+- `recipe_id`
+- `recipe_name`
+- `category_lv1` / `category_lv2`
+- `energy_kcal`
+- `protein_g`
+- optional `tags`
 
-## 6.8 欠損時の扱い
-- 採用判断の根幹項目（`name`, `ingredients[]`, `steps[]`）欠損は詳細成立不可として異常表示。
-- それ以外はプレースホルダ表示または非表示で吸収し、可能な範囲で詳細表示を継続する。
+A detail page needs:
+- `recipe_id`
+- `recipe_name`
+- `ingredients[]`
+- `ingredients[].amount_value` / `ingredients[].unit`
+- `steps[]`
+- `energy_kcal`
+- `protein_g`
+- `fat_g`
+- `carbohydrate_g`
 
-## 6.9 画面との対応関係
-- SCR-02（候補一覧）: `recipe_id` の発行元
-- SCR-03（レシピ詳細）: レスポンス表示先
+Optional or currently unavailable fields:
+- `notes`: displayed when present
+- `cooking_method`: displayed when present
+- `cooking_time_min`: not present
+- `exclude_ingredients`: not implemented in menu generation
+- `cooking_load`: not implemented in menu generation
 
-## 6.10 備考
-- 一覧と詳細で `recipe_id` の整合を必須とする。
-
-# 7. エラー応答方針
-## 7.1 共通エラー形式
-```json
-{
-  "error": {
-    "code": "ERROR_CODE",
-    "message": "利用者向けメッセージ",
-    "fields": []
-  }
-}
-```
-
-## 7.2 ステータスとUI方針
-| HTTP | code | 主な発生条件 | UI方針 |
-| --- | --- | --- | --- |
-| 400 | `VALIDATION_ERROR` | 入力値不正 | 項目単位修正案内 |
-| 404 | `RECIPE_NOT_FOUND` | 詳細対象なし | 一覧へ戻る導線 |
-| 500 | `INTERNAL_SERVER_ERROR` | サーバ内部失敗 | 再試行導線 |
-| 503 | `SERVICE_UNAVAILABLE` | 一時障害/タイムアウト | 再試行導線 |
-
-# 8. 欠損データ時の方針
-| 項目 | MVP時方針 | 区分 |
-| --- | --- | --- |
-| 主な用途 | `tags` / `notes` で代替 | 既存データで代替 |
-| 簡単な特徴 | `notes` / `tags` で代替 | 既存データで代替 |
-| 向いている場面 | `tags` / `notes` で代替 | 既存データで代替 |
-| 補足コメント | `notes` を任意表示 | 任意返却 |
-| 調理時間目安 | 欠損時「不明」 | 仮表示 |
-| 分量 | 欠損時「記載なし」 | 仮表示 |
-
-- 上記6項目はMVPで新規DB追加を前提にしない。
-- 主要判断項目は名称・材料・手順を優先し、栄養項目（`nutrition.energy_kcal`, `nutrition.protein_g` を含む）欠損時はプレースホルダ表示で詳細表示を継続する。
-
-# 9. 画面成立に必要な最低データセット
-## 9.1 候補一覧画面（SCR-02）
-- 正常成立条件
-  - `total`（0以上）
-  - `items[]`（0件可）
-- 候補1件表示に必要な最小項目
-  - `recipe_id`, `name`
-  - `nutrition.energy_kcal`（欠損時 `"-"`）、`nutrition.protein_g`（欠損時 `"-"`）
-- 0件時成立条件
-  - `total=0` かつ `items=[]` を正常応答で返すこと
-
-## 9.2 詳細画面（SCR-03）
-- 正常成立条件
-  - `recipe_id`, `name`, `ingredients[]`, `steps[]`
-- 欠損許容
-  - `ingredients[].amount`, `nutrition.energy_kcal`, `nutrition.protein_g`, `nutrition.fat_g`, `nutrition.carbohydrate_g`, `notes`, `tags`
-
-# 10. MVP範囲外として扱うAPI
-- ログイン/会員
-- 課金
-- 外部連携
-- AIチャット
-- お気に入り
-- 履歴
-- 比較
-- 共有
-- PDF出力
-- 買い物リスト
-- 条件保存
-- 週間献立
-- 自動最適化
-
-# 11. 実装前確認が必要な論点
-- 本契約はMVP実装着手可能な確定版とする。
-- 数値バリデーション閾値（`age`, `height_cm`, `weight_kg`）はMVP暫定固定値として運用し、業務承認後の改定時は契約書改版で対応する。
-- 同義語辞書のメンテナンス範囲は運用課題として管理し、MVP契約自体は「正規化後完全一致」を維持する。
+# 10. Related Docs
+- `docs/api_menu_mvp_spec.md`
+- `docs/frontend_api_integration_guide.md`
+- `docs/screen_io_specification_mvp.md`
+- `docs/error_ui_mapping_guide.md`
+- `docs/api_vocabulary_guide.md`

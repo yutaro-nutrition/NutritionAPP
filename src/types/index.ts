@@ -106,44 +106,6 @@ export interface RecipeDetail {
   recipe_points?: string[];
 }
 
-export interface RecipeNutrition extends NutrientMap {
-  recipe_id: string;
-}
-
-export interface MealRecipes {
-  breakfast: RecipeMaster[];
-  lunch: RecipeMaster[];
-  dinner: RecipeMaster[];
-}
-
-export interface SnackPlan {
-  timing: "午前補食" | "昼食後〜練習前" | "練習前補食" | "練習後補食" | "夕食後" | "就寝前";
-  recipes: string[];
-  reason: string;
-}
-
-export interface DailyPlan {
-  meals: MealRecipes;
-  snacks: SnackPlan[];
-  recipes: RecipeMaster[];
-  recipeNutritions: RecipeNutrition[];
-  dailyNutrition: NutrientMap;
-  totalBudget: number;
-  totalCookTime: number;
-  score: number;
-  debug?: {
-    constraintProfile: "strict" | "relaxed";
-    attempts: number;
-    validCandidates: number;
-    rejectedByProtein: number;
-    rejectedByFat: number;
-    bestProteinRateTried: number;
-    bestFatRateTried: number;
-  };
-}
-
-export type DayPlanType = "training" | "pre_game" | "game_day" | "off_day";
-
 export interface NutritionTargets extends NutrientMap {}
 
 export interface NutritionEvaluation {
@@ -163,13 +125,4 @@ export interface ShoppingItem {
   food_id: string;
   food_name: string;
   total_amount_g: number;
-}
-
-export interface WeeklyDayPlan {
-  dayIndex: number;
-  dayLabel: string;
-  dayType: DayPlanType;
-  plan: DailyPlan;
-  targets: NutritionTargets;
-  evaluation: NutritionEvaluation;
 }

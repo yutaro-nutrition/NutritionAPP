@@ -41,12 +41,15 @@ class RecipeRepository:
         if slot == "staple":
             return or_(
                 Recipe.category_lv1 == "主食",
+                Recipe.category_lv1 == "丼",
+                Recipe.category_lv2 == "丼",
                 Recipe.recipe_id.like("RICE%"),
                 Recipe.recipe_id.like("UDON%"),
                 Recipe.recipe_id.like("SOBA%"),
                 Recipe.recipe_id.like("RAMEN%"),
                 Recipe.recipe_id.like("BREAD%"),
                 Recipe.recipe_id.like("DONBURI%"),
+                Recipe.recipe_id.like("DON_%"),
             )
         if slot == "main":
             return or_(

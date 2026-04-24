@@ -5,7 +5,7 @@ import recipes from "@/data/recipe_master_sample.json";
 import gohanMaster from "@/data/gohan120/recipe_master_gohan120.json";
 import gohanIngredients from "@/data/gohan120/ingredients_gohan120.json";
 import gohanSteps from "@/data/gohan120/steps_gohan120.json";
-import { FoodMaster, RecipeDetail, RecipeIngredient, RecipeMaster, RecipeNutrition } from "@/types";
+import { FoodMaster, RecipeDetail, RecipeIngredient, RecipeMaster } from "@/types";
 
 type GohanMasterRow = {
   recipe_id: string;
@@ -161,29 +161,4 @@ export const getIngredientsByRecipeId = (): Map<string, RecipeIngredient[]> => {
 
 export const getRecipeDetailByIdMap = (): Map<string, RecipeDetail> => {
   return new Map(getRecipeDetails().map((detail) => [detail.recipe_id, detail]));
-};
-
-export const getPresetRecipeNutritionMap = (): Map<string, RecipeNutrition> => {
-  const map = new Map<string, RecipeNutrition>();
-  for (const row of GOHAN_MASTER_ROWS) {
-    const n = row.nutrients_per_serving;
-    map.set(row.recipe_id, {
-      recipe_id: row.recipe_id,
-      kcal: Number(n.enerc_kcal ?? 0),
-      protein: Number(n.protein_g ?? 0),
-      fat: Number(n.fat_g ?? 0),
-      carb: Number(n.carb_g ?? 0),
-      calcium: Number(n.calcium_mg ?? 0),
-      iron: Number(n.iron_mg ?? 0),
-      salt: Number(n.salt_g ?? 0),
-      vitamin_b1: Number(n.vitamin_b1_mg ?? 0),
-      vitamin_b2: Number(n.vitamin_b2_mg ?? 0),
-      vitamin_b6: Number(n.vitamin_b6_mg ?? 0),
-      vitamin_b12: Number(n.vitamin_b12_ug ?? 0),
-      vitamin_c: Number(n.vitamin_c_mg ?? 0),
-      vitamin_d: Number(n.vitamin_d_ug ?? 0),
-      retinol_activity_equivalent: Number(n.retinol_activity_equivalent_ug ?? 0),
-    });
-  }
-  return map;
 };

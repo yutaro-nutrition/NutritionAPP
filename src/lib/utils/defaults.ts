@@ -20,14 +20,3 @@ export const defaultProfile: UserProfile = {
 
 export const PROFILE_STORAGE_KEY = "kondate_profile";
 export const RESULT_STORAGE_KEY = "kondate_result";
-
-
-export const DEFAULT_WEEK_DAY_TYPES = [
-  "training",
-  "training",
-  "training",
-  "training",
-  "pre_game",
-  "game_day",
-  "off_day",
-] as const;
