@@ -25,7 +25,7 @@ jobs:
           POSTGRES_USER: recipe_test_user
           POSTGRES_PASSWORD: recipe_test_password
         ports:
-          - 55432:5432
+          - 5432:5432
         options: >-
           --health-cmd "pg_isready -U recipe_test_user -d recipe_test_db"
           --health-interval 10s
@@ -34,12 +34,12 @@ jobs:
 
     env:
       TEST_POSTGRES_HOST: 127.0.0.1
-      TEST_POSTGRES_PORT: 55432
+      TEST_POSTGRES_PORT: 5432
       TEST_POSTGRES_DB: recipe_test_db
       TEST_POSTGRES_USER: recipe_test_user
       TEST_POSTGRES_PASSWORD: recipe_test_password
       POSTGRES_HOST: 127.0.0.1
-      POSTGRES_PORT: 55432
+      POSTGRES_PORT: 5432
       POSTGRES_DB: recipe_test_db
       POSTGRES_USER: recipe_test_user
       POSTGRES_PASSWORD: recipe_test_password
