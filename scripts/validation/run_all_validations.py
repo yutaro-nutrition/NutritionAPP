@@ -12,6 +12,15 @@ TARGET_FILES = {
     "recipe_db_ramen_50.xlsx": {"category": "ramen", "expected_count": 50},
     "recipe_db_bread_100.xlsx": {"category": "bread", "expected_count": 100},
     "recipe_db_donburi_100_batch1.xlsx": {"category": "donburi", "expected_count": 100},
+    "recipe_db_gohan_120_fixed.xlsx": {"category": None, "expected_count": 120},
+    "recipe_db_main_beef_100_batch1.xlsx": {"category": None, "expected_count": 100},
+    "recipe_db_main_chicken_100_batch1.xlsx": {"category": None, "expected_count": 100},
+    "recipe_db_main_pork_100_batch1.xlsx": {"category": None, "expected_count": 100},
+    "recipe_db_main_seafood_100_batch1.xlsx": {"category": None, "expected_count": 100},
+    "recipe_db_side_lowprotein_100_batch1.xlsx": {"category": "side_lowprotein", "expected_count": 100},
+    "recipe_db_side_protein5_100_batch1.xlsx": {"category": "side_protein5", "expected_count": 100},
+    "recipe_db_soup_100_batch1.xlsx": {"category": "soup", "expected_count": 100},
+    "recipe_db_dessert_100_batch1.xlsx": {"category": "dessert", "expected_count": 100},
 }
 
 

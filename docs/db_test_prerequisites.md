@@ -12,7 +12,7 @@ DB依存テストを再現可能に実行するための最低成立条件を固
 # 3. 必要な環境変数
 ## 3.1 integration tests（`tests/conftest.py` 経由）
 - `TEST_POSTGRES_HOST` (default: `127.0.0.1`)
-- `TEST_POSTGRES_PORT` (default: `55432`)
+- `TEST_POSTGRES_PORT` (default: `5432`)
 - `TEST_POSTGRES_DB` (default: `recipe_test_db`)
 - `TEST_POSTGRES_USER` (default: `recipe_test_user`)
 - `TEST_POSTGRES_PASSWORD` (default: `recipe_test_password`)
@@ -127,7 +127,7 @@ python -m pytest app_api/tests -m integration -q
 ## 9.3 app_api向け seed 導線（推奨）
 ```powershell
 $env:POSTGRES_HOST='127.0.0.1'
-$env:POSTGRES_PORT='55432'
+$env:POSTGRES_PORT='5432'
 $env:POSTGRES_DB='recipe_test_db'
 $env:POSTGRES_USER='recipe_test_user'
 $env:POSTGRES_PASSWORD='recipe_test_password'

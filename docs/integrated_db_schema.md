@@ -2,6 +2,7 @@
 
 ## 1. 統合対象の考え方
 - 入力は `data/generated/*.xlsx` のカテゴリ別レシピDB。
+- `data/generated/*.xlsx` は GitHub に統合する元データ正本として扱う。
 - 各xlsxの3シート（`Ingredients` / `Steps` / `Recipe_Master`）を正規化し、単一の論理DBへ統合する。
 - QA結果（`qa_status`）を統合判定に利用し、既定では `passed` のみ本体へ投入する。
 - `source_file` / `source_batch` / `version` を保持し、追跡可能性（lineage）を担保する。

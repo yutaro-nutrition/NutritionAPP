@@ -174,6 +174,17 @@ def ensure_required_structure(sheets: dict[str, pd.DataFrame]) -> tuple[bool, st
     return True, ""
 
 
+def apply_compat_columns(sheets: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
+    normalized = {name: df.copy() for name, df in sheets.items()}
+    steps = normalized.get("Steps")
+    if steps is not None:
+        if "Step_Number" not in steps.columns and "Step_No" in steps.columns:
+            steps["Step_Number"] = steps["Step_No"]
+        if "Instruction" not in steps.columns and "Step_Description" in steps.columns:
+            steps["Instruction"] = steps["Step_Description"]
+    return normalized
+
+
 def standardize_recipe_master(
     recipe_master: pd.DataFrame,
     *,
@@ -396,6 +407,7 @@ def main() -> int:
                 {"file_name": file_name, "reason": f"excel_read_error: {exc}", "qa_status": qa_status}
             )
             continue
+        sheets = apply_compat_columns(sheets)
 
         ok, reason = ensure_required_structure(sheets)
         if not ok:

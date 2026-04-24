@@ -111,13 +111,13 @@ try {
     }
 
     Set-EnvDefault -Name "TEST_POSTGRES_HOST" -Value "127.0.0.1"
-    Set-EnvDefault -Name "TEST_POSTGRES_PORT" -Value "55432"
+    Set-EnvDefault -Name "TEST_POSTGRES_PORT" -Value "5432"
     Set-EnvDefault -Name "TEST_POSTGRES_DB" -Value "recipe_test_db"
     Set-EnvDefault -Name "TEST_POSTGRES_USER" -Value "recipe_test_user"
     Set-EnvDefault -Name "TEST_POSTGRES_PASSWORD" -Value "recipe_test_password"
 
     Set-EnvDefault -Name "POSTGRES_HOST" -Value "127.0.0.1"
-    Set-EnvDefault -Name "POSTGRES_PORT" -Value "55432"
+    Set-EnvDefault -Name "POSTGRES_PORT" -Value "5432"
     Set-EnvDefault -Name "POSTGRES_DB" -Value "recipe_test_db"
     Set-EnvDefault -Name "POSTGRES_USER" -Value "recipe_test_user"
     Set-EnvDefault -Name "POSTGRES_PASSWORD" -Value "recipe_test_password"

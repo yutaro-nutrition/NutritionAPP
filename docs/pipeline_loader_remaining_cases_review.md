@@ -52,3 +52,9 @@
 - `test_pipeline_loader_canonical_v1.py` の残件は、4件中3件が loader固有で保持必須。
 - 残る1件（`test_pipeline_does_not_call_db_loader_when_phase1_fails`）のみが将来再検討対象。
 - 現段階では「ここで止める」が妥当で、次段はこの1件の扱いに限定して進めるのが安全。
+
+## Prompt 16 判定結果（`test_pipeline_does_not_call_db_loader_when_phase1_fails`）
+- 判定: **B. fake-db acceptance 側へ将来移管可能**
+- 理由: 本ケースは loader 変換契約ではなく、phase1 fail 時の import 実行抑止（`db_import_executed=False`）という orchestration 契約を見ているため。
+- 受け皿候補: `tests/test_pipeline_db_import_acceptance.py`（`test_pipeline_blocks_db_import_on_validation_fail` と同層・同契約）
+- 今回方針: Prompt 16 は移管可否確定が目的のため、**実移管は行わず docs 固定のみ**。

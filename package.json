@@ -9,6 +9,7 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "test:e2e:result": "playwright test tests/e2e/result-flow.spec.ts",
+    "test:e2e:full-corpus": "playwright test tests/e2e/result-flow.spec.ts --config=playwright.full-corpus.config.ts",
     "verify:web": "npm run typecheck && npm run test:e2e:result",
     "resolve:food-links": "tsx scripts/resolve-recipe-food-links.ts",
     "generate:rice-db": "tsx scripts/generate-rice-research-db.ts",

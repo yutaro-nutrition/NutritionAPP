@@ -84,7 +84,7 @@ powershell -ExecutionPolicy Bypass -File scripts/start_test_postgres.ps1
 
 # minimum seed 手動再投入（pytest非依存）
 set POSTGRES_HOST=127.0.0.1
-set POSTGRES_PORT=55432
+set POSTGRES_PORT=5432
 set POSTGRES_DB=recipe_test_db
 set POSTGRES_USER=recipe_test_user
 set POSTGRES_PASSWORD=recipe_test_password

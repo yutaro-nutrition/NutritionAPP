@@ -1,3 +1,7 @@
+param(
+    [switch]$WriteParquet
+)
+
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
@@ -42,7 +46,11 @@ try {
 
     Push-Location $ProjectRoot
     try {
-        & $PythonExe $BuildScript
+        $integrationArgs = @($BuildScript)
+        if (-not $WriteParquet) {
+            $integrationArgs += "--no-parquet"
+        }
+        & $PythonExe @integrationArgs
         $exitCode = $LASTEXITCODE
     }
     finally {

@@ -149,3 +149,11 @@ pipeline系テストを削減する前段として、テスト関数単位で「
 - 検証結果:
   - collect-only: 移管元 4件 / 移管先 8件
   - 実行: 対象2ファイルで `12 passed`
+
+## Prompt 16 判定追記
+- 対象: `test_pipeline_loader_canonical_v1.py::test_pipeline_does_not_call_db_loader_when_phase1_fails`
+- 判定: **将来削減候補を維持（B: fake-db acceptance 側へ将来移管可能）**
+- 根拠:
+  - 検証契約は loader 変換ではなく import orchestration（`db_import_executed=False` と DB loader 非実行）。
+  - 受け皿は `test_pipeline_db_import_acceptance.py::test_pipeline_blocks_db_import_on_validation_fail` が最も整合。
+- 今回対応: Prompt 16 の目的に合わせて移管実装は行わず、判定のみ固定。

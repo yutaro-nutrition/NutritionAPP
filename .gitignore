@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+.pytest_tmp*/
 .mypy_cache/
 .ruff_cache/
 .venv/
@@ -18,9 +19,12 @@ playwright-report/
 test-results/
 *.tsbuildinfo
 reports/
-data/
+data/*
+!data/generated/
+!data/generated/*.xlsx
 *_generation_report*.json
 recipe_db_*.xlsx
+!data/generated/recipe_db_*.xlsx
 food_source.pdf
 food_source.xlsx
 source_japan2023.xlsx

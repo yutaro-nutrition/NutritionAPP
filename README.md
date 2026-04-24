@@ -11,7 +11,7 @@ Next.js フロントエンドと FastAPI + PostgreSQL API を組み合わせた�
 - Next.js 側 API:
   - `POST /api/users/profile`
   - `GET /api/meta/options`
-  - `GET /api/recipes`
+  - `GET /api/recipes/search`
   - `GET /api/recipes/{recipeId}`
   - `POST /api/menu/generate`
 - FastAPI 側 API:
@@ -100,7 +100,7 @@ powershell -ExecutionPolicy Bypass -File scripts\start_test_postgres.ps1
 ### 2. FastAPI
 ```powershell
 $env:POSTGRES_HOST='127.0.0.1'
-$env:POSTGRES_PORT='55432'
+$env:POSTGRES_PORT='5432'
 $env:POSTGRES_DB='recipe_test_db'
 $env:POSTGRES_USER='recipe_test_user'
 $env:POSTGRES_PASSWORD='recipe_test_password'
@@ -134,11 +134,25 @@ python -m pytest app_api/tests -m integration -q
 npm run test:e2e:result
 ```
 
+フル統合データを投入したローカルPostgreSQL（`.env` の `POSTGRES_*`）に対して確認する場合:
+```powershell
+npm run test:e2e:full-corpus
+```
+
 ## Excel ローダー
 
 `load_excel_to_postgres.py` の現在の契約は以下です。
 - 正式モード: `skip` / `replace`
 - 互換モード: `update`（正式契約外。警告付き）
+
+## コンテンツ元データ
+
+GitHub に統合するレシピ元データの正本は `data/generated/*.xlsx` です。
+
+- `data/generated` はカテゴリ別レシピDBの入力ディレクトリです。
+- `scripts\run_validation.ps1` はこのディレクトリの有効14ファイルを検証します。
+- `scripts\run_integration.ps1` は検証結果を使って `output/integrated/*.csv` を再生成します。
+- `output/integrated` は生成物のため Git 管理対象外です。
 
 例:
 ```powershell

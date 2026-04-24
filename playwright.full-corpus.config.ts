@@ -24,14 +24,6 @@ export default defineConfig({
     {
       command: `"${pythonCommand}" -m uvicorn app.main:app --app-dir app_api --host 127.0.0.1 --port 8000`,
       cwd: repoRoot,
-      env: {
-        ...process.env,
-        POSTGRES_HOST: "127.0.0.1",
-        POSTGRES_PORT: "5432",
-        POSTGRES_DB: "recipe_test_db",
-        POSTGRES_USER: "recipe_test_user",
-        POSTGRES_PASSWORD: "recipe_test_password",
-      },
       port: 8000,
       reuseExistingServer: true,
       timeout: 120_000,
