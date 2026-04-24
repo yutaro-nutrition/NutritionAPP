@@ -21,6 +21,8 @@ export interface AppApiIngredientItem {
   ingredient_name: string;
   ingredient_alias?: string | null;
   weight_g?: number | null;
+  amount_value?: number | null;
+  unit?: "g" | "ml" | null;
   notes?: string | null;
 }
 

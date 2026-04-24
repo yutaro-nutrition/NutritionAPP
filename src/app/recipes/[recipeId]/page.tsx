@@ -24,6 +24,14 @@ const formatWeight = (value?: number | null) => {
   return `${formatNumber(value)} g`;
 };
 
+const formatIngredientAmount = (ingredient: AppApiRecipeDetail["ingredients"][number]) => {
+  if (ingredient.amount_value != null && ingredient.unit) {
+    return `${formatNumber(ingredient.amount_value)} ${ingredient.unit}`;
+  }
+
+  return formatWeight(ingredient.weight_g);
+};
+
 export default async function RecipeDetailPage({ params }: { params: Promise<{ recipeId: string }> }) {
   const { recipeId } = await params;
 
@@ -84,7 +92,7 @@ export default async function RecipeDetailPage({ params }: { params: Promise<{ r
               >
                 <span className="col-span-7">{ingredient.ingredient_name}</span>
                 <span className="col-span-3 text-slate-500">{ingredient.ingredient_alias ?? ""}</span>
-                <span className="col-span-2 text-right">{formatWeight(ingredient.weight_g)}</span>
+                <span className="col-span-2 text-right">{formatIngredientAmount(ingredient)}</span>
               </li>
             ))}
           </ul>

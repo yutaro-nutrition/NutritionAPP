@@ -26,6 +26,8 @@ def ingredient_to_dict(ingredient: RecipeIngredient) -> dict:
         "ingredient_name": ingredient.ingredient_name,
         "ingredient_alias": ingredient.ingredient_alias,
         "weight_g": None if ingredient.weight_g is None else float(ingredient.weight_g),
+        "amount_value": None if ingredient.amount_value is None else float(ingredient.amount_value),
+        "unit": ingredient.unit,
         "notes": ingredient.notes,
     }
 

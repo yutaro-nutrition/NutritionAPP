@@ -305,6 +305,8 @@ Fetch recipe detail for `/recipes/[recipeId]`.
       "ingredient_name": "鶏むね肉",
       "ingredient_alias": "鶏むね肉",
       "weight_g": 120,
+      "amount_value": 120,
+      "unit": "g",
       "notes": null
     }
   ],
@@ -319,7 +321,7 @@ Fetch recipe detail for `/recipes/[recipeId]`.
 
 Important current limitations:
 - detail response uses flat nutrition fields, not a nested `nutrition` object
-- ingredient amount is exposed as `weight_g`; `amount_value` / `unit` are not exposed by the current API schema
+- ingredient amount is exposed as `amount_value` / `unit`; `weight_g` is also retained for gram-equivalent nutrition use
 - `cooking_time_min` is not exposed
 
 Errors:
@@ -341,6 +343,7 @@ A detail page needs:
 - `recipe_id`
 - `recipe_name`
 - `ingredients[]`
+- `ingredients[].amount_value` / `ingredients[].unit`
 - `steps[]`
 - `energy_kcal`
 - `protein_g`

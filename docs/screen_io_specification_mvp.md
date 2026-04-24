@@ -160,7 +160,7 @@ The generation request body is:
 | tag chips | `tags` split by comma or pipe |
 | cooking method | `cooking_method` |
 | notes | `notes` |
-| ingredients | `ingredients[].ingredient_name`, `ingredient_alias`, `weight_g` |
+| ingredients | `ingredients[].ingredient_name`, `ingredient_alias`, `amount_value`, `unit`, `weight_g` |
 | steps | `steps[].step_number`, `instruction` |
 | nutrition | `energy_kcal`, `protein_g`, `fat_g`, `carbohydrate_g` |
 
@@ -189,7 +189,7 @@ The generation request body is:
 | fat | `fat_g` | available |
 | carbohydrate | `carbohydrate_g` | available |
 | ingredients | `ingredients[]` | available |
-| ingredient amount | `weight_g` | available as grams; `amount_value`/`unit` not exposed |
+| ingredient amount | `amount_value` / `unit`, fallback `weight_g` | available |
 | steps | `steps[]` | available |
 | cooking time | none | not available |
 | cooking load filter | none | not implemented |
@@ -199,8 +199,7 @@ The generation request body is:
 1. Add condition-edit/retry flow from `/result` back to `/generate`.
 2. Decide whether `likes`, `dislikes`, and `allergies` should feed into menu generation.
 3. Decide whether `cooking_load` and `exclude_ingredients` belong in the current MVP API.
-4. Expose `amount_value` / `unit` in recipe detail if canonical amount display becomes required.
-5. Add or derive `cooking_time_min` if cooking burden must be visible in MVP.
+4. Add or derive `cooking_time_min` if cooking burden must be visible in MVP.
 
 # 10. Related Docs
 - `docs/api_contract_mvp.md`

@@ -68,7 +68,7 @@ def test_validation_error_has_error_code() -> None:
     assert isinstance(payload["detail"], list)
 
 
-def test_recipe_detail_allows_null_weight_g() -> None:
+def test_recipe_detail_exposes_canonical_amount_when_weight_g_is_null() -> None:
     recipe_id = "API_NULL_WEIGHT_001"
 
     with SessionLocal() as db:
@@ -137,3 +137,5 @@ def test_recipe_detail_allows_null_weight_g() -> None:
     assert response.status_code == 200, response.text
     payload = response.json()
     assert payload["ingredients"][0]["weight_g"] is None
+    assert payload["ingredients"][0]["amount_value"] == 15.0
+    assert payload["ingredients"][0]["unit"] == "ml"

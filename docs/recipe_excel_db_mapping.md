@@ -57,7 +57,7 @@
   - `step_no` -> `step_number`
   - `step_text` -> `instruction`
   - `net_weight_g` -> `weight_g`
-- APIレスポンスは既存互換を優先し `line_no`, `step_number`, `instruction`, `weight_g` を返す
+- APIレスポンスは既存互換を優先し `line_no`, `step_number`, `instruction`, `weight_g` を返し、Canonicalの表示量として `amount_value`, `unit` も返す
 - 将来v2 APIで `ingredient_no` / `step_no` 併記を検討
 
 ## 8. 実装メモ

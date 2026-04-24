@@ -23,6 +23,8 @@ class IngredientItem(BaseModel):
     ingredient_name: str
     ingredient_alias: str | None = None
     weight_g: float | None = None
+    amount_value: float | None = None
+    unit: Literal["g", "ml"] | None = None
     notes: str | None = None
 
 

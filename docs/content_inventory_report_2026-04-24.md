@@ -202,11 +202,11 @@ Completed:
 1. Add or confirm representative smoke cases for `meal_type` and `scene` combinations beyond the two API-level checks already run.
 2. Decide whether the current MVP needs content fields not yet exposed by the API:
    - `cooking_time_min`
-   - `amount_value` / `unit`
    - allergen/exclusion metadata
    - budget/cook-time filtering metadata
+3. `amount_value` / `unit` are now exposed in recipe detail for canonical ingredient amount display.
 
 # 9. Recommended Immediate Order
 1. Commit the Git-tracked source data, ETL/validation changes, DB smoke fix, and updated docs.
 2. Open a draft PR so the source workbooks, validation path, integration path, DB smoke fix, and full-corpus E2E path are reviewed together.
-3. Only after this PR, consider adding API fields such as `amount_value` / `unit` or `cooking_time_min`.
+3. After this PR, continue with fields such as `cooking_time_min`, allergen/exclusion metadata, or budget/cook-time filtering metadata.
